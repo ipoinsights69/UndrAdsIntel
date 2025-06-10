@@ -1,0 +1,126 @@
+{% extends "layout.html" %}
+
+{% block title %}Edit Environment Variables - UndrApp Intel Scraper{% endblock %}
+
+{% block content %}
+<div class="mb-8 flex justify-between items-center">
+    <h1 class="text-3xl font-bold text-gray-800">Edit Environment Variables</h1>
+    <a href="{{ url_for('index') }}" class="btn-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 inline" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+        </svg>
+        Back to Dashboard
+    </a>
+</div>
+
+<div class="card">
+    <div class="mb-4">
+        <p class="text-gray-600">Edit the environment variables below. These settings will be saved to the .env file.</p>
+        <p class="text-red-600 font-medium mt-2">Warning: Changing these values may affect the application's functionality.</p>
+    </div>
+    
+    <form method="POST" action="{{ url_for('edit_env') }}" class="space-y-6">
+        <!-- Application Settings -->
+        <div>
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Application Settings</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label for="debug" class="block text-sm font-medium text-gray-700 mb-1">Debug Mode</label>
+                    <select id="debug" name="DEBUG" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                        <option value="True" {% if env_vars.get('DEBUG') == 'True' %}selected{% endif %}>True</option>
+                        <option value="False" {% if env_vars.get('DEBUG') == 'False' %}selected{% endif %}>False</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="secret_key" class="block text-sm font-medium text-gray-700 mb-1">Secret Key</label>
+                    <input type="text" id="secret_key" name="SECRET_KEY" value="{{ env_vars.get('SECRET_KEY', '') }}" 
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Data Storage Settings -->
+        <div>
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Data Storage Settings</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label for="data_dir" class="block text-sm font-medium text-gray-700 mb-1">Data Directory</label>
+                    <input type="text" id="data_dir" name="DATA_DIR" value="{{ env_vars.get('DATA_DIR', 'data') }}" 
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                </div>
+                
+                <div>
+                    <label for="logs_dir" class="block text-sm font-medium text-gray-700 mb-1">Logs Directory</label>
+                    <input type="text" id="logs_dir" name="LOGS_DIR" value="{{ env_vars.get('LOGS_DIR', 'logs') }}" 
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                </div>
+                
+                <div>
+                    <label for="exports_dir" class="block text-sm font-medium text-gray-700 mb-1">Exports Directory</label>
+                    <input type="text" id="exports_dir" name="EXPORTS_DIR" value="{{ env_vars.get('EXPORTS_DIR', 'exports') }}" 
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                </div>
+                
+                <div>
+                    <label for="scraped_data_dir" class="block text-sm font-medium text-gray-700 mb-1">Scraped Data Directory</label>
+                    <input type="text" id="scraped_data_dir" name="SCRAPED_DATA_DIR" value="{{ env_vars.get('SCRAPED_DATA_DIR', 'scraped_data') }}" 
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scraping Settings -->
+        <div>
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Scraping Settings</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label for="scraper_api_key" class="block text-sm font-medium text-gray-700 mb-1">ScraperAPI Key</label>
+                    <input type="text" id="scraper_api_key" name="SCRAPER_API_KEY" value="{{ env_vars.get('SCRAPER_API_KEY', '') }}" 
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                </div>
+                
+                <div>
+                    <label for="scraper_api_url" class="block text-sm font-medium text-gray-700 mb-1">ScraperAPI URL</label>
+                    <input type="text" id="scraper_api_url" name="SCRAPER_API_URL" value="{{ env_vars.get('SCRAPER_API_URL', 'http://api.scraperapi.com') }}" 
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                </div>
+                
+                <div>
+                    <label for="max_threads" class="block text-sm font-medium text-gray-700 mb-1">Max Threads</label>
+                    <input type="number" id="max_threads" name="MAX_THREADS" value="{{ env_vars.get('MAX_THREADS', '5') }}" min="1" max="50" 
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Authentication Settings -->
+        <div>
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Authentication Settings</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label for="admin_username" class="block text-sm font-medium text-gray-700 mb-1">Admin Username</label>
+                    <input type="text" id="admin_username" name="ADMIN_USERNAME" value="{{ env_vars.get('ADMIN_USERNAME', '') }}" 
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                </div>
+                
+                <div>
+                    <label for="admin_password" class="block text-sm font-medium text-gray-700 mb-1">Admin Password</label>
+                    <input type="password" id="admin_password" name="ADMIN_PASSWORD" value="{{ env_vars.get('ADMIN_PASSWORD', '') }}" 
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                    <p class="text-sm text-gray-500 mt-1">Leave blank to keep current password</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pt-4 border-t border-gray-200">
+            <button type="submit" class="btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 inline" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                Save Changes
+            </button>
+        </div>
+    </form>
+</div>
+{% endblock %}

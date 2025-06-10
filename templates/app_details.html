@@ -1,0 +1,247 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ app.app_name }} - UndrApp Intel Scraper{% endblock %}
+
+{% block content %}
+<div class="mb-4">
+    <a href="{{ url_for('apps') }}" class="text-primary-600 hover:text-primary-800 flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+        </svg>
+        Back to Apps
+    </a>
+</div>
+
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+    <!-- App Header -->
+    <div class="p-6 border-b border-gray-200">
+        <div class="flex items-start">
+            <!-- App Icon Placeholder -->
+            <div class="w-24 h-24 bg-primary-100 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-primary-600" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z" />
+                </svg>
+            </div>
+            
+            <!-- App Info -->
+            <div class="flex-1">
+                <h1 class="text-2xl font-bold text-gray-800">{{ app.app_name }}</h1>
+                <p class="text-gray-600 mt-1">{{ app.package_name }}</p>
+                
+                {% if app.developer_info and app.developer_info.name %}
+                <div class="mt-2 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                    </svg>
+                    <a href="{{ url_for('apps', developer=app.developer_info.name) }}" class="text-primary-600 hover:text-primary-800">
+                        {{ app.developer_info.name }}
+                    </a>
+                </div>
+                {% endif %}
+                
+                {% if app.Rating %}
+                <div class="mt-2 flex items-center">
+                    <div class="flex items-center text-yellow-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <span class="ml-1 text-gray-700">{{ app.Rating }}</span>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+    <!-- App Stats -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6 bg-gray-50 border-b border-gray-200">
+        {% if app['Total downloads'] %}
+        <div class="text-center">
+            <h3 class="text-sm font-medium text-gray-500">Total Downloads</h3>
+            <p class="mt-1 text-xl font-semibold text-gray-900">{{ app['Total downloads'] }}</p>
+        </div>
+        {% endif %}
+        
+        {% if app['Recent downloads'] %}
+        <div class="text-center">
+            <h3 class="text-sm font-medium text-gray-500">Recent Downloads</h3>
+            <p class="mt-1 text-xl font-semibold text-gray-900">{{ app['Recent downloads'] }}</p>
+        </div>
+        {% endif %}
+        
+        {% if app.Ranking %}
+        <div class="text-center">
+            <h3 class="text-sm font-medium text-gray-500">Ranking</h3>
+            <p class="mt-1 text-xl font-semibold text-gray-900">{{ app.Ranking }}</p>
+        </div>
+        {% endif %}
+    </div>
+    
+    <!-- App Details -->
+    <div class="p-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Left Column -->
+            <div>
+                <h2 class="text-lg font-semibold text-gray-800 mb-4">App Information</h2>
+                
+                <div class="space-y-3">
+                    {% if app['APK size'] %}
+                    <div class="flex">
+                        <span class="w-1/3 text-gray-600">APK Size:</span>
+                        <span class="w-2/3 text-gray-900">{{ app['APK size'] }}</span>
+                    </div>
+                    {% endif %}
+                    
+                    {% if app['Designed for Android'] %}
+                    <div class="flex">
+                        <span class="w-1/3 text-gray-600">Android Version:</span>
+                        <span class="w-2/3 text-gray-900">{{ app['Designed for Android'] }}</span>
+                    </div>
+                    {% endif %}
+                    
+                    {% if app.Ads %}
+                    <div class="flex">
+                        <span class="w-1/3 text-gray-600">Ads:</span>
+                        <span class="w-2/3 text-gray-900">{{ app.Ads }}</span>
+                    </div>
+                    {% endif %}
+                    
+                    {% if app.developer_info %}
+                    <div class="mt-6">
+                        <h3 class="text-md font-semibold text-gray-800 mb-2">Developer Information</h3>
+                        
+                        {% if app.developer_info.email %}
+                        <div class="flex">
+                            <span class="w-1/3 text-gray-600">Email:</span>
+                            <span class="w-2/3 text-gray-900">{{ app.developer_info.email }}</span>
+                        </div>
+                        {% endif %}
+                        
+                        {% if app.developer_info.website %}
+                        <div class="flex">
+                            <span class="w-1/3 text-gray-600">Website:</span>
+                            <a href="{{ app.developer_info.website }}" target="_blank" class="w-2/3 text-primary-600 hover:text-primary-800">{{ app.developer_info.website }}</a>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                </div>
+                
+                {% if app.app_description %}
+                <div class="mt-6">
+                    <h3 class="text-md font-semibold text-gray-800 mb-2">Description</h3>
+                    <p class="text-gray-700 whitespace-pre-line">{{ app.app_description }}</p>
+                </div>
+                {% endif %}
+            </div>
+            
+            <!-- Right Column -->
+            <div>
+                {% if app.api_details and app.api_details.technologies %}
+                <h2 class="text-lg font-semibold text-gray-800 mb-4">Technologies</h2>
+                
+                {% if app.api_details.technologies['Social libraries'] %}
+                <div class="mb-4">
+                    <h3 class="text-md font-semibold text-gray-700 mb-2">Social Libraries</h3>
+                    <ul class="list-disc pl-5 text-gray-700">
+                        {% for lib in app.api_details.technologies['Social libraries'] %}
+                        <li>{{ lib }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+                
+                {% if app.api_details.technologies['Ad network libraries'] %}
+                <div class="mb-4">
+                    <h3 class="text-md font-semibold text-gray-700 mb-2">Ad Network Libraries</h3>
+                    <ul class="list-disc pl-5 text-gray-700">
+                        {% for lib in app.api_details.technologies['Ad network libraries'] %}
+                        <li>{{ lib }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+                
+                {% if app.api_details.technologies['Development tools'] %}
+                <div class="mb-4">
+                    <h3 class="text-md font-semibold text-gray-700 mb-2">Development Tools</h3>
+                    <ul class="list-disc pl-5 text-gray-700">
+                        {% for tool in app.api_details.technologies['Development tools'] %}
+                        <li>{{ tool }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+                {% endif %}
+                
+                {% if app.changelog and app.changelog|length > 0 %}
+                <div class="mt-6">
+                    <h2 class="text-lg font-semibold text-gray-800 mb-4">Changelog</h2>
+                    <div class="space-y-4">
+                        {% for change in app.changelog[:10] %}
+                        <div class="border-l-4 border-primary-500 pl-4 py-1">
+                            <div class="flex justify-between items-center">
+                                <span class="font-medium text-gray-900">{{ change.date }}</span>
+                                <span class="text-sm text-gray-500">{{ change.type }}</span>
+                            </div>
+                            <p class="text-gray-700 mt-1">{{ change.description }}</p>
+                        </div>
+                        {% endfor %}
+                        
+                        {% if app.changelog|length > 10 %}
+                        <div class="text-center mt-2">
+                            <button id="showMoreChangelog" class="text-primary-600 hover:text-primary-800 text-sm font-medium">Show More</button>
+                        </div>
+                        <div id="moreChangelog" class="hidden space-y-4">
+                            {% for change in app.changelog[10:] %}
+                            <div class="border-l-4 border-primary-500 pl-4 py-1">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-medium text-gray-900">{{ change.date }}</span>
+                                    <span class="text-sm text-gray-500">{{ change.type }}</span>
+                                </div>
+                                <p class="text-gray-700 mt-1">{{ change.description }}</p>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if app.about_section %}
+<div class="mt-6 bg-white rounded-lg shadow-md p-6">
+    <h2 class="text-lg font-semibold text-gray-800 mb-4">About</h2>
+    <div class="text-gray-700 whitespace-pre-line">{{ app.about_section }}</div>
+</div>
+{% endif %}
+
+{% if app.url %}
+<div class="mt-6 text-center">
+    <a href="{{ app.url }}" target="_blank" class="btn-primary inline-flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+            <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+        </svg>
+        View on AppBrain
+    </a>
+</div>
+{% endif %}
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const showMoreBtn = document.getElementById('showMoreChangelog');
+        const moreChangelog = document.getElementById('moreChangelog');
+        
+        if (showMoreBtn && moreChangelog) {
+            showMoreBtn.addEventListener('click', function() {
+                moreChangelog.classList.toggle('hidden');
+                showMoreBtn.textContent = moreChangelog.classList.contains('hidden') ? 'Show More' : 'Show Less';
+            });
+        }
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,483 @@
+{% extends "layout.html" %}
+
+{% block title %}Export Data - UndrApp Intel Scraper{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h1 class="text-3xl font-bold text-gray-800 mb-2">Export Data</h1>
+    <p class="text-gray-600">Export scraped app data in different formats with customizable filters</p>
+</div>
+
+<!-- Export Filters -->
+<div class="card mb-8 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+    <div class="bg-gray-50 p-4 rounded-t-lg border-b border-gray-200">
+        <div class="flex justify-between items-center">
+            <h2 class="text-xl font-semibold text-gray-800">Export Filters</h2>
+            <button type="button" id="toggle-filters" class="btn-secondary text-sm flex items-center">
+                <span id="toggle-text">Hide Filters</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 inline-block transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="filters-container" class="p-4">
+        <form id="export-filters-form" class="space-y-6">
+            <!-- First Row: Ads, Ranking, Developer -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Ads Filter -->
+                <div class="filter-group">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Ads</label>
+                    <select name="ads_filter" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                        <option value="">All</option>
+                        <option value="Contains ads">Contains ads</option>
+                        <option value="No ads">No ads</option>
+                    </select>
+                </div>
+                
+                <!-- Ranking Filter -->
+                <div class="filter-group">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Ranking</label>
+                    <select name="ranking_filter" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                        <option value="">All</option>
+                        <option value="Top ranked">Top ranked</option>
+                        <option value="High ranked">High ranked</option>
+                        <option value="Medium ranked">Medium ranked</option>
+                        <option value="Low ranked">Low ranked</option>
+                    </select>
+                </div>
+                
+                <!-- Developer Filter -->
+                <div class="filter-group">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Developer</label>
+                    <input type="text" name="developer" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200" placeholder="Enter developer name">
+                </div>
+            </div>
+            
+            <!-- Second Row: APK Size, Android Version -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- APK Size Filter -->
+                <div class="filter-group">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">APK Size (MB)</label>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <div class="relative">
+                                <input type="number" name="apk_size_min" min="0" step="0.1" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200 pl-3 pr-8" placeholder="Min size">
+                                <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 text-xs">MB</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="relative">
+                                <input type="number" name="apk_size_max" min="0" step="0.1" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200 pl-3 pr-8" placeholder="Max size">
+                                <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 text-xs">MB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Android Version Filter -->
+                <div class="filter-group">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Minimum Android Version</label>
+                    <select name="android_version_min" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                        <option value="">All</option>
+                        <option value="4.0">Android 4.0+</option>
+                        <option value="5.0">Android 5.0+</option>
+                        <option value="6.0">Android 6.0+</option>
+                        <option value="7.0">Android 7.0+</option>
+                        <option value="8.0">Android 8.0+</option>
+                        <option value="9.0">Android 9.0+</option>
+                        <option value="10.0">Android 10.0+</option>
+                        <option value="11.0">Android 11.0+</option>
+                        <option value="12.0">Android 12.0+</option>
+                        <option value="13.0">Android 13.0+</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Rating Filter -->
+            <div class="filter-group p-4 bg-gray-50 rounded-lg border border-gray-200">
+                <label class="block text-sm font-medium text-gray-700 mb-2">App Rating</label>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs text-gray-500 mb-1">Minimum Rating</label>
+                        <div class="relative">
+                            <input type="number" name="rating_min" min="0" max="5" step="0.1" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200 pl-3 pr-8" placeholder="Min rating (e.g. 4.0)">
+                            <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 text-xs">★</span>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs text-gray-500 mb-1">Maximum Rating</label>
+                        <div class="relative">
+                            <input type="number" name="rating_max" min="0" max="5" step="0.1" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200 pl-3 pr-8" placeholder="Max rating (e.g. 5.0)">
+                            <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 text-xs">★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-2 text-xs text-gray-500">Filter apps by their rating value (from 0 to 5 stars)</div>
+            </div>
+            
+            <!-- Third Row: Downloads -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Total Downloads -->
+                <div class="filter-group">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Total Downloads</label>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div>
+                            <input type="number" name="total_downloads_min" min="0" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200" placeholder="Min">
+                        </div>
+                        <div>
+                            <select name="total_downloads_min_unit" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                                <option value="thousand">Thousand</option>
+                                <option value="million">Million</option>
+                                <option value="billion">Billion</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recent Downloads -->
+                <div class="filter-group">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Recent Downloads</label>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div>
+                            <input type="number" name="recent_downloads_min" min="0" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200" placeholder="Min">
+                        </div>
+                        <div>
+                            <select name="recent_downloads_min_unit" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                                <option value="thousand">Thousand</option>
+                                <option value="million">Million</option>
+                                <option value="billion">Billion</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fourth Row: Export Options -->
+            <div class="filter-group p-4 bg-gray-50 rounded-lg border border-gray-200">
+                <label class="block text-sm font-medium text-gray-700 mb-2">Export Options</label>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-center">
+                        <input type="checkbox" name="include_all_technologies" id="include_all_technologies" class="rounded border-gray-300 text-primary-600 shadow-sm focus:border-primary-300 focus:ring focus:ring-primary-200 focus:ring-opacity-50" checked>
+                        <label for="include_all_technologies" class="ml-2 block text-sm text-gray-700">Include all technologies</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" name="include_latest_changelog" id="include_latest_changelog" class="rounded border-gray-300 text-primary-600 shadow-sm focus:border-primary-300 focus:ring focus:ring-primary-200 focus:ring-opacity-50" checked>
+                        <label for="include_latest_changelog" class="ml-2 block text-sm text-gray-700">Include latest changelog only</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex justify-end space-x-3">
+                <button type="button" id="reset-filters" class="btn-secondary text-sm px-4 py-2 rounded-md transition-colors duration-200 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    </svg>
+                    Reset Filters
+                </button>
+                <button type="button" id="apply-filters" class="btn-primary text-sm px-4 py-2 rounded-md transition-colors duration-200 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+                    </svg>
+                    Apply Filters
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Export Format Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- CSV Export -->
+    <div class="card hover:shadow-lg transition-shadow duration-300 border border-gray-200 rounded-lg overflow-hidden">
+        <div class="bg-green-50 p-4 border-b border-gray-200">
+            <div class="flex items-center">
+                <div class="p-3 rounded-full bg-green-100 mr-4 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                </div>
+                <h2 class="text-xl font-semibold text-gray-800">CSV Format</h2>
+            </div>
+        </div>
+        
+        <div class="p-4">
+            <p class="text-gray-600 mb-6">Export data as a CSV file that can be opened in Excel, Google Sheets, or other spreadsheet applications.</p>
+            
+            <form action="{{ url_for('export') }}" method="post" class="export-form">
+                <input type="hidden" name="format" value="csv">
+                <!-- Hidden filter fields will be populated by JavaScript -->
+                <button type="submit" class="btn-primary w-full flex items-center justify-center py-2 rounded-md transition-colors duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                    Export as CSV
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- JSON Export -->
+    <div class="card hover:shadow-lg transition-shadow duration-300 border border-gray-200 rounded-lg overflow-hidden">
+        <div class="bg-yellow-50 p-4 border-b border-gray-200">
+            <div class="flex items-center">
+                <div class="p-3 rounded-full bg-yellow-100 mr-4 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <h2 class="text-xl font-semibold text-gray-800">JSON Format</h2>
+            </div>
+        </div>
+        
+        <div class="p-4">
+            <p class="text-gray-600 mb-6">Export data as a JSON file, ideal for developers or for importing into other applications.</p>
+            
+            <form action="{{ url_for('export') }}" method="post" class="export-form">
+                <input type="hidden" name="format" value="json">
+                <!-- Hidden filter fields will be populated by JavaScript -->
+                <button type="submit" class="btn-primary w-full flex items-center justify-center py-2 rounded-md transition-colors duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                    Export as JSON
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Excel Export -->
+    <div class="card hover:shadow-lg transition-shadow duration-300 border border-gray-200 rounded-lg overflow-hidden">
+        <div class="bg-blue-50 p-4 border-b border-gray-200">
+            <div class="flex items-center">
+                <div class="p-3 rounded-full bg-blue-100 mr-4 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                </div>
+                <h2 class="text-xl font-semibold text-gray-800">Excel Format</h2>
+            </div>
+        </div>
+        
+        <div class="p-4">
+            <p class="text-gray-600 mb-6">Export data as an Excel file (.xlsx) with proper formatting for Microsoft Excel.</p>
+            
+            <form action="{{ url_for('export') }}" method="post" class="export-form">
+                <input type="hidden" name="format" value="excel">
+                <!-- Hidden filter fields will be populated by JavaScript -->
+                <button type="submit" class="btn-primary w-full flex items-center justify-center py-2 rounded-md transition-colors duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                    Export as Excel
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Export History -->
+<div class="card mt-8 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+    <div class="bg-gray-50 p-4 rounded-t-lg border-b border-gray-200">
+        <h2 class="text-xl font-semibold text-gray-800">Export History</h2>
+    </div>
+    
+    <div class="p-4">
+        {% if export_files %}
+            <div class="overflow-x-auto rounded-lg border border-gray-200">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Filename</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Format</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Size</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        {% for file in export_files %}
+                        <tr class="hover:bg-gray-50 transition-colors duration-150">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{ file.filename }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                <span class="px-2 py-1 text-xs rounded-full {% if file.format == 'CSV' %}bg-green-100 text-green-800{% elif file.format == 'JSON' %}bg-yellow-100 text-yellow-800{% elif file.format == 'Excel' %}bg-blue-100 text-blue-800{% else %}bg-gray-100 text-gray-800{% endif %}">{{ file.format }}</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ file.date.strftime('%Y-%m-%d %H:%M:%S') }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ file.size }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                <a href="{{ url_for('download_file', filename=file.filename) }}" class="text-primary-600 hover:text-primary-800 flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                    </svg>
+                                    Download
+                                </a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        {% else %}
+            <div class="text-center py-8 text-gray-500 bg-gray-50 rounded-lg border border-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-gray-400 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
+                </svg>
+                <p>No export history found</p>
+                <p class="text-sm mt-2">Apply filters and export data to see history</p>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Export Instructions -->
+<div class="card mt-8 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+    <div class="bg-gray-50 p-4 rounded-t-lg border-b border-gray-200">
+        <h2 class="text-xl font-semibold text-gray-800">Export Instructions</h2>
+    </div>
+    
+    <div class="p-4">
+        <div class="space-y-4 text-gray-700">
+            <div class="p-4 bg-green-50 rounded-lg border border-green-100">
+                <h3 class="font-medium text-gray-900 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    CSV Format
+                </h3>
+                <p class="mt-2">CSV (Comma-Separated Values) files can be opened in any spreadsheet application like Microsoft Excel, Google Sheets, or LibreOffice Calc.</p>
+            </div>
+            
+            <div class="p-4 bg-yellow-50 rounded-lg border border-yellow-100">
+                <h3 class="font-medium text-gray-900 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    JSON Format
+                </h3>
+                <p class="mt-2">JSON files contain structured data that can be easily parsed by programming languages. This format is ideal for developers or for importing into other applications.</p>
+            </div>
+            
+            <div class="p-4 bg-blue-50 rounded-lg border border-blue-100">
+                <h3 class="font-medium text-gray-900 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    Excel Format
+                </h3>
+                <p class="mt-2">Excel files (.xlsx) are optimized for Microsoft Excel with proper formatting and data types.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript for handling filters -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterForm = document.getElementById('export-filters-form');
+        const exportForms = document.querySelectorAll('.export-form');
+        const applyFiltersBtn = document.getElementById('apply-filters');
+        const resetFiltersBtn = document.getElementById('reset-filters');
+        const toggleFiltersBtn = document.getElementById('toggle-filters');
+        const filtersContainer = document.getElementById('filters-container');
+        const toggleText = document.getElementById('toggle-text');
+        const toggleIcon = toggleFiltersBtn.querySelector('svg');
+        
+        // Hide filters by default
+        filtersContainer.style.display = 'none';
+        toggleText.textContent = 'Show Filters';
+        toggleIcon.classList.add('rotate-180');
+        
+        // Toggle filters visibility with animation
+        toggleFiltersBtn.addEventListener('click', function() {
+            if (filtersContainer.style.display === 'none') {
+                filtersContainer.style.display = 'block';
+                toggleText.textContent = 'Hide Filters';
+                toggleIcon.classList.remove('rotate-180');
+            } else {
+                filtersContainer.style.display = 'none';
+                toggleText.textContent = 'Show Filters';
+                toggleIcon.classList.add('rotate-180');
+            }
+        });
+        
+        // Apply filters to all export forms with visual feedback
+        applyFiltersBtn.addEventListener('click', function() {
+            const formData = new FormData(filterForm);
+            
+            // Clear existing hidden inputs
+            exportForms.forEach(form => {
+                const hiddenInputs = form.querySelectorAll('input[type="hidden"]:not([name="format"])');
+                hiddenInputs.forEach(input => input.remove());
+            });
+            
+            // Add filter values as hidden inputs to each export form
+            let filterCount = 0;
+            for (const [name, value] of formData.entries()) {
+                if (value) { // Only add non-empty values
+                    filterCount++;
+                    exportForms.forEach(form => {
+                        const hiddenInput = document.createElement('input');
+                        hiddenInput.type = 'hidden';
+                        hiddenInput.name = name;
+                        hiddenInput.value = value;
+                        form.appendChild(hiddenInput);
+                    });
+                }
+            }
+            
+            // Show success notification
+            const notification = document.createElement('div');
+            notification.className = 'fixed bottom-4 right-4 bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded shadow-md transition-opacity duration-500';
+            notification.innerHTML = `
+                <div class="flex items-center">
+                    <svg class="h-6 w-6 text-green-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <p><span class="font-bold">Success!</span> ${filterCount} filters applied. Click an export button to download.</p>
+                </div>
+            `;
+            document.body.appendChild(notification);
+            
+            // Remove notification after 3 seconds
+            setTimeout(() => {
+                notification.style.opacity = '0';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 500);
+            }, 3000);
+        });
+        
+        // Reset filters with visual feedback
+        resetFiltersBtn.addEventListener('click', function() {
+            filterForm.reset();
+            
+            // Clear hidden inputs from export forms
+            exportForms.forEach(form => {
+                const hiddenInputs = form.querySelectorAll('input[type="hidden"]:not([name="format"])');
+                hiddenInputs.forEach(input => input.remove());
+            });
+            
+            // Show reset notification
+            const notification = document.createElement('div');
+            notification.className = 'fixed bottom-4 right-4 bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 rounded shadow-md transition-opacity duration-500';
+            notification.innerHTML = `
+                <div class="flex items-center">
+                    <svg class="h-6 w-6 text-blue-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    </svg>
+                    <p><span class="font-bold">Reset complete!</span> All filters have been cleared.</p>
+                </div>
+            `;
+            document.body.appendChild(notification);
+            
+            // Remove notification after 3 seconds
+            setTimeout(() => {
+                notification.style.opacity = '0';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 500);
+            }, 3000);
+        });
+    });
+</script>
+{% endblock %}

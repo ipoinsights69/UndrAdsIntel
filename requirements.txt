@@ -1,0 +1,8 @@
+Flask==2.3.3
+Werkzeug==2.3.7
+requests==2.31.0
+beautifulsoup4==4.12.2
+pandas==2.1.0
+python-dotenv==1.0.0
+Flask-WTF==1.1.1
+WTForms==3.0.1

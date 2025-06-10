@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+{% block title %}Upload Package Names{% endblock %}
+{% block content %}
+<div class="mb-8">
+    <h1 class="text-3xl font-bold text-gray-800 mb-4">Upload Package Names</h1>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="card">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Upload CSV File</h2>
+            <form action="/upload" method="post" enctype="multipart/form-data" class="space-y-4">
+                <div>
+                    <label for="file" class="block text-sm font-medium text-gray-700 mb-1">Select CSV file with package names</label>
+                    <div class="relative border border-gray-300 rounded-lg p-2 bg-white">
+                        <input type="file" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" id="file" name="file" accept=".csv">
+                        <div class="flex items-center justify-center py-2 text-gray-500" id="file-label">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                            </svg>
+                            <span>Click to select or drag and drop</span>
+                        </div>
+                    </div>
+                    <p class="mt-1 text-sm text-gray-500">CSV should have a header row with 'package_name' column. <a href="/static/sample.csv" download class="text-primary-600 hover:text-primary-800">Download sample CSV</a></p>
+                </div>
+                <button type="submit" class="btn-primary w-full flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                    </svg>
+                    Upload and Start Scraping
+                </button>
+            </form>
+        </div>
+        
+        <div class="card">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Enter Package Names Manually</h2>
+            <form action="/upload" method="post" class="space-y-4">
+                <div>
+                    <label for="package_names" class="block text-sm font-medium text-gray-700 mb-1">Package Names</label>
+                    <textarea class="w-full border border-gray-300 rounded-lg p-2 focus:ring-primary-500 focus:border-primary-500" id="package_names" name="package_names" rows="5" placeholder="Enter one package name per line"></textarea>
+                    <p class="mt-1 text-sm text-gray-500">Example: com.facebook.katana</p>
+                </div>
+                <button type="submit" class="btn-primary w-full flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                    Start Scraping
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="mt-6">
+        <a href="/logs" class="btn-secondary inline-flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+            </svg>
+            Back to Logs
+        </a>
+    </div>
+</div>
+
+<script>
+    document.getElementById('file').addEventListener('change', function() {
+        const fileName = this.files[0]?.name;
+        const fileLabel = document.getElementById('file-label');
+        
+        if (fileName) {
+            fileLabel.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg><span>${fileName}</span>`;
+        }
+    });
+</script>
+{% endblock %}

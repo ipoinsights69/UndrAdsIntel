@@ -1,0 +1,171 @@
+{% extends "layout.html" %}
+
+{% block title %}Logs - UndrApp Intel Scraper{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h1 class="text-3xl font-bold text-gray-800">Logs & Results</h1>
+    <p class="text-gray-600">View scraping logs and job results</p>
+</div>
+
+<!-- Scrape Jobs -->
+<div class="card mb-8">
+    <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-semibold text-gray-800">Scrape Jobs</h2>
+        <a href="{{ url_for('upload') }}" class="btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd" />
+            </svg>
+            New Scrape Job
+        </a>
+    </div>
+    
+    {% if jobs and jobs|length > 0 %}
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Job ID</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Timestamp</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Progress</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Apps</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    {% for job in jobs %}
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{ job.job_id }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{ job.timestamp }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            {% if job.status == 'complete' %}
+                                {% if job.failed_count == 0 %}
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Success</span>
+                                {% elif job.success_count == 0 %}
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Failed</span>
+                                {% else %}
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">Partial</span>
+                                {% endif %}
+                            {% else %}
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">Running</span>
+                            {% endif %}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-primary-600 h-2.5 rounded-full" style="width: {{ job.progress }}%;"></div>
+                            </div>
+                            <span class="text-xs">{{ job.progress }}%</span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            <span class="text-green-600">{{ job.success_count }} success</span> / 
+                            <span class="text-red-600">{{ job.failed_count }} failed</span>
+                            {% if job.partial_count > 0 %}
+                                / <span class="text-yellow-600">{{ job.partial_count }} partial</span>
+                            {% endif %}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                            <div class="flex space-x-2">
+                                <a href="{{ url_for('view_job_results', job_id=job.job_id) }}" class="text-primary-600 hover:text-primary-900">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                                {% if job.status == 'complete' and (job.failed_count > 0 or job.partial_count > 0) %}
+                                <a href="{{ url_for('retry_failed_apps', job_id=job.job_id) }}" class="text-primary-600 hover:text-primary-900">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                                {% endif %}
+                                 <!-- Delete -->
+    <form method="POST" action="{{ url_for('delete_job', job_id=job.job_id) }}" onsubmit="return confirm('Are you sure you want to delete this job?');">
+        <button type="submit" class="text-red-600 hover:text-red-900" title="Delete Job">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H3a1 1 0 100 2h1v10a2 2 0 002 2h8a2 2 0 002-2V6h1a1 1 0 100-2h-2V3a1 1 0 00-1-1H6zm2 4a1 1 0 012 0v8a1 1 0 11-2 0V6zm4 0a1 1 0 012 0v8a1 1 0 11-2 0V6z" clip-rule="evenodd" />
+            </svg>
+        </button>
+    </form>
+</div>
+                            </div>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% else %}
+        <div class="text-center py-8 text-gray-500">
+            <p>No scrape jobs found</p>
+        </div>
+    {% endif %}
+</div>
+
+<!-- Application Logs -->
+<div class="card">
+    <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-semibold text-gray-800">Application Logs</h2>
+        <div class="flex space-x-2">
+            <div class="relative">
+                <select id="log-level" class="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm rounded-md">
+                    <option value="all">All Logs</option>
+                    <option value="info">Info</option>
+                    <option value="error">Errors</option>
+                    <option value="warning">Warnings</option>
+                </select>
+            </div>
+            <button id="refresh-logs" class="btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd" />
+                </svg>
+                Refresh
+            </button>
+        </div>
+    </div>
+    
+    <div class="bg-gray-800 text-gray-200 p-4 rounded-lg h-96 overflow-y-auto">
+        <pre id="log-content" class="text-sm font-mono whitespace-pre-wrap">{{ log_content }}</pre>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const logLevelSelect = document.getElementById('log-level');
+        const refreshButton = document.getElementById('refresh-logs');
+        const logContent = document.getElementById('log-content');
+        
+        // Function to fetch and filter logs
+        function fetchLogs() {
+            const level = logLevelSelect.value;
+            fetch(`/api/logs?level=${level}`)
+                .then(response => response.json())
+                .then(data => {
+                    logContent.textContent = data.logs;
+                    logContent.scrollTop = logContent.scrollHeight; // Auto-scroll to bottom
+                })
+                .catch(error => console.error('Error fetching logs:', error));
+        }
+        
+        // Event listeners
+        logLevelSelect.addEventListener('change', fetchLogs);
+        refreshButton.addEventListener('click', fetchLogs);
+        
+        // Initial fetch
+        fetchLogs();
+        
+        // Set up auto-refresh every 5 seconds if on 'all' level
+        let autoRefreshInterval;
+        
+        function setupAutoRefresh() {
+            clearInterval(autoRefreshInterval);
+            if (logLevelSelect.value === 'all') {
+                autoRefreshInterval = setInterval(fetchLogs, 5000);
+            }
+        }
+        
+        logLevelSelect.addEventListener('change', setupAutoRefresh);
+        setupAutoRefresh();
+    });
+</script>
+{% endblock %}

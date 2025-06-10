@@ -1,0 +1,278 @@
+{% extends "layout.html" %}
+
+{% block title %}Retry Failed Apps - UndrApp Intel Scraper{% endblock %}
+
+{% block content %}
+<div class="mb-6">
+    <div class="flex items-center justify-between">
+        <h1 class="text-3xl font-bold text-gray-800">Retry Failed Apps</h1>
+        <div class="flex space-x-2">
+            <a href="{{ url_for('logs') }}" class="btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                </svg>
+                Back to Logs
+            </a>
+            <a href="{{ url_for('view_job_results', job_id=job_id) }}" class="btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                </svg>
+                View Job Results
+            </a>
+        </div>
+    </div>
+    <p class="text-gray-600">Job ID: {{ job_id }} | Timestamp: {{ timestamp }}</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+    <div class="card p-6">
+        <div class="flex items-center justify-between mb-4">
+            <h3 class="text-lg font-semibold text-gray-800">Failed Apps</h3>
+            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">{{ failed_apps|length }}</span>
+        </div>
+        <p class="text-gray-600 text-sm">Apps that failed to scrape completely</p>
+    </div>
+    
+    <div class="card p-6">
+        <div class="flex items-center justify-between mb-4">
+            <h3 class="text-lg font-semibold text-gray-800">Missing App Details</h3>
+            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">{{ missing_details|length }}</span>
+        </div>
+        <p class="text-gray-600 text-sm">Apps with missing app details</p>
+    </div>
+    
+    <div class="card p-6">
+        <div class="flex items-center justify-between mb-4">
+            <h3 class="text-lg font-semibold text-gray-800">Missing Changelogs</h3>
+            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">{{ missing_changelogs|length }}</span>
+        </div>
+        <p class="text-gray-600 text-sm">Apps with missing changelogs</p>
+    </div>
+</div>
+
+<div id="retry-options" class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+    <!-- Retry All Failed Apps -->
+    {% if failed_apps|length > 0 %}
+    <div class="card">
+        <div class="p-6 border-b border-gray-200">
+            <h3 class="text-lg font-semibold text-gray-800">Retry All Failed Apps</h3>
+            <p class="text-gray-600 text-sm">Retry scraping for all {{ failed_apps|length }} failed apps</p>
+        </div>
+        <div class="p-6">
+            <form id="retry-all-form" method="POST" action="{{ url_for('retry_failed_apps', job_id=job_id) }}">
+                <input type="hidden" name="retry_type" value="all">
+                <button type="submit" class="btn-primary w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd" />
+                    </svg>
+                    Retry All Failed Apps
+                </button>
+            </form>
+            
+            <div class="mt-4">
+                <h4 class="text-md font-medium text-gray-700 mb-2">Failed Apps ({{ failed_apps|length }}):</h4>
+                <div class="max-h-40 overflow-y-auto bg-gray-50 p-3 rounded-md">
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        {% for app in failed_apps %}
+                        <li>{{ app }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    
+    <!-- Retry Apps with Missing Details -->
+    {% if missing_details|length > 0 %}
+    <div class="card">
+        <div class="p-6 border-b border-gray-200">
+            <h3 class="text-lg font-semibold text-gray-800">Retry Apps with Missing Details</h3>
+            <p class="text-gray-600 text-sm">Retry scraping app details for {{ missing_details|length }} apps</p>
+        </div>
+        <div class="p-6">
+            <form id="retry-details-form" method="POST" action="{{ url_for('retry_failed_apps', job_id=job_id) }}">
+                <input type="hidden" name="retry_type" value="details">
+                <button type="submit" class="btn-primary w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd" />
+                    </svg>
+                    Retry App Details
+                </button>
+            </form>
+            
+            <div class="mt-4">
+                <h4 class="text-md font-medium text-gray-700 mb-2">Apps with Missing Details ({{ missing_details|length }}):</h4>
+                <div class="max-h-40 overflow-y-auto bg-gray-50 p-3 rounded-md">
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        {% for app in missing_details %}
+                        <li>{{ app }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    
+    <!-- Retry Apps with Missing Changelogs -->
+    {% if missing_changelogs|length > 0 %}
+    <div class="card">
+        <div class="p-6 border-b border-gray-200">
+            <h3 class="text-lg font-semibold text-gray-800">Retry Apps with Missing Changelogs</h3>
+            <p class="text-gray-600 text-sm">Retry scraping changelogs for {{ missing_changelogs|length }} apps</p>
+        </div>
+        <div class="p-6">
+            <form id="retry-changelogs-form" method="POST" action="{{ url_for('retry_failed_apps', job_id=job_id) }}">
+                <input type="hidden" name="retry_type" value="changelog">
+                <button type="submit" class="btn-primary w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd" />
+                    </svg>
+                    Retry Changelogs
+                </button>
+            </form>
+            
+            <div class="mt-4">
+                <h4 class="text-md font-medium text-gray-700 mb-2">Apps with Missing Changelogs ({{ missing_changelogs|length }}):</h4>
+                <div class="max-h-40 overflow-y-auto bg-gray-50 p-3 rounded-md">
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        {% for app in missing_changelogs %}
+                        <li>{{ app }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    
+    {% if failed_apps|length == 0 and missing_details|length == 0 and missing_changelogs|length == 0 %}
+    <div class="col-span-2 card p-6 text-center">
+        <p class="text-gray-600">No failed apps to retry</p>
+        <a href="{{ url_for('logs') }}" class="btn-primary inline-block mt-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+            </svg>
+            Back to Logs
+        </a>
+    </div>
+    {% endif %}
+</div>
+
+<!-- Live Status (hidden initially) -->
+<div id="live-status" class="card mb-8 hidden">
+    <div class="p-6 border-b border-gray-200">
+        <h3 class="text-lg font-semibold text-gray-800">Live Status</h3>
+        <p class="text-gray-600 text-sm">Scraping in progress...</p>
+    </div>
+    <div class="p-6">
+        <div class="mb-4">
+            <div class="flex justify-between mb-1">
+                <span class="text-sm font-medium text-gray-700">Progress</span>
+                <span id="progress-text" class="text-sm font-medium text-gray-700">0%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div id="progress-bar" class="bg-primary-600 h-2.5 rounded-full" style="width: 0%"></div>
+            </div>
+            <div class="mt-1 text-sm text-gray-600">
+                <span id="progress-count">0</span> of <span id="total-count">0</span> apps processed
+            </div>
+        </div>
+        
+        <div class="mt-6">
+            <h4 class="text-md font-medium text-gray-700 mb-2">Live Logs:</h4>
+            <div class="bg-gray-800 text-gray-200 p-4 rounded-lg h-64 overflow-y-auto">
+                <pre id="live-logs" class="text-sm font-mono whitespace-pre-wrap"></pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Handle form submissions via AJAX
+        const forms = document.querySelectorAll('#retry-all-form, #retry-details-form, #retry-changelogs-form');
+        const retryOptions = document.getElementById('retry-options');
+        const liveStatus = document.getElementById('live-status');
+        const progressBar = document.getElementById('progress-bar');
+        const progressText = document.getElementById('progress-text');
+        const progressCount = document.getElementById('progress-count');
+        const totalCount = document.getElementById('total-count');
+        const liveLogs = document.getElementById('live-logs');
+        
+        let jobId = null;
+        let pollingInterval = null;
+        
+        forms.forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(form);
+                
+                fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest'
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        // Hide retry options and show live status
+                        retryOptions.classList.add('hidden');
+                        liveStatus.classList.remove('hidden');
+                        
+                        // Set job ID and total count
+                        jobId = data.job_id;
+                        totalCount.textContent = data.total_apps;
+                        
+                        // Start polling for status updates
+                        startPolling();
+                    } else {
+                        alert('Error: ' + data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred. Please try again.');
+                });
+            });
+        });
+        
+        function startPolling() {
+            // Poll every 2 seconds
+            pollingInterval = setInterval(updateStatus, 2000);
+        }
+        
+        function updateStatus() {
+            if (!jobId) return;
+            
+            fetch(`/api/scraping/status?job_id=${jobId}`)
+                .then(response => response.json())
+                .then(data => {
+                    // Update progress
+                    const progress = Math.round((data.completed / data.total) * 100);
+                    progressBar.style.width = `${progress}%`;
+                    progressText.textContent = `${progress}%`;
+                    progressCount.textContent = data.completed;
+                    
+                    // Update logs
+                    liveLogs.textContent = data.logs;
+                    liveLogs.scrollTop = liveLogs.scrollHeight;
+                    
+                    // If job is complete, stop polling and redirect
+                    if (data.status === 'complete') {
+                        clearInterval(pollingInterval);
+                        window.location.href = `/view_job_results/${data.job_id}`;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+    });
+</script>
+{% endblock %}
