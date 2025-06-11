@@ -1,0 +1,477 @@
+2025-06-12 00:30:33,423 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1234
+ * Running on http://192.168.1.10:1234
+2025-06-12 00:30:33,423 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-12 00:30:33,425 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 00:30:34,339 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 00:30:34,374 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 00:30:35,099 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:30:35] "[33mPOST /parse_csv HTTP/1.1[0m" 404 -
+2025-06-12 00:31:11,899 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 00:31:12,108 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 00:31:13,168 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 00:31:13,180 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 00:31:14,130 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:31:14] "[31m[1mPOST /parse_csv HTTP/1.1[0m" 400 -
+2025-06-12 00:31:21,538 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:31:21] "[31m[1mPOST /parse_csv HTTP/1.1[0m" 400 -
+2025-06-12 00:31:52,495 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:31:52] "[31m[1mPOST /parse_csv HTTP/1.1[0m" 400 -
+2025-06-12 00:31:57,938 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1234
+ * Running on http://192.168.1.10:1234
+2025-06-12 00:31:57,938 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-12 00:31:57,938 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 00:31:58,363 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 00:31:58,370 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 00:31:59,669 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:31:59] "[31m[1mPOST /parse_csv HTTP/1.1[0m" 400 -
+2025-06-12 00:32:00,592 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:32:00] "[31m[1mPOST /parse_csv HTTP/1.1[0m" 400 -
+2025-06-12 00:32:22,957 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:32:22] "[31m[1mPOST /parse_csv HTTP/1.1[0m" 400 -
+2025-06-12 00:32:23,800 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:32:23] "[31m[1mPOST /parse_csv HTTP/1.1[0m" 400 -
+2025-06-12 00:32:24,167 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:32:24] "[31m[1mPOST /parse_csv HTTP/1.1[0m" 400 -
+2025-06-12 00:32:24,864 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:32:24] "[31m[1mPOST /parse_csv HTTP/1.1[0m" 400 -
+2025-06-12 00:32:25,169 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:32:25] "[31m[1mPOST /parse_csv HTTP/1.1[0m" 400 -
+2025-06-12 00:32:30,642 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 00:32:30,759 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 00:32:31,369 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 00:32:31,376 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 00:32:58,329 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:32:58] "[35m[1mPOST /parse_csv HTTP/1.1[0m" 500 -
+2025-06-12 00:32:59,064 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:32:59] "[35m[1mPOST /parse_csv HTTP/1.1[0m" 500 -
+2025-06-12 00:33:10,722 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 00:33:10,840 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 00:33:11,646 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 00:33:11,655 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 00:33:18,712 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 00:33:18,797 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 00:33:19,391 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 00:33:19,396 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 00:33:21,435 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:33:21] "POST /parse_csv HTTP/1.1" 200 -
+2025-06-12 00:37:05,079 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 00:37:05,470 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 00:37:06,337 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 00:37:06,344 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 00:37:40,640 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 00:37:40,795 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 00:37:41,629 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 00:37:41,636 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 00:37:54,765 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 00:37:54,925 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 00:37:55,651 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 00:37:55,657 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 00:38:55,080 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 00:38:55,302 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 00:38:56,056 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 00:38:56,063 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 00:39:04,117 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 00:39:04,239 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 00:39:05,026 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 00:39:05,034 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 00:39:50,964 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:39:50] "GET / HTTP/1.1" 200 -
+2025-06-12 00:39:52,345 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:39:52] "GET / HTTP/1.1" 200 -
+2025-06-12 00:39:52,805 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:39:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:39:53,677 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:39:53] "GET /upload HTTP/1.1" 200 -
+2025-06-12 00:40:02,509 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:40:02] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-06-12 00:40:02,516 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:40:02] "GET /upload HTTP/1.1" 200 -
+2025-06-12 00:40:10,595 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 00:40:10,749 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 00:40:11,576 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 00:40:11,584 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 00:40:51,098 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:40:51] "POST /parse_csv HTTP/1.1" 200 -
+2025-06-12 00:40:51,099 - root - INFO - [Job 6ddcea6d-81c1-40e9-af2b-dc70f5df11f1] Scraping 1/1: com.roblox.client.vnggames
+2025-06-12 00:40:51,100 - services.scraper - INFO - Scraping data for package: com.roblox.client.vnggames
+2025-06-12 00:40:51,100 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:40:51] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-06-12 00:40:51,100 - services.scraper - INFO - Attempting request to https://www.appbrain.com/app/body-color-swap/com.roblox.client.vnggames (attempt 1/3)
+2025-06-12 00:40:51,127 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:40:51] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:40:55,377 - services.scraper - INFO - Request successful for https://www.appbrain.com/app/body-color-swap/com.roblox.client.vnggames on attempt 1
+2025-06-12 00:40:55,398 - services.scraper - INFO - Attempting request to https://www.appbrain.com/app_details/com.roblox.client.vnggames (attempt 1/3)
+2025-06-12 00:40:57,379 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:40:57] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:40:57,731 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:40:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:41:00,442 - services.scraper - INFO - Request successful for https://www.appbrain.com/app_details/com.roblox.client.vnggames on attempt 1
+2025-06-12 00:41:00,442 - services.scraper - INFO - Status Code for com.roblox.client.vnggames: 200
+2025-06-12 00:41:00,444 - services.scraper - INFO - Fetching changelog for com.roblox.client.vnggames...
+2025-06-12 00:41:00,444 - services.scraper - INFO - Attempting request to https://www.appbrain.com/app_details/com.roblox.client.vnggames?changelog=true (attempt 1/3)
+2025-06-12 00:41:02,635 - services.scraper - INFO - Request successful for https://www.appbrain.com/app_details/com.roblox.client.vnggames?changelog=true on attempt 1
+2025-06-12 00:41:02,648 - services.scraper - INFO - Successfully scraped data for com.roblox.client.vnggames
+2025-06-12 00:41:02,650 - root - INFO - [Job 6ddcea6d-81c1-40e9-af2b-dc70f5df11f1] Scraping complete. Results saved to /Users/vaibhav/Desktop/AppBrain Scraper/results/6ddcea6d-81c1-40e9-af2b-dc70f5df11f1.json
+2025-06-12 00:41:03,163 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:41:03] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:41:03,435 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:41:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:41:05,620 - app - INFO - Job 6ddcea6d-81c1-40e9-af2b-dc70f5df11f1 stats: {'total': 1, 'success': 1, 'failed': 0, 'partial': 0, 'completed': 1}
+2025-06-12 00:41:05,640 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:41:05] "GET /view_job_results/6ddcea6d-81c1-40e9-af2b-dc70f5df11f1 HTTP/1.1" 200 -
+2025-06-12 00:41:09,777 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:41:09] "GET /apps HTTP/1.1" 200 -
+2025-06-12 00:41:10,691 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:41:10] "GET /app/com.roblox.client.vnggames HTTP/1.1" 200 -
+2025-06-12 00:42:14,354 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:42:14] "GET / HTTP/1.1" 200 -
+2025-06-12 00:42:15,951 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:42:15] "GET /upload HTTP/1.1" 200 -
+2025-06-12 00:42:21,934 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:42:21] "POST /parse_csv HTTP/1.1" 200 -
+2025-06-12 00:42:21,935 - root - INFO - [Job a02d2382-3ba9-4f9c-b378-5b6db23e6bac] Scraping 1/1: com.roblox.client.vnggames
+2025-06-12 00:42:21,936 - services.scraper - INFO - Scraping data for package: com.roblox.client.vnggames
+2025-06-12 00:42:21,937 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:42:21] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-06-12 00:42:21,937 - services.scraper - INFO - Attempting request to https://www.appbrain.com/app/body-color-swap/com.roblox.client.vnggames (attempt 1/3)
+2025-06-12 00:42:21,944 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:42:21] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:42:25,788 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:42:25] "[32mPOST /delete-job/6ddcea6d-81c1-40e9-af2b-dc70f5df11f1 HTTP/1.1[0m" 302 -
+2025-06-12 00:42:25,790 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:42:25] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:42:25,801 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:42:25] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:42:26,315 - services.scraper - INFO - Request successful for https://www.appbrain.com/app/body-color-swap/com.roblox.client.vnggames on attempt 1
+2025-06-12 00:42:26,353 - services.scraper - INFO - Attempting request to https://www.appbrain.com/app_details/com.roblox.client.vnggames (attempt 1/3)
+2025-06-12 00:42:31,990 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:42:31] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:42:32,350 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:42:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:42:33,707 - services.scraper - INFO - Request successful for https://www.appbrain.com/app_details/com.roblox.client.vnggames on attempt 1
+2025-06-12 00:42:33,708 - services.scraper - INFO - Status Code for com.roblox.client.vnggames: 200
+2025-06-12 00:42:33,715 - services.scraper - INFO - Fetching changelog for com.roblox.client.vnggames...
+2025-06-12 00:42:33,715 - services.scraper - INFO - Attempting request to https://www.appbrain.com/app_details/com.roblox.client.vnggames?changelog=true (attempt 1/3)
+2025-06-12 00:42:36,057 - services.scraper - INFO - Request successful for https://www.appbrain.com/app_details/com.roblox.client.vnggames?changelog=true on attempt 1
+2025-06-12 00:42:36,069 - services.scraper - INFO - Successfully scraped data for com.roblox.client.vnggames
+2025-06-12 00:42:36,069 - root - INFO - [Job a02d2382-3ba9-4f9c-b378-5b6db23e6bac] Scraping complete. Results saved to /Users/vaibhav/Desktop/AppBrain Scraper/results/a02d2382-3ba9-4f9c-b378-5b6db23e6bac.json
+2025-06-12 00:42:50,225 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:42:50] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:42:50,708 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:42:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:44:27,667 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/services/scraper.py', reloading
+2025-06-12 00:44:27,821 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 00:44:28,679 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 00:44:28,685 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 00:44:36,862 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/services/scraper.py', reloading
+2025-06-12 00:44:36,971 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 00:44:37,769 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 00:44:37,777 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 00:44:45,839 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 00:44:45,963 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 00:44:46,734 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 00:44:46,741 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 00:44:55,810 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 00:44:55,924 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 00:44:56,581 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 00:44:56,591 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 00:45:04,643 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 00:45:04,727 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 00:45:05,440 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 00:45:05,449 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 00:45:21,152 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:21] "POST /parse_csv HTTP/1.1" 200 -
+2025-06-12 00:45:21,153 - root - INFO - [Job 3dbbaf35-14a4-4326-bf4c-23f755f54bd1] Scraping 1/1: com.roblox.client.vnggames
+2025-06-12 00:45:21,154 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:21] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-06-12 00:45:21,154 - services.scraper - INFO - Scraping data for package: com.roblox.client.vnggames
+2025-06-12 00:45:21,154 - services.scraper - INFO - Attempting request to https://www.appbrain.com/app/body-color-swap/com.roblox.client.vnggames (attempt 1/3)
+2025-06-12 00:45:21,159 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:21,181 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:21] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:22,790 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:22,792 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:22] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:23,360 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:23,848 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:23,850 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:23] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:24,161 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:24,236 - services.scraper - INFO - Request successful for https://www.appbrain.com/app/body-color-swap/com.roblox.client.vnggames on attempt 1
+2025-06-12 00:45:24,261 - services.scraper - INFO - Attempting request to https://www.appbrain.com/app_details/com.roblox.client.vnggames (attempt 1/3)
+2025-06-12 00:45:24,418 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:24,421 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:24] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:24,623 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:24,854 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:24,857 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:24] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:25,054 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:25,232 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:25,233 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:25] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:25,439 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:25,593 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:25,595 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:25] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:25,796 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:25,892 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:25,895 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:25] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:26,094 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:26,178 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:26,180 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:26] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:26,368 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:26,453 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:26,454 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:26] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:26,663 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:27,114 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:27,118 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:27] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:27,462 - services.scraper - INFO - Request successful for https://www.appbrain.com/app_details/com.roblox.client.vnggames on attempt 1
+2025-06-12 00:45:27,462 - services.scraper - INFO - Status Code for com.roblox.client.vnggames: 200
+2025-06-12 00:45:27,466 - services.scraper - INFO - Fetching changelog for com.roblox.client.vnggames...
+2025-06-12 00:45:27,466 - services.scraper - INFO - Attempting request to https://www.appbrain.com/app_details/com.roblox.client.vnggames?changelog=true (attempt 1/3)
+2025-06-12 00:45:27,468 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:27,474 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:27] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:27,543 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:27,545 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:27] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:27,757 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:27,830 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:27,831 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:27] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:28,027 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:28,055 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:28,059 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:28] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:28,257 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:28,267 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:28,271 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:28] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:28,475 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:28,499 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:28,500 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:28] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:28,715 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:28,716 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:28] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:28,928 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:28,930 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:28] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:29,139 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:29,181 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:29,185 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:29] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:29,381 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:29,385 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:29] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:29,589 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:30,114 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:30,116 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:30] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:30,462 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:30,634 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:30,639 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:30] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:30,869 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:31,095 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:31,097 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:31] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:31,306 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:31,524 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:31,528 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:31] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:31,752 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:31,986 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:31,990 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:31] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:32,202 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:32,468 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:32,470 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:32] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:32,681 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:45:32,725 - services.scraper - INFO - Request successful for https://www.appbrain.com/app_details/com.roblox.client.vnggames?changelog=true on attempt 1
+2025-06-12 00:45:32,736 - services.scraper - INFO - Successfully scraped data for com.roblox.client.vnggames
+2025-06-12 00:45:32,737 - root - INFO - [Job 3dbbaf35-14a4-4326-bf4c-23f755f54bd1] Scraping complete. Results saved to /Users/vaibhav/Desktop/AppBrain Scraper/results/3dbbaf35-14a4-4326-bf4c-23f755f54bd1.json
+2025-06-12 00:45:33,548 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:45:33,550 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:33] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:45:33,850 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:45:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:47:58,205 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 00:47:58,355 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 00:47:59,235 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 00:47:59,243 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 00:48:12,162 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:48:12] "GET / HTTP/1.1" 200 -
+2025-06-12 00:48:49,298 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:48:49] "GET /upload HTTP/1.1" 200 -
+2025-06-12 00:48:52,831 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:48:52] "POST /parse_csv HTTP/1.1" 200 -
+2025-06-12 00:48:52,832 - root - INFO - [Job 37b45d8c-1f0d-489a-8294-7abd0d90075d] Scraping 1/1: com.garena.game.kgvn
+2025-06-12 00:48:52,834 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:48:52] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-06-12 00:48:52,834 - services.scraper - INFO - Scraping data for package: com.garena.game.kgvn
+2025-06-12 00:48:52,834 - services.scraper - INFO - Attempting request to https://www.appbrain.com/app/body-color-swap/com.garena.game.kgvn (attempt 1/3)
+2025-06-12 00:48:52,838 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:48:52,838 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:48:52,851 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:48:52] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:48:56,201 - services.scraper - INFO - Request successful for https://www.appbrain.com/app/body-color-swap/com.garena.game.kgvn on attempt 1
+2025-06-12 00:48:56,234 - services.scraper - INFO - Attempting request to https://www.appbrain.com/app_details/com.garena.game.kgvn (attempt 1/3)
+2025-06-12 00:49:01,136 - services.scraper - INFO - Request successful for https://www.appbrain.com/app_details/com.garena.game.kgvn on attempt 1
+2025-06-12 00:49:01,136 - services.scraper - INFO - Status Code for com.garena.game.kgvn: 200
+2025-06-12 00:49:01,143 - services.scraper - INFO - Fetching changelog for com.garena.game.kgvn...
+2025-06-12 00:49:01,144 - services.scraper - INFO - Attempting request to https://www.appbrain.com/app_details/com.garena.game.kgvn?changelog=true (attempt 1/3)
+2025-06-12 00:49:06,432 - services.scraper - INFO - Request successful for https://www.appbrain.com/app_details/com.garena.game.kgvn?changelog=true on attempt 1
+2025-06-12 00:49:06,451 - services.scraper - INFO - Successfully scraped data for com.garena.game.kgvn
+2025-06-12 00:49:06,453 - root - INFO - [Job 37b45d8c-1f0d-489a-8294-7abd0d90075d] Scraping complete. Results saved to /Users/vaibhav/Desktop/AppBrain Scraper/results/37b45d8c-1f0d-489a-8294-7abd0d90075d.json
+2025-06-12 00:54:08,648 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:54:08,649 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:54:08,654 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:54:08] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:57:21,408 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:57:21] "GET / HTTP/1.1" 200 -
+2025-06-12 00:57:22,782 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:57:22] "GET /upload HTTP/1.1" 200 -
+2025-06-12 00:57:27,527 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:57:27] "[31m[1mPOST /parse_csv HTTP/1.1[0m" 400 -
+2025-06-12 00:57:27,529 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:57:27] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-06-12 00:57:27,536 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:57:27] "GET /upload HTTP/1.1" 200 -
+2025-06-12 00:57:35,192 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:57:35] "GET /apps HTTP/1.1" 200 -
+2025-06-12 00:57:35,737 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 00:57:35,936 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 00:57:36,975 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 00:57:36,981 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 00:57:40,476 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:57:40] "GET /app/com.garena.game.kgvn HTTP/1.1" 200 -
+2025-06-12 00:57:51,784 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:57:51] "GET / HTTP/1.1" 200 -
+2025-06-12 00:57:53,225 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:57:53] "GET /upload HTTP/1.1" 200 -
+2025-06-12 00:57:56,772 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:57:56] "POST /parse_csv HTTP/1.1" 200 -
+2025-06-12 00:57:56,773 - root - INFO - [Job 1dba6070-9d6d-4c07-8358-0151d8c5be29] Scraping 1/1: com.garena.game.kgvn
+2025-06-12 00:57:56,774 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:57:56] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-06-12 00:57:56,774 - services.scraper - INFO - Scraping data for package: com.garena.game.kgvn
+2025-06-12 00:57:56,774 - services.scraper - INFO - Attempting request to https://www.appbrain.com/app/body-color-swap/com.garena.game.kgvn (attempt 1/3)
+2025-06-12 00:57:56,779 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:57:56,779 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:57:56,780 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:57:56,795 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:57:56] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:57:58,694 - services.scraper - INFO - Request successful for https://www.appbrain.com/app/body-color-swap/com.garena.game.kgvn on attempt 1
+2025-06-12 00:57:58,732 - services.scraper - INFO - Attempting request to https://www.appbrain.com/app_details/com.garena.game.kgvn (attempt 1/3)
+2025-06-12 00:57:59,005 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:57:59,006 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:57:59,007 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:57:59,012 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:57:59] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:57:59,369 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:57:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:58:00,088 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:58:00,088 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:58:00,088 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:58:00,092 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:58:00] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:58:00,415 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:58:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:58:00,709 - services.scraper - INFO - Request successful for https://www.appbrain.com/app_details/com.garena.game.kgvn on attempt 1
+2025-06-12 00:58:00,710 - services.scraper - INFO - Status Code for com.garena.game.kgvn: 200
+2025-06-12 00:58:00,723 - services.scraper - INFO - Fetching changelog for com.garena.game.kgvn...
+2025-06-12 00:58:00,723 - services.scraper - INFO - Attempting request to https://www.appbrain.com/app_details/com.garena.game.kgvn?changelog=true (attempt 1/3)
+2025-06-12 00:58:00,742 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:58:00,742 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:58:00,742 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:58:00,745 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:58:00] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:58:01,076 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:58:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:58:01,262 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:58:01,262 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:58:01,263 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:58:01,267 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:58:01] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:58:01,568 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:58:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:58:03,026 - services.scraper - INFO - Request successful for https://www.appbrain.com/app_details/com.garena.game.kgvn?changelog=true on attempt 1
+2025-06-12 00:58:03,042 - services.scraper - INFO - Successfully scraped data for com.garena.game.kgvn
+2025-06-12 00:58:03,044 - root - INFO - [Job 1dba6070-9d6d-4c07-8358-0151d8c5be29] Scraping complete. Results saved to /Users/vaibhav/Desktop/AppBrain Scraper/results/1dba6070-9d6d-4c07-8358-0151d8c5be29.json
+2025-06-12 00:58:09,117 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 00:58:09,122 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:58:09] "GET /logs HTTP/1.1" 200 -
+2025-06-12 00:58:09,546 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:58:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:58:11,400 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:58:11] "GET / HTTP/1.1" 200 -
+2025-06-12 00:58:12,280 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:58:12] "GET /upload HTTP/1.1" 200 -
+2025-06-12 00:58:13,678 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:58:13] "GET /apps HTTP/1.1" 200 -
+2025-06-12 00:59:04,596 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:59:04] "GET / HTTP/1.1" 200 -
+2025-06-12 00:59:12,813 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 00:59:12,993 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 00:59:14,101 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 00:59:14,123 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 00:59:15,323 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:59:15] "GET / HTTP/1.1" 200 -
+2025-06-12 00:59:15,886 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:59:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:59:22,329 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:59:22] "GET / HTTP/1.1" 200 -
+2025-06-12 00:59:22,787 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:59:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:59:23,322 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:59:23] "GET / HTTP/1.1" 200 -
+2025-06-12 00:59:23,829 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:59:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:59:23,995 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:59:23] "GET / HTTP/1.1" 200 -
+2025-06-12 00:59:24,279 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:59:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:59:24,548 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:59:24] "GET / HTTP/1.1" 200 -
+2025-06-12 00:59:24,843 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:59:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:59:35,589 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:59:35] "GET / HTTP/1.1" 200 -
+2025-06-12 00:59:35,958 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:59:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 00:59:39,370 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:59:39] "GET /upload HTTP/1.1" 200 -
+2025-06-12 00:59:40,932 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:59:40] "GET /apps HTTP/1.1" 200 -
+2025-06-12 00:59:54,721 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:59:54] "GET /upload HTTP/1.1" 200 -
+2025-06-12 00:59:58,058 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:59:58] "POST /parse_csv HTTP/1.1" 200 -
+2025-06-12 00:59:58,059 - root - INFO - [Job a23cb516-6e2f-4cc4-a35b-09ecd5270f00] Skipping com.garena.game.kgvn as it has already been scraped
+2025-06-12 00:59:58,059 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:59:58] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-06-12 00:59:58,061 - root - INFO - [Job a23cb516-6e2f-4cc4-a35b-09ecd5270f00] Scraping complete. Results saved to /Users/vaibhav/Desktop/AppBrain Scraper/results/a23cb516-6e2f-4cc4-a35b-09ecd5270f00.json
+2025-06-12 00:59:58,073 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 00:59:58] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:00:01,368 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:00:01] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:00:01,783 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:00:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 01:00:02,376 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:00:02] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:00:02,745 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:00:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 01:00:03,108 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:00:03] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:00:03,455 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:00:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 01:00:27,384 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:00:27] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:00:27,826 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:00:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 01:00:29,075 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:00:29] "[32mPOST /delete-job/a23cb516-6e2f-4cc4-a35b-09ecd5270f00 HTTP/1.1[0m" 302 -
+2025-06-12 01:00:29,082 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:00:29,082 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:00:29,082 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:00:29,082 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:00:29,084 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:00:29] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:00:29,096 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:00:29,096 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:00:29,096 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:00:29,096 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:00:29,098 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:00:29] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:00:30,624 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:00:30,624 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:00:30,625 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:00:30,625 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:00:30,626 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:00:30] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:00:30,963 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:00:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 01:00:43,148 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:00:43,149 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:00:43,149 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:00:43,149 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:00:43,152 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:00:43] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:00:43,540 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:00:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 01:00:49,759 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:00:49] "GET / HTTP/1.1" 200 -
+2025-06-12 01:00:50,316 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:00:50] "GET /developers HTTP/1.1" 200 -
+2025-06-12 01:00:53,351 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:00:53] "GET / HTTP/1.1" 200 -
+2025-06-12 01:01:26,891 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 01:01:27,110 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 01:01:28,299 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 01:01:28,330 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 01:01:37,406 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 01:01:37,499 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 01:01:38,174 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 01:01:38,180 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 01:01:54,295 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 01:01:54,413 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 01:01:55,047 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 01:01:55,055 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 01:02:04,108 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 01:02:04,252 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 01:02:04,908 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 01:02:04,914 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 01:02:42,143 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 01:02:42,246 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 01:02:42,958 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 01:02:42,966 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 01:02:50,024 - werkzeug - INFO -  * Detected change in '/Users/vaibhav/Desktop/AppBrain Scraper/app.py', reloading
+2025-06-12 01:02:50,168 - werkzeug - INFO -  * Restarting with stat
+2025-06-12 01:02:50,915 - werkzeug - WARNING -  * Debugger is active!
+2025-06-12 01:02:50,921 - werkzeug - INFO -  * Debugger PIN: 119-220-332
+2025-06-12 01:03:01,723 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:01] "GET / HTTP/1.1" 200 -
+2025-06-12 01:03:02,270 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 01:03:03,187 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:03] "GET /upload HTTP/1.1" 200 -
+2025-06-12 01:03:06,337 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:06] "POST /parse_csv HTTP/1.1" 200 -
+2025-06-12 01:03:06,338 - root - INFO - [Job d53b47d6-0401-4030-98f3-fb5b379b1d4c] Skipping com.garena.game.kgvn as it has already been scraped
+2025-06-12 01:03:06,338 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:06] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-06-12 01:03:06,340 - root - INFO - [Job d53b47d6-0401-4030-98f3-fb5b379b1d4c] Scraping complete. Results saved to /Users/vaibhav/Desktop/AppBrain Scraper/results/d53b47d6-0401-4030-98f3-fb5b379b1d4c.json
+2025-06-12 01:03:06,342 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:06,343 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:06,343 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:06,354 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:06] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:03:14,803 - app - INFO - Job d53b47d6-0401-4030-98f3-fb5b379b1d4c stats: {'total': 1, 'success': 1, 'failed': 0, 'partial': 0, 'completed': 1, 'skipped_duplicates': 1}
+2025-06-12 01:03:14,825 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:14] "GET /view_job_results/d53b47d6-0401-4030-98f3-fb5b379b1d4c HTTP/1.1" 200 -
+2025-06-12 01:03:16,263 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:16,264 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:16,264 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:16,269 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:16] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:03:17,175 - app - INFO - Job 37b45d8c-1f0d-489a-8294-7abd0d90075d stats: {'total': 1, 'success': 1, 'failed': 0, 'partial': 0, 'completed': 1, 'skipped_duplicates': 0}
+2025-06-12 01:03:17,176 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:17] "GET /view_job_results/37b45d8c-1f0d-489a-8294-7abd0d90075d HTTP/1.1" 200 -
+2025-06-12 01:03:21,791 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:21] "[32mPOST /delete-job/d53b47d6-0401-4030-98f3-fb5b379b1d4c HTTP/1.1[0m" 302 -
+2025-06-12 01:03:21,799 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:21,800 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:21,800 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:21,801 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:21,810 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:21] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:03:21,823 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:21,823 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:21,824 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:21,824 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:21,827 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:21] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:03:24,388 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:24] "GET /upload HTTP/1.1" 200 -
+2025-06-12 01:03:27,851 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:27] "POST /parse_csv HTTP/1.1" 200 -
+2025-06-12 01:03:27,854 - root - INFO - [Job 0494adb9-2a44-4d58-b41c-3c2c2278d55e] Skipping com.roblox.client.vnggames as it has already been scraped
+2025-06-12 01:03:27,855 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:27] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-06-12 01:03:27,858 - root - INFO - [Job 0494adb9-2a44-4d58-b41c-3c2c2278d55e] Scraping complete. Results saved to /Users/vaibhav/Desktop/AppBrain Scraper/results/0494adb9-2a44-4d58-b41c-3c2c2278d55e.json
+2025-06-12 01:03:27,860 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:27,860 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:27,861 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:27,861 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:27,864 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:27] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:03:30,245 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:30] "GET /upload HTTP/1.1" 200 -
+2025-06-12 01:03:33,385 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:33] "POST /parse_csv HTTP/1.1" 200 -
+2025-06-12 01:03:33,389 - root - INFO - [Job c619469c-4830-40e8-87a2-5e3430b6251b] Skipping com.garena.game.kgvn as it has already been scraped
+2025-06-12 01:03:33,390 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:33] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-06-12 01:03:33,393 - root - INFO - [Job c619469c-4830-40e8-87a2-5e3430b6251b] Scraping complete. Results saved to /Users/vaibhav/Desktop/AppBrain Scraper/results/c619469c-4830-40e8-87a2-5e3430b6251b.json
+2025-06-12 01:03:33,397 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:33,401 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:33] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:03:39,187 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:39,193 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:39] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:03:39,544 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 01:03:40,112 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:40,118 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:40] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:03:40,329 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-12 01:03:44,393 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:44] "[32mPOST /delete-job/1dba6070-9d6d-4c07-8358-0151d8c5be29 HTTP/1.1[0m" 302 -
+2025-06-12 01:03:44,400 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:44,406 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:44] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:03:44,422 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:44,425 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:44] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:03:47,136 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:47] "[32mPOST /delete-job/0494adb9-2a44-4d58-b41c-3c2c2278d55e HTTP/1.1[0m" 302 -
+2025-06-12 01:03:47,140 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:47,145 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:47] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:03:47,157 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:47,160 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:47] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:03:49,055 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:49] "[32mPOST /delete-job/c619469c-4830-40e8-87a2-5e3430b6251b HTTP/1.1[0m" 302 -
+2025-06-12 01:03:49,059 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:49,060 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:49,060 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:49,065 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:49] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:03:49,082 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:49,082 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:49,082 - app - ERROR - Error loading job data: cannot access local variable 'completed' where it is not associated with a value
+2025-06-12 01:03:49,084 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:49] "GET /logs HTTP/1.1" 200 -
+2025-06-12 01:03:51,379 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:03:51] "GET / HTTP/1.1" 200 -
+2025-06-12 01:04:11,612 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:04:11] "GET /export HTTP/1.1" 200 -
+2025-06-12 01:04:46,446 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:04:46] "GET / HTTP/1.1" 200 -
+2025-06-12 01:04:47,923 - werkzeug - INFO - 127.0.0.1 - - [12/Jun/2025 01:04:47] "GET /upload HTTP/1.1" 200 -

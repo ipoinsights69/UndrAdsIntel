@@ -68,11 +68,17 @@ def make_request_with_retry(url, max_retries=MAX_RETRIES, timeout=15):
                 raise
 
 
-def scrape_app_data(package_name, country='', category=''):
+def scrape_app_data(package_name, country='', category='', additional_data=None):
     print("corr")
     """
     Scrape app data from AppBrain for the given package name using ScraperAPI
-    Includes optional country and category information
+    Includes optional country and category information and additional data from CSV
+    
+    Args:
+        package_name: The package name to scrape
+        country: Optional country code
+        category: Optional category
+        additional_data: Optional dictionary with additional data from CSV
     """
     logger.info(f"Scraping data for package: {package_name}")
     
@@ -175,6 +181,14 @@ def scrape_app_data(package_name, country='', category=''):
             "url": url,
             "timestamp": datetime.now().isoformat()
         }
+        
+        # Add additional data from CSV if available
+        if additional_data:
+            # Add CSV data fields to the app_data
+            for key, value in additional_data.items():
+                # Don't overwrite existing keys unless they're empty
+                if key not in app_data or not app_data[key]:
+                    app_data[key] = value
         
         # Save the raw HTML for future processing if needed
         scraped_data_dir = os.getenv('SCRAPED_DATA_DIR', 'scraped_data')

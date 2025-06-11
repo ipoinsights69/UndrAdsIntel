@@ -32,7 +32,7 @@
 <div class="card mb-8">
     <h2 class="text-xl font-semibold text-gray-800 mb-4">Summary</h2>
     
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
         <div class="bg-gray-50 p-4 rounded-lg">
             <div class="text-4xl font-bold text-gray-800">{{ stats.total }}</div>
             <div class="text-sm text-gray-500">Total Apps</div>
@@ -51,6 +51,11 @@
         <div class="bg-yellow-50 p-4 rounded-lg">
             <div class="text-4xl font-bold text-yellow-600">{{ stats.partial }}</div>
             <div class="text-sm text-gray-500">Partial Success</div>
+        </div>
+        
+        <div class="bg-blue-50 p-4 rounded-lg">
+            <div class="text-4xl font-bold text-blue-600">{{ stats.skipped_duplicates }}</div>
+            <div class="text-sm text-gray-500">Skipped Duplicates</div>
         </div>
     </div>
 </div>

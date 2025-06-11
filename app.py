@@ -11,8 +11,9 @@ from werkzeug.utils import secure_filename
 from werkzeug.security import generate_password_hash, check_password_hash
 from dotenv import load_dotenv
 import re
-
+import pandas as pd
 import os
+import requests
 
 RESULTS_DIR = "results"
 
@@ -89,49 +90,82 @@ def upload():
                 return redirect(request.url)
             
             if file and allowed_file(file.filename):
-                # Read package names from CSV
-                package_names = []
+                # Parse CSV using the parse_csv endpoint
                 try:
-                    stream = io.StringIO(file.stream.read().decode("UTF8"), newline=None)
-                    csv_reader = csv.reader(stream)
-                    for row in csv_reader:
-                        if row and row[0].strip():  # Check if row is not empty
-                            package_names.append(row[0].strip())
+                    # Save the file temporarily to pass to the parse_csv function
+                    temp_file = io.BytesIO()
+                    file.save(temp_file)
+                    temp_file.seek(0)
+                    
+                    # Create a mock request with the file
+                    mock_files = {'file': (file.filename, temp_file, 'text/csv')}
+                    
+                    # Call the parse_csv function directly
+                    response = requests.post(
+                        'http://localhost:1234/parse_csv',
+                        files=mock_files
+                    )
+                    
+                    if response.status_code != 200:
+                        flash(f'Error parsing CSV: {response.text}', 'error')
+                        return redirect(request.url)
+                    
+                    # Extract data from the response
+                    parsed_data = response.json()
+                    filters = parsed_data.get('filters', {})
+                    rows = parsed_data.get('rows', [])
+                    
+                    if not rows:
+                        flash('No data found in the CSV file', 'error')
+                        return redirect(request.url)
+                    
+                    # Extract package names and additional data
+                    package_names = []
+                    app_data_map = {}
+                    
+                    for row in rows:
+                        package_name = row.get('package_name')
+                        if package_name:
+                            package_names.append(package_name)
+                            app_data_map[package_name] = row
+                    
+                    if not package_names:
+                        flash('No package names found in the CSV file', 'error')
+                        return redirect(request.url)
+                    
+                    # Get country and category from form or filters
+                    country = request.form.get('country', '') or filters.get('Country', '')
+                    category = request.form.get('category', '') or filters.get('Category', '')
+                    
+                    # Create a unique job ID
+                    job_id = str(uuid.uuid4())
+                    
+                    # Store job information
+                    scraping_jobs[job_id] = {
+                        'package_names': package_names,
+                        'total': len(package_names),
+                        'completed': 0,
+                        'status': 'running',
+                        'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                        'country': country,
+                        'category': category,
+                        'app_data_map': app_data_map,  # Store additional data
+                        'filters': filters  # Store filters from CSV
+                    }
+                    
+                    # Start scraping in a separate thread
+                    threading.Thread(
+                        target=scrape_and_save,
+                        args=(package_names, job_id, None, 'all', country, category, app_data_map),
+                        daemon=True
+                    ).start()
+                    
+                    flash(f'Started scraping {len(package_names)} apps. Job ID: {job_id}', 'success')
+                    return redirect(url_for('logs'))
+                    
                 except Exception as e:
-                    flash(f'Error reading CSV file: {str(e)}', 'error')
+                    flash(f'Error processing CSV file: {str(e)}', 'error')
                     return redirect(request.url)
-                
-                if not package_names:
-                    flash('No package names found in the CSV file', 'error')
-                    return redirect(request.url)
-                
-                # Get country and category from form
-                country = request.form.get('country', '')
-                category = request.form.get('category', '')
-                
-                # Create a unique job ID
-                job_id = str(uuid.uuid4())
-                
-                # Store job information
-                scraping_jobs[job_id] = {
-                    'package_names': package_names,
-                    'total': len(package_names),
-                    'completed': 0,
-                    'status': 'running',
-                    'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                    'country': country,
-                    'category': category
-                }
-                
-                # Start scraping in a separate thread
-                threading.Thread(
-                    target=scrape_and_save,
-                    args=(package_names, job_id, None, 'all', country, category),
-                    daemon=True
-                ).start()
-                
-                flash(f'Started scraping {len(package_names)} apps. Job ID: {job_id}', 'success')
-                return redirect(url_for('logs'))
             else:
                 flash('Only CSV files are allowed', 'error')
                 return redirect(request.url)
@@ -157,6 +191,9 @@ def upload():
             # Create a unique job ID
             job_id = str(uuid.uuid4())
             
+            # Create an empty app_data_map for consistency with CSV upload
+            app_data_map = {}
+            
             # Store job information
             scraping_jobs[job_id] = {
                 'package_names': package_names,
@@ -165,13 +202,14 @@ def upload():
                 'status': 'running',
                 'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                 'country': country,
-                'category': category
+                'category': category,
+                'app_data_map': app_data_map
             }
             
             # Start scraping in a separate thread
             threading.Thread(
                 target=scrape_and_save,
-                args=(package_names, job_id, None, 'all', country, category),
+                args=(package_names, job_id, None, 'all', country, category, app_data_map),
                 daemon=True
             ).start()
             
@@ -278,7 +316,8 @@ def logs():
                             'failed_count': failed_count,
                             'partial_count': partial_count,
                             'completed_apps': completed,  # Make sure this is included
-                            'total_apps': total           # Make sure this is included
+                            'total_apps': total,          # Make sure this is included
+                            'skipped_duplicates': job_data.get('skipped_duplicates', 0)  # Include skipped duplicates count
                         }
                         jobs.append(job_info)
     
@@ -309,7 +348,8 @@ def logs():
                     'progress': progress,
                     'completed_apps': completed,
                     'original_job_id': job_info.get('original_job_id', ''),
-                    'retry_mode': job_info.get('retry_mode', 'all')
+                    'retry_mode': job_info.get('retry_mode', 'all'),
+                    'skipped_duplicates': job_info.get('skipped_duplicates', 0)  # Include skipped duplicates count
                 })
     
     return render_template('logs.html', jobs=jobs, log_content=log_entries)
@@ -377,7 +417,8 @@ def view_job_results(job_id):
             'success': len(success_apps),
             'failed': len(failed_apps),
             'partial': len(partial_success),
-            'completed': completed  # Explicitly include completed count
+            'completed': completed,  # Explicitly include completed count
+            'skipped_duplicates': job_data.get('skipped_duplicates', 0)  # Include skipped duplicates count
         }
         
         # Combine all apps for the all_apps tab
@@ -495,6 +536,11 @@ def retry_failed_apps(job_id):
         # Create a new job ID for the retry
         new_job_id = str(uuid.uuid4())
         
+        # Get app_data_map from original job if available
+        app_data_map = {}
+        if 'app_data_map' in job_data:
+            app_data_map = job_data['app_data_map']
+        
         # Store job information
         scraping_jobs[new_job_id] = {
             'package_names': package_names,
@@ -503,13 +549,18 @@ def retry_failed_apps(job_id):
             'status': 'running',
             'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             'original_job_id': job_id,
-            'retry_mode': retry_type
+            'retry_mode': retry_type,
+            'app_data_map': app_data_map
         }
+        
+        # Get country and category from original job if available
+        country = job_data.get('country', '')
+        category = job_data.get('category', '')
         
         # Start scraping in a separate thread
         threading.Thread(
             target=scrape_and_save,
-            args=(package_names, new_job_id, job_id, retry_type),
+            args=(package_names, new_job_id, job_id, retry_type, country, category, app_data_map),
             daemon=True
         ).start()
         
@@ -520,10 +571,21 @@ def retry_failed_apps(job_id):
             'redirect_url': url_for('logs')
         })
 
-def scrape_and_save(package_names, job_id, original_job_id=None, retry_mode='all', country='', category=''):
-    """Scrape apps and save results, with support for retrying specific parts and country/category info"""
+def scrape_and_save(package_names, job_id, original_job_id=None, retry_mode='all', country='', category='', app_data_map=None):
+    """Scrape apps and save results, with support for retrying specific parts and country/category info
+    
+    Args:
+        package_names: List of package names to scrape
+        job_id: Unique ID for this job
+        original_job_id: ID of the original job if this is a retry
+        retry_mode: Mode for retrying ('all', 'details', 'changelog')
+        country: Country code for the apps
+        category: Category for the apps
+        app_data_map: Dictionary mapping package names to additional data from CSV
+    """
     results = {}
     total_apps = len(package_names)
+    skipped_duplicates = 0  # Counter for skipped duplicates
     
     # If we're retrying details or changelog, load the original data
     original_data = {}
@@ -539,19 +601,53 @@ def scrape_and_save(package_names, job_id, original_job_id=None, retry_mode='all
             except Exception as e:
                 logging.error(f"Error loading original job data: {str(e)}")
     
+    # Initialize app_data_map if not provided
+    if app_data_map is None:
+        app_data_map = {}
+    
+    # Get the scraped_data directory path
+    scraped_data_dir = os.getenv('SCRAPED_DATA_DIR', 'scraped_data')
+    
+    # Initialize skipped_duplicates counter in job status
+    if job_id in scraping_jobs:
+        scraping_jobs[job_id]['skipped_duplicates'] = 0
+    
     # Scrape each app
     for i, package_name in enumerate(package_names):
         # Check if job has been stopped
         if job_id in scraping_jobs and scraping_jobs[job_id].get('status') == 'stopped':
             logging.info(f"[Job {job_id}] Stopping job as requested by user after processing {i} apps")
             break
+        
+        # Check if this package has already been scraped
+        json_file_path = os.path.join(scraped_data_dir, f"{package_name}.json")
+        if os.path.exists(json_file_path) and retry_mode == 'all':
+            logging.info(f"[Job {job_id}] Skipping {package_name} as it has already been scraped")
+            skipped_duplicates += 1  # Increment skipped duplicates counter
+            
+            # Load existing data and add to results
+            try:
+                with open(json_file_path, 'r') as f:
+                    existing_app_data = json.load(f)
+                    results[package_name] = existing_app_data
+                    
+                # Update job progress and skipped duplicates count
+                if job_id in scraping_jobs:
+                    scraping_jobs[job_id]['completed'] = i + 1
+                    scraping_jobs[job_id]['skipped_duplicates'] = skipped_duplicates
+                    
+                continue  # Skip to next package
+            except Exception as e:
+                logging.error(f"[Job {job_id}] Error loading existing data for {package_name}: {str(e)}")
+                # If we can't load the existing data, we'll scrape it again
             
         try:
             logging.info(f"[Job {job_id}] Scraping {i+1}/{total_apps}: {package_name}")
             
             if retry_mode == 'all':
-                # Full scrape
-                app_data = scrape_app_data(package_name, country, category)
+                # Full scrape with additional data from CSV if available
+                additional_data = app_data_map.get(package_name, None)
+                app_data = scrape_app_data(package_name, country, category, additional_data)
                 results[package_name] = app_data
             
             elif retry_mode == 'details':
@@ -572,11 +668,21 @@ def scrape_and_save(package_names, job_id, original_job_id=None, retry_mode='all
                         logging.error(f"[Job {job_id}] Error fetching details for {package_name}: {str(e)}")
                         app_data['error'] = f"Error fetching details: {str(e)}"
                     
+                    # Add additional data from CSV if available
+                    if package_name in app_data_map:
+                        csv_data = app_data_map[package_name]
+                        # Merge the CSV data with the scraped data
+                        for key, value in csv_data.items():
+                            # Don't overwrite existing keys unless they're empty
+                            if key not in app_data or not app_data[key]:
+                                app_data[key] = value
+                    
                     results[package_name] = app_data
                 else:
                     # If original data not found, do a full scrape
                     logging.warning(f"[Job {job_id}] Original data not found for {package_name}, doing full scrape")
-                    app_data = scrape_app_data(package_name, country, category)
+                    additional_data = app_data_map.get(package_name, None)
+                    app_data = scrape_app_data(package_name, country, category, additional_data)
                     results[package_name] = app_data
             
             elif retry_mode == 'changelog':
@@ -597,21 +703,40 @@ def scrape_and_save(package_names, job_id, original_job_id=None, retry_mode='all
                         logging.error(f"[Job {job_id}] Error fetching changelog for {package_name}: {str(e)}")
                         app_data['error'] = f"Error fetching changelog: {str(e)}"
                     
+                    # Add additional data from CSV if available
+                    if package_name in app_data_map:
+                        csv_data = app_data_map[package_name]
+                        # Merge the CSV data with the scraped data
+                        for key, value in csv_data.items():
+                            # Don't overwrite existing keys unless they're empty
+                            if key not in app_data or not app_data[key]:
+                                app_data[key] = value
+                    
                     results[package_name] = app_data
                 else:
                     # If original data not found, do a full scrape
                     logging.warning(f"[Job {job_id}] Original data not found for {package_name}, doing full scrape")
-                    app_data = scrape_app_data(package_name, country, category)
+                    additional_data = app_data_map.get(package_name, None)
+                    app_data = scrape_app_data(package_name, country, category, additional_data)
                     results[package_name] = app_data
         
         except Exception as e:
             logging.error(f"[Job {job_id}] Error scraping {package_name}: {str(e)}")
-            results[package_name] = {
+            error_data = {
                 'package_name': package_name,
                 'status': 'error',
                 'error': str(e),
                 'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             }
+            
+            # Add additional data from CSV even for failed scrapes
+            if package_name in app_data_map:
+                csv_data = app_data_map[package_name]
+                for key, value in csv_data.items():
+                    if key not in error_data:
+                        error_data[key] = value
+            
+            results[package_name] = error_data
         
         # Update job status
         if job_id in scraping_jobs:
@@ -624,8 +749,13 @@ def scrape_and_save(package_names, job_id, original_job_id=None, retry_mode='all
         'package_names': package_names,
         'country': country,
         'category': category,
+        'skipped_duplicates': skipped_duplicates,  # Include skipped duplicates count
         'results': results
     }
+    
+    # Add filters if available
+    if job_id in scraping_jobs and 'filters' in scraping_jobs[job_id]:
+        output['filters'] = scraping_jobs[job_id]['filters']
     
     results_dir = os.path.join(app.root_path, 'results')
     os.makedirs(results_dir, exist_ok=True)
@@ -817,6 +947,96 @@ def api_apps_by_developer(developer):
     return jsonify(get_apps_by_developer(developer))
 
 
+
+
+# Utility to parse filters
+def parse_filters(filter_line: str):
+    filter_line = filter_line.replace("Filters:", "").strip()
+    filters = {}
+
+    for item in filter_line.split('.'):
+        item = item.strip()
+        if not item:
+            continue
+        if ':' in item:
+            key, value = item.split(':', 1)
+            filters[key.strip()] = value.strip()
+        else:
+            filters[item.strip()] = ""
+    return filters
+
+# Utility to normalize column keys to snake_case
+def normalize_key(key: str):
+    key = key.strip().lower()
+    key = re.sub(r'[^\w]+', '_', key)
+    key = re.sub(r'_+', '_', key)
+    key = key.strip('_')
+    return key
+
+# Utility to extract package name from market url
+def extract_package_name(url: str):
+    match = re.search(r'id=([a-zA-Z0-9\._]+)', url)
+    return match.group(1) if match else None
+@app.route('/parse_csv', methods=['POST'])
+def parse_csv():
+    if 'file' not in request.files:
+        return jsonify({"error": "No file uploaded"}), 400
+
+    file = request.files['file']
+    content = file.read().decode('utf-8')
+    lines = content.strip().splitlines()
+
+    # Remove 'sep=,' if present
+    if lines[0].startswith("sep="):
+        lines = lines[1:]
+
+    # Extract filters
+    filter_line = ""
+    for idx, line in enumerate(lines):
+        if line.startswith("Filters:"):
+            filter_line = line
+            filter_idx = idx
+            break
+    else:
+        return jsonify({"error": "Filters line not found"}), 400
+
+    filters = parse_filters(filter_line)
+    country = filters.get('Country', '')
+
+    # Extract CSV data after filters
+    data_lines = lines[filter_idx + 1:]
+    csv_text = '\n'.join(data_lines)
+
+    # Read CSV into DataFrame
+    df = pd.read_csv(io.StringIO(csv_text))
+
+    # Normalize columns
+    df.columns = [normalize_key(col) for col in df.columns]
+
+    # Replace NaN with None (null in JSON)
+    df = df.where(pd.notnull(df), None)
+
+    # Apply extraction logic row-wise
+    rows = []
+    for _, row in df.iterrows():
+        # Convert to dict and explicitly handle any remaining NaN values
+        row_dict = {}
+        for k, v in row.to_dict().items():
+            if pd.isna(v):
+                row_dict[k] = None
+            else:
+                row_dict[k] = v
+                
+        market_url = row_dict.get("market_url", "")
+        package_name = extract_package_name(market_url)
+        row_dict["package_name"] = package_name
+        row_dict["country"] = country
+        rows.append(row_dict)
+
+    return jsonify({
+        "filters": filters,
+        "rows": rows
+    })
 # Custom Jinja2 filters
 @app.template_filter('exists')
 def file_exists(path):
