@@ -68,10 +68,11 @@ def make_request_with_retry(url, max_retries=MAX_RETRIES, timeout=15):
                 raise
 
 
-def scrape_app_data(package_name):
+def scrape_app_data(package_name, country='', category=''):
     print("corr")
     """
     Scrape app data from AppBrain for the given package name using ScraperAPI
+    Includes optional country and category information
     """
     logger.info(f"Scraping data for package: {package_name}")
     
@@ -168,6 +169,8 @@ def scrape_app_data(package_name):
             "app_description": cleaned_description,
             "api_details": api_details,
             "changelog": changelog_data,
+            "country": country,
+            "category": category,
             "status": "success",
             "url": url,
             "timestamp": datetime.now().isoformat()

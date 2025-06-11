@@ -82,8 +82,8 @@ def index():
 def upload():
     if request.method == 'POST':
         # Check if the post request has the file part
-        if 'file' in request.files:
-            file = request.files['file']
+        if 'csv_file' in request.files:
+            file = request.files['csv_file']
             if file.filename == '':
                 flash('No file selected', 'error')
                 return redirect(request.url)
@@ -105,6 +105,10 @@ def upload():
                     flash('No package names found in the CSV file', 'error')
                     return redirect(request.url)
                 
+                # Get country and category from form
+                country = request.form.get('country', '')
+                category = request.form.get('category', '')
+                
                 # Create a unique job ID
                 job_id = str(uuid.uuid4())
                 
@@ -114,13 +118,15 @@ def upload():
                     'total': len(package_names),
                     'completed': 0,
                     'status': 'running',
-                    'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                    'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                    'country': country,
+                    'category': category
                 }
                 
                 # Start scraping in a separate thread
                 threading.Thread(
                     target=scrape_and_save,
-                    args=(package_names, job_id),
+                    args=(package_names, job_id, None, 'all', country, category),
                     daemon=True
                 ).start()
                 
@@ -144,6 +150,10 @@ def upload():
                 flash('No valid package names entered', 'error')
                 return redirect(request.url)
             
+            # Get country and category from form
+            country = request.form.get('country', '')
+            category = request.form.get('category', '')
+            
             # Create a unique job ID
             job_id = str(uuid.uuid4())
             
@@ -153,13 +163,15 @@ def upload():
                 'total': len(package_names),
                 'completed': 0,
                 'status': 'running',
-                'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                'country': country,
+                'category': category
             }
             
             # Start scraping in a separate thread
             threading.Thread(
                 target=scrape_and_save,
-                args=(package_names, job_id),
+                args=(package_names, job_id, None, 'all', country, category),
                 daemon=True
             ).start()
             
@@ -508,8 +520,8 @@ def retry_failed_apps(job_id):
             'redirect_url': url_for('logs')
         })
 
-def scrape_and_save(package_names, job_id, original_job_id=None, retry_mode='all'):
-    """Scrape apps and save results, with support for retrying specific parts"""
+def scrape_and_save(package_names, job_id, original_job_id=None, retry_mode='all', country='', category=''):
+    """Scrape apps and save results, with support for retrying specific parts and country/category info"""
     results = {}
     total_apps = len(package_names)
     
@@ -539,7 +551,7 @@ def scrape_and_save(package_names, job_id, original_job_id=None, retry_mode='all
             
             if retry_mode == 'all':
                 # Full scrape
-                app_data = scrape_app_data(package_name)
+                app_data = scrape_app_data(package_name, country, category)
                 results[package_name] = app_data
             
             elif retry_mode == 'details':
@@ -564,7 +576,7 @@ def scrape_and_save(package_names, job_id, original_job_id=None, retry_mode='all
                 else:
                     # If original data not found, do a full scrape
                     logging.warning(f"[Job {job_id}] Original data not found for {package_name}, doing full scrape")
-                    app_data = scrape_app_data(package_name)
+                    app_data = scrape_app_data(package_name, country, category)
                     results[package_name] = app_data
             
             elif retry_mode == 'changelog':
@@ -589,7 +601,7 @@ def scrape_and_save(package_names, job_id, original_job_id=None, retry_mode='all
                 else:
                     # If original data not found, do a full scrape
                     logging.warning(f"[Job {job_id}] Original data not found for {package_name}, doing full scrape")
-                    app_data = scrape_app_data(package_name)
+                    app_data = scrape_app_data(package_name, country, category)
                     results[package_name] = app_data
         
         except Exception as e:
@@ -610,6 +622,8 @@ def scrape_and_save(package_names, job_id, original_job_id=None, retry_mode='all
         'job_id': job_id,
         'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
         'package_names': package_names,
+        'country': country,
+        'category': category,
         'results': results
     }
     
@@ -677,6 +691,14 @@ def export():
         # Developer filter
         if 'developer' in request.form and request.form['developer']:
             filters['developer'] = request.form['developer']
+        
+        # Country filter
+        if 'country_filter' in request.form and request.form['country_filter']:
+            filters['country_filter'] = request.form['country_filter']
+        
+        # Category filter
+        if 'category_filter' in request.form and request.form['category_filter']:
+            filters['category_filter'] = request.form['category_filter']
         
         # Export options
         if 'include_all_technologies' in request.form:
@@ -969,7 +991,12 @@ def edit_env():
         # Write to .env file
         with open(env_file_path, 'w') as f:
             for key, value in env_vars.items():
-                f.write(f"{key}={value}\n")
+                if key == 'CUSTOM_SCRIPT':
+                    # For script content, encode as a single line
+                    encoded_value = value.replace('\n', '\\n').replace('\r', '\\r')
+                    f.write(f"{key}={encoded_value}\n")
+                else:
+                    f.write(f"{key}={value}\n")
         
         # Reload environment variables
         load_dotenv(override=True)
@@ -984,8 +1011,17 @@ def edit_env():
             for line in f:
                 line = line.strip()
                 if line and not line.startswith('#'):
-                    key, value = line.split('=', 1)
-                    env_vars[key] = value
+                    try:
+                        key, value = line.split('=', 1)
+                        # Handle special case for CUSTOM_SCRIPT
+                        if key == 'CUSTOM_SCRIPT':
+                            # Decode escaped newlines and carriage returns
+                            value = value.replace('\\n', '\n').replace('\\r', '\r')
+                        env_vars[key] = value
+                    except ValueError:
+                        # Skip lines that don't have a key=value format
+                        logging.warning(f"Skipping invalid line in .env file: {line}")
+                        continue
     
     return render_template('edit_env.html', env_vars=env_vars)
 

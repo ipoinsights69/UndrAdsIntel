@@ -195,6 +195,18 @@ def export_data(format_type, filters=None, export_name=None):
                 
                 if filter_developer not in developer_name:
                     include_app = False
+            
+            # Country filter
+            if filters.get('country_filter') and filters['country_filter']:
+                app_country = app.get('country', '')
+                if app_country != filters['country_filter']:
+                    include_app = False
+            
+            # Category filter
+            if filters.get('category_filter') and filters['category_filter']:
+                app_category = app.get('category', '')
+                if app_category != filters['category_filter']:
+                    include_app = False
                     
             
             # If all filters passed, include the app
