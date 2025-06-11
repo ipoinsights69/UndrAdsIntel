@@ -1,0 +1,327 @@
+{
+  "app_name": "Crafting and Building for Android - Free App Download",
+  "package_name": "com.mmircil.cnb2",
+  "Total downloads": "130 million",
+  "Recent downloads": "2.6 million",
+  "Rating": "4.15 based on 1.3 million ratings",
+  "Ranking": "Top ranked",
+  "APK size": "325.6 MB",
+  "Designed for Android": "6.0+",
+  "Suitable for": "Everyone",
+  "Ads": "Contains ads",
+  "developer_info": {
+    "name": "GeneRe",
+    "email": "jager12245@gmail.com",
+    "website": "https://mmarcel.com"
+  },
+  "about_section": "Crafting and Building is an adventure game developed by GeneRe. The APK has been available since February 2020 . In the last 30 days, the app was downloaded about 2.6 million times. It's top ranked. It's rated 4.15 out of 5 stars, based on 1.3 million ratings. The last update of the app was on January 9, 2025 . Crafting and Building has a content rating \"Everyone\" . Crafting and Building has an APK download size of 325.61 MB and the latest version available is 2.7.21.88 . Designed for Android version 6.0+ . Crafting and Building is FREE to download.",
+  "app_description": "Do you like building games? Crafting and Building is a new free building game. Download now the FREE game of 2020!\nStart building and show the world your best game and constructions. Crafting and Building is a free game for the whole family: from kids, boys and girls, to adults.\nThe gameplay:\nLearn how to build your house in a castle or in a mine.\nDecorate your house with your mates ' furniture and your own eyes. Learn more and more, and you will never be able to build massive castles and temples!\nExploration:\nTired of human beings, huh? Play with your dogs, please! Take a dog or a mouse, take a horse! Unlike in other titles, there are no monsters involved in designing and constructing.\nPlay with your friends:\nStart exploring! You can visit the world that was built by your friends! Who's got the biggest structure? Check if they finished their new castle and give them a hand, they'll pay you back later! Multiplayer is really a lot of fun!\nMany block types:\nThere are many square sorts extending from grass square to precious stone and even sanctuary stone. You have numerous choices with regards to building your realm.\nCrafting and Building is an innovative free building game where you can play with pets, start an incredible construction and play multiplayer games.\nFeatures:\n* - Perfect game for the whole family: boys and girls will love it.\n* - Cool game: Search for a hidden cave with your friends, multiplayer mode is cool!\n* - Build anything: house with a room and a kitchen? A castle?\n* - One of the best simulation games: begin constructing your house and meet your neighbors.\n* - Choose your character: boy or girl? Custom skin ?\n* - Multiplayer games: you can play online and help your friend to build their house!\n* - Fun game: Play with villagers and animals it is so fun!\n* - Cool graphics: enjoy the best pixel graphics with high fps.\n* - Free game: play the game for free!\n* - Building game: Build your own constructions. Who will have the best building?\nDeveloped by PROTON MOBILE\nRecent changes:\nminor bug fixes",
+  "api_details": {
+    "permissions": {},
+    "technologies": {
+      "Ad network libraries": [
+        "AdMob",
+        "Facebook Audience Network",
+        "Unity Ads",
+        "Open Measurement",
+        "AppLovin",
+        "Ironsource"
+      ],
+      "Social libraries": [],
+      "Development tools": [
+        "Android Jetpack core",
+        "Android Architecture Components",
+        "Android Jetpack VersionedParcelable",
+        "Android Jetpack Annotations",
+        "Android Jetpack Widgets",
+        "Android Jetpack AppCompat",
+        "AndroidX Activity",
+        "Android Activity Saved State",
+        "AndroidX Loader",
+        "Android Transition Support Library",
+        "Android Support Library collections",
+        "Android Support VectorDrawable",
+        "Kotlin",
+        "AndroidX Cursor Adapter",
+        "Android WorkManager",
+        "Okio",
+        "Chromium",
+        "Google Protocol Buffers",
+        "greenrobot EventBus",
+        "GameAnalytics"
+      ]
+    },
+    "raw_html_snippet": "<div>\n    <h2>\n        Permissions\n    </h2>\n    \n        <div class=\"row app-permissions\">\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Development tools</b>\n                        <div>\n                            \n                                test access to protected storage\n                            \n                        </div>\n                    </div>\n                </div>\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Your location</b>\n                        <div>\n                            \n                                approximate (network-based) location\n                            \n                        </div>\n                    </div>\n                </div>\n            \n                <div class=\"col-sm-6 col-lg-4\">\n         ..."
+  },
+  "changelog": [
+    {
+      "date": "Jan 9, 2025",
+      "type": "Update",
+      "description": "Version 2.7.21.88"
+    },
+    {
+      "date": "Nov 22, 2024",
+      "type": "Update",
+      "description": "Version 2.7.21.28"
+    },
+    {
+      "date": "Nov 14, 2024",
+      "type": "Update",
+      "description": "Version 2.7.21.23"
+    },
+    {
+      "date": "Nov 1, 2024",
+      "type": "Update",
+      "description": "Version 2.7.21.20"
+    },
+    {
+      "date": "Aug 3, 2024",
+      "type": "Update",
+      "description": "Version 2.7.21.15"
+    },
+    {
+      "date": "Jul 29, 2024",
+      "type": "Update",
+      "description": "Version 2.7.21.13"
+    },
+    {
+      "date": "Jul 25, 2024",
+      "type": "Update",
+      "description": "Version 2.7.21.12"
+    },
+    {
+      "date": "May 19, 2024",
+      "type": "Installs",
+      "description": "100,000,000+ installs"
+    },
+    {
+      "date": "Mar 28, 2024",
+      "type": "Update",
+      "description": "Version 2.6.51.07"
+    },
+    {
+      "date": "Mar 27, 2024",
+      "type": "Update",
+      "description": "Version 2.6.51.06"
+    },
+    {
+      "date": "Mar 24, 2024",
+      "type": "Update",
+      "description": "Version 2.6.51.05"
+    },
+    {
+      "date": "Mar 11, 2024",
+      "type": "Update",
+      "description": "Version 2.6.51.04"
+    },
+    {
+      "date": "Oct 24, 2023",
+      "type": "Update",
+      "description": "Version 2.5.21.23"
+    },
+    {
+      "date": "Oct 5, 2023",
+      "type": "Update",
+      "description": "Version 2.5.21.21"
+    },
+    {
+      "date": "Sep 4, 2023",
+      "type": "Update",
+      "description": "Version 2.5.21.18"
+    },
+    {
+      "date": "Jul 19, 2023",
+      "type": "Update",
+      "description": "Version 2.5.21.11"
+    },
+    {
+      "date": "Apr 17, 2023",
+      "type": "Update",
+      "description": "Version 2.5.19.85"
+    },
+    {
+      "date": "Apr 2, 2023",
+      "type": "Update",
+      "description": "Version 2.5.19.83"
+    },
+    {
+      "date": "Mar 27, 2023",
+      "type": "Update",
+      "description": "Version 2.5.19.81"
+    },
+    {
+      "date": "Mar 20, 2023",
+      "type": "Update",
+      "description": "Version 2.5.19.79"
+    },
+    {
+      "date": "Mar 12, 2023",
+      "type": "Update",
+      "description": "Version 2.5.19.60"
+    },
+    {
+      "date": "Mar 7, 2023",
+      "type": "Update",
+      "description": "Version 2.4.22.03"
+    },
+    {
+      "date": "Feb 24, 2023",
+      "type": "Update",
+      "description": "Version 2.4.21.96"
+    },
+    {
+      "date": "Feb 17, 2023",
+      "type": "Update",
+      "description": "Version 2.4.20.57"
+    },
+    {
+      "date": "Oct 8, 2022",
+      "type": "Update",
+      "description": "Version 2.4.19.66"
+    },
+    {
+      "date": "Sep 26, 2022",
+      "type": "Update",
+      "description": "Version 2.4.19.63"
+    },
+    {
+      "date": "Sep 13, 2022",
+      "type": "Update",
+      "description": "Version 2.4.19.59"
+    },
+    {
+      "date": "Aug 26, 2022",
+      "type": "Update",
+      "description": "Version 2.4.19.57"
+    },
+    {
+      "date": "Aug 19, 2022",
+      "type": "Update",
+      "description": "Version 2.4.19.56"
+    },
+    {
+      "date": "Aug 7, 2022",
+      "type": "Update",
+      "description": "Version 2.4.19.55"
+    },
+    {
+      "date": "Jun 22, 2022",
+      "type": "Update",
+      "description": "Version 2.4.19.01"
+    },
+    {
+      "date": "Jun 6, 2022",
+      "type": "Update",
+      "description": "Version 2.4.18.37"
+    },
+    {
+      "date": "May 23, 2022",
+      "type": "Update",
+      "description": "Version 2.4.18.32"
+    },
+    {
+      "date": "May 18, 2022",
+      "type": "Update",
+      "description": "Version 2.4.18.31"
+    },
+    {
+      "date": "May 2, 2022",
+      "type": "Installs",
+      "description": "50,000,000+ installs"
+    },
+    {
+      "date": "Apr 17, 2022",
+      "type": "Update",
+      "description": "Version 2.4.18.23"
+    },
+    {
+      "date": "Mar 13, 2022",
+      "type": "Update",
+      "description": "Version 2.4.18.20"
+    },
+    {
+      "date": "Feb 8, 2022",
+      "type": "Update",
+      "description": "Version 2.4.18.14"
+    },
+    {
+      "date": "Oct 30, 2021",
+      "type": "Update",
+      "description": "Version 2.4.17.32"
+    },
+    {
+      "date": "Oct 22, 2021",
+      "type": "Update",
+      "description": "Version 2.1.17.32"
+    },
+    {
+      "date": "Oct 16, 2021",
+      "type": "Update",
+      "description": "Version 2.0.17.32"
+    },
+    {
+      "date": "Aug 13, 2021",
+      "type": "Update",
+      "description": "Version 1.9.9.33"
+    },
+    {
+      "date": "Aug 5, 2021",
+      "type": "Update",
+      "description": "Version 1.7.8.79"
+    },
+    {
+      "date": "Jul 11, 2021",
+      "type": "Update",
+      "description": "Version 1.1.6.30"
+    },
+    {
+      "date": "Jul 3, 2021",
+      "type": "Update",
+      "description": "Version 1.1.6.30"
+    },
+    {
+      "date": "Jun 28, 2021",
+      "type": "Update",
+      "description": "Version 1.7.7.30"
+    },
+    {
+      "date": "Jun 24, 2021",
+      "type": "Update",
+      "description": "Version 1.1.9.60"
+    },
+    {
+      "date": "Apr 24, 2021",
+      "type": "Update",
+      "description": "Version 1.1.6.30"
+    },
+    {
+      "date": "Apr 18, 2021",
+      "type": "Update",
+      "description": "Version 1.1.6.30"
+    },
+    {
+      "date": "Apr 15, 2021",
+      "type": "Update",
+      "description": "Version 1.1.6.30"
+    }
+  ],
+  "country": "US",
+  "category": "Game",
+  "status": "success",
+  "url": "https://www.appbrain.com/app/body-color-swap/com.mmircil.cnb2",
+  "timestamp": "2025-06-12T02:21:39.198992",
+  "categories": "Game, Adventure",
+  "downloads": 436268,
+  "is_ad": "NO",
+  "is_pub": "YES",
+  "market_url": "https://play.google.com/store/apps/details?hl=en_US&gl=us&id=com.mmircil.cnb2",
+  "name": "Crafting and Building",
+  "platform": "Android",
+  "position": 38,
+  "publisher_contacts": "admin@mmarcel.com, contact@milu.com, jager12245@gmail.com",
+  "publisher_name": "GeneRe",
+  "publisher_website": "https://mmarcel.com",
+  "release_date": "2020-01-27",
+  "revenue_usd": 0,
+  "rpd": 0.0
+}

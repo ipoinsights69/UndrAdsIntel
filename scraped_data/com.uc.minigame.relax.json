@@ -1,0 +1,340 @@
+{
+  "app_name": "Mini Games: Calm & Relax for Android - Free App Download",
+  "package_name": "com.uc.minigame.relax",
+  "Total downloads": "110 million",
+  "Recent downloads": "6.6 million",
+  "Rating": "4.75 based on 440 thousand ratings",
+  "Ranking": "Top ranked",
+  "APK size": "200.6 MB",
+  "Designed for Android": "7.0+",
+  "Suitable for": "Everyone",
+  "Ads": "Contains ads",
+  "developer_info": {
+    "name": "Unicorn Studio Official",
+    "email": "contact.unicorn.gamestudio@gmail.com",
+    "website": "https://unicornstudio.online/"
+  },
+  "about_section": "Mini Games: Calm & Relax is a casual game developed by Unicorn Studio Official. The APK has been available since August 2024 . In the last 30 days, the app was downloaded about 6.6 million times. It's top ranked. It's rated 4.75 out of 5 stars, based on 440 thousand ratings. The last update of the app was on May 30, 2025 . Mini Games: Calm & Relax has a content rating \"Everyone\" . Mini Games: Calm & Relax has an APK download size of 200.57 MB and the latest version available is 1.0.65 . Designed for Android version 7.0+ . Mini Games: Calm & Relax is FREE to download.",
+  "app_description": "Welcome to Mini Games: Calm & Relax!!           \nTake on the ultimate challenge of all your favorite games in one place? Welcome to Mini Games - where challenging meets relaxing, where trending games and filters on social media meet cute design gameplay!\nTired after a long day at work and school? This game is designed for all ages and classic-game enthusiasts and puzzle lovers. And the best part? It includes all the trendy filters you are looking for! Get ready to tap, swipe, and laugh your mouth off in funny challenges \u2013 It's full of silly games, crazy sounds, and weird challenges that make your brain go wild !! This is not just a normal game\u2026 this is a all-in-one app at its finest!\nDo you like Scream Chicken and DoReMi challenge? Our game includes all the games inspired by the most famous filters on social media such as Scream Chicken Challenge, Animal Sound Challenge, Do Re Mi challenge and many more. These game are perfect for relaxing and chill moments. Look no further than \"Mini Games: Calm & Relax\", it has all the funny and hilarious mini games that you are looking for !\nCan you control your pitch and voice in Do Re Mi challenge to lead the ball to the finish line? Can you master all the sound of all animal in Animal Sound Challenge ? Are you smart enough to solve all the puzzle in many classic puzzles mini games like Merge Fruit, Water Sort, Draw Single Line, etc., These mini games can look easy at first but can be very tricky and hard to master. Tap in and challenge yourself!\nKey Features\n- Stress Relief: Designed to help you unwind and reduce anxiety.\n- Endless Fun: A variety of mini-games to keep you entertained for hours. Inspired by most popular games and filters on social media.\n- Easy to Play: Simple controls for a relaxing gaming experience.\n- Visually Appealing: Immerse yourself in colorful and soothing pixelated graphics.\nWhether you're taking a short break, commuting, or simply looking to relax, \"Mini Games: Calm & Relax\" offers a perfect escape. It's the perfect app to challenge yourself, pass the time, and have loads of fun.\nWho knew having fun could be this easy and convenient? Jump in \"Mini Games: Calm & Relax\" and start playing today!\nRecent changes:\n+ New minigame!",
+  "api_details": {
+    "permissions": {},
+    "technologies": {
+      "Ad network libraries": [
+        "AdMob",
+        "Facebook Audience Network",
+        "Unity Ads",
+        "Open Measurement",
+        "AppLovin",
+        "AppsFlyer",
+        "Ironsource",
+        "InMobi",
+        "MyTarget"
+      ],
+      "Social libraries": [],
+      "Development tools": [
+        "Android Jetpack core",
+        "Android Architecture Components",
+        "Android Jetpack VersionedParcelable",
+        "Firebase",
+        "Android Jetpack Annotations",
+        "Android Jetpack Widgets",
+        "Android Jetpack AppCompat",
+        "AndroidX Activity",
+        "Android Activity Saved State",
+        "AndroidX Loader",
+        "Android Jetpack Media",
+        "Google Cloud Messaging (GCM)",
+        "Android Transition Support Library",
+        "Android Support Library collections",
+        "Android Support VectorDrawable",
+        "Kotlin",
+        "AndroidX Legacy: Support Library core UI",
+        "Google gson",
+        "Android WorkManager",
+        "AndroidX Widget ViewPager2",
+        "Okio",
+        "JetBrains Annotations",
+        "AndroidX ExifInterface",
+        "Picasso",
+        "Chromium",
+        "Google Guava",
+        "Google Protocol Buffers",
+        "Unity 3D",
+        "FMOD Ex Programmers API",
+        "AndroidSVG"
+      ]
+    },
+    "raw_html_snippet": "<div>\n    <h2>\n        Permissions\n    </h2>\n    \n        <div class=\"row app-permissions\">\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Development tools</b>\n                        <div>\n                            \n                                test access to protected storage\n                            \n                        </div>\n                    </div>\n                </div>\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Network communication</b>\n                        <div>\n                            \n                                view network connections,\n                            \n                                view Wi-Fi connections,\n                            \n                                pair with Bluetooth devices,\n        ..."
+  },
+  "changelog": [
+    {
+      "date": "May 30, 2025",
+      "type": "Update",
+      "description": "Version 1.0.65"
+    },
+    {
+      "date": "May 24, 2025",
+      "type": "Update",
+      "description": "Version 1.0.64"
+    },
+    {
+      "date": "May 16, 2025",
+      "type": "Update",
+      "description": "Version 1.0.62"
+    },
+    {
+      "date": "May 14, 2025",
+      "type": "Installs",
+      "description": "100,000,000+ installs"
+    },
+    {
+      "date": "May 8, 2025",
+      "type": "Update",
+      "description": "Version 1.0.61"
+    },
+    {
+      "date": "Apr 23, 2025",
+      "type": "Update",
+      "description": "Version 1.0.60"
+    },
+    {
+      "date": "Apr 20, 2025",
+      "type": "Update",
+      "description": "Version 1.0.59"
+    },
+    {
+      "date": "Mar 27, 2025",
+      "type": "Update",
+      "description": "Version 1.0.54"
+    },
+    {
+      "date": "Mar 17, 2025",
+      "type": "Update",
+      "description": "Version 1.0.53"
+    },
+    {
+      "date": "Mar 10, 2025",
+      "type": "Update",
+      "description": "Version 1.0.52"
+    },
+    {
+      "date": "Mar 3, 2025",
+      "type": "Update",
+      "description": "Version 1.0.50"
+    },
+    {
+      "date": "Feb 27, 2025",
+      "type": "Update",
+      "description": "Version 1.0.49"
+    },
+    {
+      "date": "Feb 26, 2025",
+      "type": "Update",
+      "description": "Version 1.0.48"
+    },
+    {
+      "date": "Feb 20, 2025",
+      "type": "Update",
+      "description": "Version 1.0.47"
+    },
+    {
+      "date": "Feb 12, 2025",
+      "type": "Update",
+      "description": "Version 1.0.46"
+    },
+    {
+      "date": "Feb 4, 2025",
+      "type": "Update",
+      "description": "Version 1.0.45"
+    },
+    {
+      "date": "Jan 23, 2025",
+      "type": "Update",
+      "description": "Version 1.0.43"
+    },
+    {
+      "date": "Jan 14, 2025",
+      "type": "Update",
+      "description": "Version 1.0.41"
+    },
+    {
+      "date": "Jan 9, 2025",
+      "type": "Update",
+      "description": "Version 1.0.40"
+    },
+    {
+      "date": "Jan 3, 2025",
+      "type": "Update",
+      "description": "Version 1.0.39"
+    },
+    {
+      "date": "Dec 27, 2024",
+      "type": "Update",
+      "description": "Version 1.0.38"
+    },
+    {
+      "date": "Dec 20, 2024",
+      "type": "Update",
+      "description": "Version 1.0.37"
+    },
+    {
+      "date": "Dec 15, 2024",
+      "type": "Update",
+      "description": "Version 1.0.36"
+    },
+    {
+      "date": "Dec 10, 2024",
+      "type": "Update",
+      "description": "Version 1.0.35"
+    },
+    {
+      "date": "Nov 29, 2024",
+      "type": "Update",
+      "description": "Version 1.0.34"
+    },
+    {
+      "date": "Nov 25, 2024",
+      "type": "Installs",
+      "description": "50,000,000+ installs"
+    },
+    {
+      "date": "Nov 21, 2024",
+      "type": "Update",
+      "description": "Version 1.0.31"
+    },
+    {
+      "date": "Nov 19, 2024",
+      "type": "Update",
+      "description": "Version 1.0.30"
+    },
+    {
+      "date": "Nov 15, 2024",
+      "type": "Update",
+      "description": "Version 1.0.29"
+    },
+    {
+      "date": "Nov 11, 2024",
+      "type": "Update",
+      "description": "Version 1.0.28"
+    },
+    {
+      "date": "Nov 5, 2024",
+      "type": "Update",
+      "description": "Version 1.0.27"
+    },
+    {
+      "date": "Nov 4, 2024",
+      "type": "Update",
+      "description": "Version 1.0.26"
+    },
+    {
+      "date": "Nov 1, 2024",
+      "type": "Update",
+      "description": "Version 1.0.25"
+    },
+    {
+      "date": "Oct 25, 2024",
+      "type": "Update",
+      "description": "Version 1.0.23"
+    },
+    {
+      "date": "Oct 18, 2024",
+      "type": "Update",
+      "description": "Version 1.0.22"
+    },
+    {
+      "date": "Oct 14, 2024",
+      "type": "Installs",
+      "description": "10,000,000+ installs"
+    },
+    {
+      "date": "Oct 12, 2024",
+      "type": "Installs",
+      "description": "5,000,000+ installs"
+    },
+    {
+      "date": "Oct 11, 2024",
+      "type": "Update",
+      "description": "Version 1.0.21"
+    },
+    {
+      "date": "Oct 8, 2024",
+      "type": "Update",
+      "description": "Version 1.0.19"
+    },
+    {
+      "date": "Oct 8, 2024",
+      "type": "Installs",
+      "description": "1,000,000+ installs"
+    },
+    {
+      "date": "Oct 7, 2024",
+      "type": "Update",
+      "description": "Version 1.0.18"
+    },
+    {
+      "date": "Oct 6, 2024",
+      "type": "Installs",
+      "description": "500,000+ installs"
+    },
+    {
+      "date": "Oct 4, 2024",
+      "type": "Update",
+      "description": "Version 1.0.15"
+    },
+    {
+      "date": "Oct 3, 2024",
+      "type": "Update",
+      "description": "Version 1.0.14"
+    },
+    {
+      "date": "Sep 27, 2024",
+      "type": "Update",
+      "description": "Version 1.0.12"
+    },
+    {
+      "date": "Sep 20, 2024",
+      "type": "Update",
+      "description": "Version 1.0.11"
+    },
+    {
+      "date": "Sep 14, 2024",
+      "type": "Installs",
+      "description": "100,000+ installs"
+    },
+    {
+      "date": "Sep 12, 2024",
+      "type": "Update",
+      "description": "Version 1.0.10"
+    },
+    {
+      "date": "Sep 4, 2024",
+      "type": "Update",
+      "description": "Version 1.0.9"
+    },
+    {
+      "date": "Aug 31, 2024",
+      "type": "Installs",
+      "description": "50,000+ installs"
+    }
+  ],
+  "country": "US",
+  "category": "Game",
+  "status": "success",
+  "url": "https://www.appbrain.com/app/body-color-swap/com.uc.minigame.relax",
+  "timestamp": "2025-06-12T02:28:40.919919",
+  "categories": "Game, Casual",
+  "downloads": 297665,
+  "is_ad": "YES",
+  "is_pub": "YES",
+  "market_url": "https://play.google.com/store/apps/details?hl=en_US&gl=us&id=com.uc.minigame.relax",
+  "name": "Mini Games: Calm & Relax",
+  "platform": "Android",
+  "position": 75,
+  "publisher_contacts": "admin@unicornstudio.online, gamesonmarscustomerfeedback@gmail.com, admin@ctctechltd.com, contact.unicorn.gamestudio@gmail.com",
+  "publisher_name": "Unicorn Studio Official",
+  "publisher_website": "https://unicornstudio.online/",
+  "release_date": "2024-08-07",
+  "revenue_usd": 63,
+  "rpd": 0.001
+}

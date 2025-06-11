@@ -1,0 +1,295 @@
+{
+  "app_name": "Talking Tom Hero Dash for Android - Free App Download",
+  "package_name": "com.outfit7.herodash",
+  "Total downloads": "490 million",
+  "Recent downloads": "3.4 million",
+  "Rating": "4.33 based on 1.8 million ratings",
+  "Ranking": "Top ranked",
+  "APK size": "138.8 MB",
+  "Designed for Android": "6.0+",
+  "Suitable for": "Everyone",
+  "Ads": "Contains ads",
+  "developer_info": {
+    "name": "Outfit7 Limited",
+    "email": "support@outfit7.com",
+    "website": "https://talkingtomandfriends.com/support/"
+  },
+  "about_section": "Talking Tom Hero Dash is an action game developed by Outfit7 Limited. The APK has been available since April 2019 . In the last 30 days, the app was downloaded about 3.4 million times. It's top ranked. It's rated 4.33 out of 5 stars, based on 1.8 million ratings. The last update of the app was on May 28, 2025 . Talking Tom Hero Dash has a content rating \"Everyone\" . Talking Tom Hero Dash has an APK download size of 138.84 MB and the latest version available is 25.2.3.8787 . Designed for Android version 6.0+ . Talking Tom Hero Dash is FREE to download.",
+  "app_description": "Greetings from Talking Tom Hero Dash!\nThe Race is on. The Rakoonz are causing havoc again! They've captured Angela, Ben, Hank, and Ginger, and it's up to Tom to embark on a heroic adventure and rescue his friends!\nJoin Tom on a fast-paced journey through forgotten temples, ancient cities, sandy dunes, and icy peaks in Talking Tom Hero Dash. Dash, leap, evade, and slide past obstacles in this epic endless runner game. It's a super way to embrace the joyful atmosphere of Spring!\nDownload Talking Tom Hero Dash today and be part of Tom's superhero journey!\nKey features:\nEmbark on an epic journey through 4 distinct worlds in Talking Tom Hero Dash.\nCollect power-ups to make Tom run even faster.\nUnlock new friends and costumes in this fast and furious adventure.\nCompete with friends and family on online leaderboards in this talkingtomandfriends game.\nEnjoy this talking tom hero dash run game for free! This endless runner game is guaranteed fun.\nFrom Outfit7, creators of My Talking Tom, My Talking Tom Friends, My Talking Angela, and Talking Tom Gold Run.\nThis app is certified by PRIVO, an FTC Children\u2019s Online Privacy Protection Act (COPPA) Safe Harbor.\nThis app contains:\n- Promotion of Outfit7's products and advertising;\n- Links that direct customers to Outfit7\u2019s websites and other apps;\n- Personalization of content to encourage users to play the app again;\n- YouTube integration to allow users to watch videos of Outfit7's animated characters;\n- The option to make in-app purchases;\n- Items to purchase (available in different prices) using virtual currency, depending on the player\u2019s progress; and\n- Alternative options to access all functionalities of the app without making any in-app purchases using real money.\nTerms of use: https://talkingtomandfriends.com/eula/en/\nEEA privacy policy: https://talkingtomandfriends.com/eea/en/\nUS privacy policy: https://talkingtomandfriends.com/privacy/en/\nBrazil privacy policy: https://talkingtomandfriends.com/privacy-brazil/en/\nRest of the world privacy policy: https://talkingtomandfriends.com/privacy/en/\nCustomer support: support@outfit7.com\nRecent changes:\nBug fixes and minor gameplay improvements.",
+  "api_details": {
+    "permissions": {},
+    "technologies": {},
+    "raw_html_snippet": "<div>\n    <h2>\n        Permissions\n    </h2>\n    \n        <div class=\"row app-permissions\">\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Network communication</b>\n                        <div>\n                            \n                                view network connections,\n                            \n                                full network access,\n                            \n                                Google Play billing service,\n                            \n                                Google Play license check\n                            \n                        </div>\n                    </div>\n                </div>\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>System tools</b>\n                        <div>\n                       ..."
+  },
+  "changelog": [
+    {
+      "date": "May 28, 2025",
+      "type": "Update",
+      "description": "Version 25.2.3.8787"
+    },
+    {
+      "date": "May 22, 2025",
+      "type": "Update",
+      "description": "Version 25.2.2.8703"
+    },
+    {
+      "date": "May 15, 2025",
+      "type": "Update",
+      "description": "Version 25.2.0.8662"
+    },
+    {
+      "date": "Apr 29, 2025",
+      "type": "Update",
+      "description": "Version 25.1.6.8456"
+    },
+    {
+      "date": "Mar 13, 2025",
+      "type": "Update",
+      "description": "Version 25.1.5.8153"
+    },
+    {
+      "date": "Mar 3, 2025",
+      "type": "Update",
+      "description": "Version 25.1.1.8119"
+    },
+    {
+      "date": "Feb 6, 2025",
+      "type": "Update",
+      "description": "Version 5.0.3.7924"
+    },
+    {
+      "date": "Jan 10, 2025",
+      "type": "Update",
+      "description": "Version 5.0.2.7853"
+    },
+    {
+      "date": "Dec 9, 2024",
+      "type": "Update",
+      "description": "Version 5.0.1.7784"
+    },
+    {
+      "date": "Dec 3, 2024",
+      "type": "Update",
+      "description": "Version 5.0.0.7746"
+    },
+    {
+      "date": "Oct 22, 2024",
+      "type": "Update",
+      "description": "Version 4.9.2.7384"
+    },
+    {
+      "date": "Sep 12, 2024",
+      "type": "Update",
+      "description": "Version 4.9.1.7175"
+    },
+    {
+      "date": "Jul 11, 2024",
+      "type": "Update",
+      "description": "Version 4.8.0.6539"
+    },
+    {
+      "date": "Apr 29, 2024",
+      "type": "Update",
+      "description": "Version 4.7.0.6231"
+    },
+    {
+      "date": "Mar 7, 2024",
+      "type": "Update",
+      "description": "Version 4.6.0.6062"
+    },
+    {
+      "date": "Jan 18, 2024",
+      "type": "Update",
+      "description": "Version 4.5.0.5838"
+    },
+    {
+      "date": "Nov 23, 2023",
+      "type": "Update",
+      "description": "Version 4.4.0.5556"
+    },
+    {
+      "date": "Nov 21, 2023",
+      "type": "Update",
+      "description": "Version 4.3.5.5488"
+    },
+    {
+      "date": "Oct 17, 2023",
+      "type": "Update",
+      "description": "Version 4.3.3.4985"
+    },
+    {
+      "date": "Sep 4, 2023",
+      "type": "Update",
+      "description": "Version 4.2.1.4582"
+    },
+    {
+      "date": "Aug 29, 2023",
+      "type": "Update",
+      "description": "Version 4.2.0.4549"
+    },
+    {
+      "date": "Jun 28, 2023",
+      "type": "Update",
+      "description": "Version 4.1.0.4365"
+    },
+    {
+      "date": "Apr 26, 2023",
+      "type": "Update",
+      "description": "Version 4.0.0.4275"
+    },
+    {
+      "date": "Feb 23, 2023",
+      "type": "Update",
+      "description": "Version 3.9.0.4126"
+    },
+    {
+      "date": "Jan 3, 2023",
+      "type": "Update",
+      "description": "Version 3.8.0.3967"
+    },
+    {
+      "date": "Nov 23, 2022",
+      "type": "Update",
+      "description": "Version 3.7.1.3868"
+    },
+    {
+      "date": "Oct 25, 2022",
+      "type": "Update",
+      "description": "Version 3.7.0.3791"
+    },
+    {
+      "date": "Oct 12, 2022",
+      "type": "Update",
+      "description": "Version 3.6.1.3736"
+    },
+    {
+      "date": "Jun 30, 2022",
+      "type": "Update",
+      "description": "Version 3.4.1.3458"
+    },
+    {
+      "date": "Apr 13, 2022",
+      "type": "Update",
+      "description": "Version 3.3.0.3291"
+    },
+    {
+      "date": "Feb 22, 2022",
+      "type": "Update",
+      "description": "Version 3.2.1.3122"
+    },
+    {
+      "date": "Dec 16, 2021",
+      "type": "Update",
+      "description": "Version 3.1.0.2785"
+    },
+    {
+      "date": "Dec 14, 2021",
+      "type": "Update",
+      "description": "Version 3.0.1.2761"
+    },
+    {
+      "date": "Nov 25, 2021",
+      "type": "Update",
+      "description": "Version 2.9.0.2615"
+    },
+    {
+      "date": "Oct 20, 2021",
+      "type": "Update",
+      "description": "Version 2.8.1.2416"
+    },
+    {
+      "date": "Sep 28, 2021",
+      "type": "Update",
+      "description": "Version 2.8.0.2244"
+    },
+    {
+      "date": "Aug 10, 2021",
+      "type": "Update",
+      "description": "Version 2.7.0.1955"
+    },
+    {
+      "date": "Jul 1, 2021",
+      "type": "Update",
+      "description": "Version 2.6.0.1505"
+    },
+    {
+      "date": "Apr 23, 2021",
+      "type": "Update",
+      "description": "Version 2.5.0.894"
+    },
+    {
+      "date": "Mar 12, 2021",
+      "type": "Update",
+      "description": "Version 2.4.1.1397"
+    },
+    {
+      "date": "Jan 25, 2021",
+      "type": "Update",
+      "description": "Version 2.3.2.1351"
+    },
+    {
+      "date": "Jan 18, 2021",
+      "type": "Update",
+      "description": "Version 2.3.1.1344"
+    },
+    {
+      "date": "Dec 10, 2020",
+      "type": "Update",
+      "description": "Version 2.2.1.1300"
+    },
+    {
+      "date": "Oct 23, 2020",
+      "type": "Update",
+      "description": "Version 2.1.1.1235"
+    },
+    {
+      "date": "Sep 23, 2020",
+      "type": "Update",
+      "description": "Version 2.0.0.1184"
+    },
+    {
+      "date": "Aug 6, 2020",
+      "type": "Update",
+      "description": "Version 1.9.2.1108"
+    },
+    {
+      "date": "Jun 11, 2020",
+      "type": "Update",
+      "description": "Version 1.8.0.1043"
+    },
+    {
+      "date": "May 11, 2020",
+      "type": "Installs",
+      "description": "100,000,000+ installs"
+    },
+    {
+      "date": "May 4, 2020",
+      "type": "Update",
+      "description": "Version 1.7.1.995"
+    },
+    {
+      "date": "Apr 7, 2020",
+      "type": "Update",
+      "description": "Version 1.6.1.941"
+    }
+  ],
+  "country": "US",
+  "category": "Game",
+  "status": "success",
+  "url": "https://www.appbrain.com/app/body-color-swap/com.outfit7.herodash",
+  "timestamp": "2025-06-12T02:21:10.877269",
+  "categories": "Game, Action",
+  "downloads": 465123,
+  "is_ad": "YES",
+  "is_pub": "YES",
+  "market_url": "https://play.google.com/store/apps/details?hl=en_US&gl=us&id=com.outfit7.herodash",
+  "name": "Talking Tom Hero Dash",
+  "platform": "Android",
+  "position": 34,
+  "publisher_contacts": "support@outfit7.com",
+  "publisher_name": "Outfit7 Limited",
+  "publisher_website": "https://talkingtomandfriends.com/support/",
+  "release_date": "2016-03-19",
+  "revenue_usd": 1452,
+  "rpd": 0.001
+}

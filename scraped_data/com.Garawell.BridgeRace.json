@@ -1,0 +1,351 @@
+{
+  "app_name": "Bridge Race for Android - Free App Download",
+  "package_name": "com.Garawell.BridgeRace",
+  "Total downloads": "470 million",
+  "Recent downloads": "5.7 million",
+  "Rating": "4.26 based on 1.9 million ratings",
+  "Ranking": "Top ranked",
+  "APK size": "201.6 MB",
+  "Designed for Android": "6.0+",
+  "Suitable for": "Everyone",
+  "Ads": "Contains ads",
+  "developer_info": {
+    "name": "Supersonic Studios LTD",
+    "email": "support@supersonic.com",
+    "website": "https://supersonic.com/"
+  },
+  "about_section": "Bridge Race is a casual game developed by Supersonic Studios LTD. The APK has been available since February 2021 . In the last 30 days, the app was downloaded about 5.7 million times. It's top ranked. It's rated 4.26 out of 5 stars, based on 1.9 million ratings. The last update of the app was on April 10, 2025 . Bridge Race has a content rating \"Everyone\" . Bridge Race has an APK download size of 201.55 MB and the latest version available is 3.75 . Designed for Android version 6.0+ . Bridge Race is FREE to download.",
+  "app_description": "Best Racing Game ever with approximately 250 Million downloads! Try to build your own Bridge by competing with others for collectible blocks! You should look out for potential looters.\nJoin the adventure with more than 1000 levels that contain mechanisms such as sliders, trampolines, zip-lines, ladders, and elevators! Collect blocks of your own color and build bridges with them.\nThe main features of the game include:\n\u25cf Customize the Color of the Character and Blocks: You can play with more than 80 different types of characters, choose more than 30 blocks, and more than 30 colors! Customize your character skins but also the color of the character!\n\u25cf Bundles: You can also get bundles containing exciting characters, blocks, and unique character animations!\n\u25cf Road Map: You can see your road map and get back to the same level in order to get better results maybe even perfection! You can play all around the world in different cities!\n\u25cf Leaderboard: Be faster and collect more and get more stars in order to climb up in the leaderboard!\u2028\nRecent changes:\nEaster has arrived in Bridge Race! Starting from level 5, you can join a festive event filled with colorful surprises. Collect hidden Easter items as you race and unlock exclusive rewards to make your adventure even more exciting. Hop into the fun now and discover what\u2019s waiting for you!",
+  "api_details": {
+    "permissions": {},
+    "technologies": {
+      "Ad network libraries": [
+        "AdMob",
+        "Facebook Audience Network",
+        "Unity Ads",
+        "Open Measurement",
+        "AppLovin",
+        "AppsFlyer",
+        "Ironsource",
+        "PubNative"
+      ],
+      "Social libraries": [
+        "Facebook",
+        "Google Play Games Services"
+      ],
+      "Development tools": [
+        "Android Jetpack core",
+        "Android Architecture Components",
+        "Android Jetpack VersionedParcelable",
+        "Firebase",
+        "Android Jetpack Annotations",
+        "Android Jetpack Widgets",
+        "Android Jetpack AppCompat",
+        "AndroidX Activity",
+        "Android Activity Saved State",
+        "AndroidX Loader",
+        "Android Jetpack Media",
+        "Android Transition Support Library",
+        "Android Support Library collections",
+        "Android Support VectorDrawable",
+        "AndroidX Legacy: Support Library core utils",
+        "Kotlin",
+        "AndroidX Cursor Adapter",
+        "AndroidX Local Broadcast Manager",
+        "Android Support Library Print",
+        "Android Support Library Document File",
+        "AndroidX Legacy: Support Library core UI",
+        "Google gson",
+        "Android Support Library Async Layout Inflater",
+        "Android WorkManager",
+        "Okio",
+        "JetBrains Annotations",
+        "IntelliJ IDEA",
+        "AndroidX ExifInterface",
+        "Google ZXing",
+        "Chromium",
+        "Google Guava",
+        "BoltsFramework",
+        "Google Protocol Buffers",
+        "Unity 3D",
+        "FMOD Ex Programmers API",
+        "The Checker Framework",
+        "Simple Logging Facade for Java (SLF4J)",
+        "RootBeer",
+        "GameAnalytics"
+      ]
+    },
+    "raw_html_snippet": "<div>\n    <h2>\n        Permissions\n    </h2>\n    \n        <div class=\"row app-permissions\">\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Network communication</b>\n                        <div>\n                            \n                                view network connections,\n                            \n                                view Wi-Fi connections,\n                            \n                                full network access,\n                            \n                                Google Play billing service,\n                            \n                                Google Play license check\n                            \n                        </div>\n                    </div>\n                </div>\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n            ..."
+  },
+  "changelog": [
+    {
+      "date": "Apr 10, 2025",
+      "type": "Update",
+      "description": "Version 3.75"
+    },
+    {
+      "date": "Mar 18, 2025",
+      "type": "Update",
+      "description": "Version 3.74"
+    },
+    {
+      "date": "Feb 18, 2025",
+      "type": "Update",
+      "description": "Version 3.73"
+    },
+    {
+      "date": "Feb 4, 2025",
+      "type": "Update",
+      "description": "Version 3.70"
+    },
+    {
+      "date": "Feb 3, 2025",
+      "type": "Update",
+      "description": "Version 3.70"
+    },
+    {
+      "date": "Jan 23, 2025",
+      "type": "Update",
+      "description": "Version 3.68"
+    },
+    {
+      "date": "Jan 16, 2025",
+      "type": "Update",
+      "description": "Version 3.67"
+    },
+    {
+      "date": "Jan 9, 2025",
+      "type": "Update",
+      "description": "Version 3.66"
+    },
+    {
+      "date": "Dec 30, 2024",
+      "type": "Update",
+      "description": "Version 3.65"
+    },
+    {
+      "date": "Dec 23, 2024",
+      "type": "Update",
+      "description": "Version 3.64"
+    },
+    {
+      "date": "Dec 18, 2024",
+      "type": "Update",
+      "description": "Version 3.63"
+    },
+    {
+      "date": "Dec 16, 2024",
+      "type": "Update",
+      "description": "Version 3.62"
+    },
+    {
+      "date": "Dec 10, 2024",
+      "type": "Update",
+      "description": "Version 3.61"
+    },
+    {
+      "date": "Dec 6, 2024",
+      "type": "Update",
+      "description": "Version 3.60"
+    },
+    {
+      "date": "Nov 4, 2024",
+      "type": "Update",
+      "description": "Version 3.59"
+    },
+    {
+      "date": "Oct 26, 2024",
+      "type": "Update",
+      "description": "Version 3.58"
+    },
+    {
+      "date": "Sep 19, 2024",
+      "type": "Update",
+      "description": "Version 3.58"
+    },
+    {
+      "date": "Sep 18, 2024",
+      "type": "Update",
+      "description": "Version 3.57"
+    },
+    {
+      "date": "Aug 27, 2024",
+      "type": "Update",
+      "description": "Version 3.56"
+    },
+    {
+      "date": "Aug 23, 2024",
+      "type": "Update",
+      "description": "Version 3.55"
+    },
+    {
+      "date": "Aug 8, 2024",
+      "type": "Update",
+      "description": "Version 3.54"
+    },
+    {
+      "date": "Jul 19, 2024",
+      "type": "Update",
+      "description": "Version 3.53"
+    },
+    {
+      "date": "Jul 15, 2024",
+      "type": "Update",
+      "description": "Version 3.52"
+    },
+    {
+      "date": "Jul 3, 2024",
+      "type": "Update",
+      "description": "Version 3.51"
+    },
+    {
+      "date": "Jun 24, 2024",
+      "type": "Update",
+      "description": "Version 3.51"
+    },
+    {
+      "date": "Jun 12, 2024",
+      "type": "Update",
+      "description": "Version 3.50"
+    },
+    {
+      "date": "Jun 5, 2024",
+      "type": "Update",
+      "description": "Version 3.49"
+    },
+    {
+      "date": "Apr 17, 2024",
+      "type": "Update",
+      "description": "Version 3.48"
+    },
+    {
+      "date": "Mar 25, 2024",
+      "type": "Update",
+      "description": "Version 3.47"
+    },
+    {
+      "date": "Mar 11, 2024",
+      "type": "Update",
+      "description": "Version 3.47"
+    },
+    {
+      "date": "Mar 5, 2024",
+      "type": "Update",
+      "description": "Version 3.46"
+    },
+    {
+      "date": "Feb 29, 2024",
+      "type": "Update",
+      "description": "Version 3.44"
+    },
+    {
+      "date": "Feb 23, 2024",
+      "type": "Update",
+      "description": "Version 3.43"
+    },
+    {
+      "date": "Feb 12, 2024",
+      "type": "Update",
+      "description": "Version 3.42"
+    },
+    {
+      "date": "Feb 9, 2024",
+      "type": "Update",
+      "description": "Version 3.41"
+    },
+    {
+      "date": "Feb 1, 2024",
+      "type": "Update",
+      "description": "Version 3.40"
+    },
+    {
+      "date": "Jan 12, 2024",
+      "type": "Update",
+      "description": "Version 3.39"
+    },
+    {
+      "date": "Dec 22, 2023",
+      "type": "Update",
+      "description": "Version 3.38"
+    },
+    {
+      "date": "Dec 19, 2023",
+      "type": "Update",
+      "description": "Version 3.37"
+    },
+    {
+      "date": "Dec 8, 2023",
+      "type": "Update",
+      "description": "Version 3.36.1"
+    },
+    {
+      "date": "Dec 6, 2023",
+      "type": "Update",
+      "description": "Version 3.36"
+    },
+    {
+      "date": "Dec 1, 2023",
+      "type": "Update",
+      "description": "Version 3.35"
+    },
+    {
+      "date": "Nov 30, 2023",
+      "type": "Update",
+      "description": "Version 3.34.1"
+    },
+    {
+      "date": "Nov 27, 2023",
+      "type": "Update",
+      "description": "Version 3.34"
+    },
+    {
+      "date": "Nov 23, 2023",
+      "type": "Update",
+      "description": "Version 3.33"
+    },
+    {
+      "date": "Nov 20, 2023",
+      "type": "Update",
+      "description": "Version 3.32"
+    },
+    {
+      "date": "Nov 17, 2023",
+      "type": "Update",
+      "description": "Version 3.32"
+    },
+    {
+      "date": "Nov 13, 2023",
+      "type": "Update",
+      "description": "Version 3.30"
+    },
+    {
+      "date": "Nov 2, 2023",
+      "type": "Update",
+      "description": "Version 3.29"
+    },
+    {
+      "date": "Oct 30, 2023",
+      "type": "Update",
+      "description": "Version 3.28.1"
+    }
+  ],
+  "country": "US",
+  "category": "Game",
+  "status": "success",
+  "url": "https://www.appbrain.com/app/body-color-swap/com.Garawell.BridgeRace",
+  "timestamp": "2025-06-12T02:26:01.280369",
+  "categories": "Game, Casual",
+  "downloads": 332895,
+  "is_ad": "YES",
+  "is_pub": "YES",
+  "market_url": "https://play.google.com/store/apps/details?hl=en_US&gl=us&id=com.Garawell.BridgeRace",
+  "name": "Bridge Race",
+  "platform": "Android",
+  "position": 61,
+  "publisher_contacts": "support@supersonic.com, tummygamescompany@gmail.com, contact@saltcastlestudio.com, devencreativestudio@gmail.com, yoni.da@gmail.com, vismay@mrmint.in, worlotank@gmail.com, info@dodolabs.org, support@mood.games, uniqcko@gmail.com, uuggoo1688@gmail.com, contact@factura.games, yoni@unity3d.com, ugoodgame123@gmail.com, support@nitrogames.com, contact@supersonic.com",
+  "publisher_name": "Supersonic Studios LTD",
+  "publisher_website": "https://supersonic.com/",
+  "release_date": "2021-02-13",
+  "revenue_usd": 8,
+  "rpd": 0.001
+}

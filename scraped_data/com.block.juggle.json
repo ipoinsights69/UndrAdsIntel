@@ -1,0 +1,349 @@
+{
+  "app_name": "Block Blast! for Android - Free App Download",
+  "package_name": "com.block.juggle",
+  "Total downloads": "520 million",
+  "Recent downloads": "36 million",
+  "Rating": "4.79 based on 1.9 million ratings",
+  "Ranking": "Top ranked",
+  "APK size": "207.3 MB",
+  "Designed for Android": "5.0+",
+  "Suitable for": "Everyone",
+  "Ads": "Contains ads",
+  "developer_info": {
+    "name": "HungryStudio",
+    "email": "blockblast-support@hungrystudio.com",
+    "website": "https://hungrystudio.com?utm_source=googleplay&utm_medium=referral&utm_campaign=visitwebsite"
+  },
+  "about_section": "Block Blast! is a puzzle game developed by HungryStudio. The APK has been available since September 2022 . In the last 30 days, the app was downloaded about 36 million times. It's top ranked. It's rated 4.79 out of 5 stars, based on 1.9 million ratings. The last update of the app was on June 7, 2025 . Block Blast! has a content rating \"Everyone\" . Block Blast! has an APK download size of 207.29 MB and the latest version available is 7.2.7 . Designed for Android version 5.0+ . Block Blast! is FREE to download.",
+  "app_description": "\"Block Blast\" is a free and popular block puzzle game that is your best choice when you want to pass the casual time and challenge your brain. The goal of this block puzzle game is easy yet fun: match and clear as many colored blocks as possible on the board. Mastering the skill of filling rows or columns will make the block puzzle game easier. \"Block Blast\" not only provides a relaxing and cozy puzzle gaming experience but also enhances your logical abilities and trains your brain.\nThe block puzzle game features two fun and addictive modes: Classic Block Puzzle and Block Adventure Mode, offering a cozy and satisfying gaming experience. The cube block puzzle game is easy to play, exercises your brain, and enhances your mind. Additionally, \"Block Blast\" is completely free, requiring no WiFi or internet connection, allowing you to take on the challenge of logic puzzles even in offline mode. It's time to embark on a relaxing jigsaw puzzle journey, and \"Block Blast\" will be your companion for idle good times!\n\u2022 Classic Block Puzzle: Drag colored blocks onto the board and match as many block jigsaws as possible in this addictive brain-training game. The cube block puzzle game continuously provides various shapes of idle blocks until there is no remaining space on the board.\n\u2022 Block Adventure Mode: A new puzzle game mode begins! Enter the world of challenging puzzles, explore the tropical rainforest, encounter rare animals, collect candies and toys, and train your brain and boost your mind by crushing logic puzzles. \nIn this free and popular cube block puzzle game, you don't need WiFi or an internet connection. Even in offline mode, you can use logic and strategy to solve block puzzles and enhance your mind. Join this relaxing puzzle journey!\nHow to play the free block puzzle game:\n\u2022 Rhythmically drag and drop colored tile blocks onto the 8x8 board for sorting and matching.\n\u2022 Classic block puzzle games require strategic matching of rows or columns to clear colored block jigsaws.\n\u2022 When there is no more space to place cube blocks on the board, the puzzle game will end.\n\u2022 Block puzzle jigsaws cannot rotate, adding challenge and uncertainty. You need to apply logic and thinking to ensure that the placed blocks are the best match, testing your IQ and brain.\nBlock puzzle game features:\n\u2022 Completely free, no WiFi needed. Play online or offline and enjoy the fun of block puzzle jigsaw games anytime, anywhere.\n\u2022 Fun block puzzle games suitable for men and girls, of all ages, including kids, adults, and seniors.\n\u2022 Rhythmic music accompanies you while playing the block puzzle game, along with toon jigsaw, color cube toys, and hundreds of addictive levels!\nIn this free cube block puzzle game, you will also experience the cool original COMBO gameplay. Whether you are a puzzle game expert or a beginner, our carefully designed logic puzzles and irresistible gaming experience will captivate you.\nHow to become a master in the fun and satisfying block puzzle game:\n\u2022 Use the space on the board to increase the chances of scoring high in the puzzle game.\n\u2022 Choose the best placement for the puzzle game based on the shapes of colored tile jigsaws.\n\u2022 Plan the positions of multiple cube blocks, not just the current block position.\n\u2022 Analyze the vacant positions of the puzzle game board and predict potential jigsaw shapes of blocks.\nIf you are looking for a free classic puzzle game, \"Block Blast\" suits you. The block puzzle game can be played offline without WiFi and combines elements of 1010 brain games, Sudoku block games, match 3 cube games, and woody puzzle games, making it perfect for passing the time. Download this free puzzle game loved by all age groups and share it with friends and family!\nRecent changes:\n- Bug fixes and performance improvements.\n- We actively gather and analyze feedback to steer the improvements in our game. We're committed to bringing you the finest block puzzle gaming, coupled with an unparalleled playing experience.",
+  "api_details": {
+    "permissions": {},
+    "technologies": {
+      "Ad network libraries": [
+        "AdMob",
+        "Facebook Audience Network",
+        "Unity Ads",
+        "Open Measurement",
+        "AppLovin",
+        "AppsFlyer",
+        "Ironsource",
+        "InMobi",
+        "Chartboost",
+        "Amazon Mobile Ads",
+        "Ogury",
+        "PubNative"
+      ],
+      "Social libraries": [],
+      "Development tools": [
+        "Android Jetpack core",
+        "Android Architecture Components",
+        "Android Jetpack VersionedParcelable",
+        "Firebase",
+        "Android Jetpack Annotations",
+        "Android Jetpack Widgets",
+        "Android Jetpack AppCompat",
+        "AndroidX Activity",
+        "Android Activity Saved State",
+        "AndroidX Loader",
+        "Android Jetpack Media",
+        "Google Cloud Messaging (GCM)",
+        "Android Transition Support Library",
+        "Android Support Library collections",
+        "Android Support VectorDrawable",
+        "AndroidX Legacy: Support Library core utils",
+        "Kotlin",
+        "AndroidX Cursor Adapter",
+        "AndroidX Local Broadcast Manager",
+        "Android Support Library Print",
+        "Android Support Library Document File",
+        "Google gson",
+        "Android WorkManager",
+        "AndroidX Widget ViewPager2",
+        "Okio",
+        "JetBrains Annotations",
+        "Glide",
+        "AndroidX Multi-Dex Library",
+        "AndroidX ExifInterface",
+        "Picasso",
+        "Chromium",
+        "Google Guava",
+        "Google Protocol Buffers",
+        "Volley",
+        "Simple Logging Facade for Java (SLF4J)",
+        "Cocos2D-X"
+      ]
+    },
+    "raw_html_snippet": "<div>\n    <h2>\n        Permissions\n    </h2>\n    \n        <div class=\"row app-permissions\">\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Network communication</b>\n                        <div>\n                            \n                                view network connections,\n                            \n                                view Wi-Fi connections,\n                            \n                                full network access,\n                            \n                                Google Play billing service,\n                            \n                                receive data from Internet\n                            \n                        </div>\n                    </div>\n                </div>\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n           ..."
+  },
+  "changelog": [
+    {
+      "date": "Jun 7, 2025",
+      "type": "Update",
+      "description": "Version 7.2.7"
+    },
+    {
+      "date": "Jun 6, 2025",
+      "type": "Update",
+      "description": "Version 7.2.6"
+    },
+    {
+      "date": "Jun 4, 2025",
+      "type": "Update",
+      "description": "Version 7.2.4"
+    },
+    {
+      "date": "May 30, 2025",
+      "type": "Update",
+      "description": "Version 7.2.2"
+    },
+    {
+      "date": "May 27, 2025",
+      "type": "Update",
+      "description": "Version 7.2.0"
+    },
+    {
+      "date": "May 24, 2025",
+      "type": "Update",
+      "description": "Version 7.1.9"
+    },
+    {
+      "date": "May 23, 2025",
+      "type": "Installs",
+      "description": "500,000,000+ installs"
+    },
+    {
+      "date": "May 21, 2025",
+      "type": "Update",
+      "description": "Version 7.1.6"
+    },
+    {
+      "date": "May 18, 2025",
+      "type": "Update",
+      "description": "Version 7.1.3"
+    },
+    {
+      "date": "May 15, 2025",
+      "type": "Update",
+      "description": "Version 7.1.0"
+    },
+    {
+      "date": "May 13, 2025",
+      "type": "Update",
+      "description": "Version 7.0.9"
+    },
+    {
+      "date": "May 11, 2025",
+      "type": "Update",
+      "description": "Version 7.0.8"
+    },
+    {
+      "date": "May 10, 2025",
+      "type": "Update",
+      "description": "Version 7.0.7"
+    },
+    {
+      "date": "May 6, 2025",
+      "type": "Update",
+      "description": "Version 7.0.5"
+    },
+    {
+      "date": "May 3, 2025",
+      "type": "Update",
+      "description": "Version 7.0.3"
+    },
+    {
+      "date": "May 1, 2025",
+      "type": "Update",
+      "description": "Version 7.0.2"
+    },
+    {
+      "date": "Apr 28, 2025",
+      "type": "Update",
+      "description": "Version 6.9.9"
+    },
+    {
+      "date": "Apr 27, 2025",
+      "type": "Update",
+      "description": "Version 6.9.8"
+    },
+    {
+      "date": "Apr 24, 2025",
+      "type": "Update",
+      "description": "Version 6.9.6"
+    },
+    {
+      "date": "Apr 18, 2025",
+      "type": "Update",
+      "description": "Version 6.9.1"
+    },
+    {
+      "date": "Apr 17, 2025",
+      "type": "Update",
+      "description": "Version 6.9.0"
+    },
+    {
+      "date": "Apr 15, 2025",
+      "type": "Update",
+      "description": "Version 6.8.9"
+    },
+    {
+      "date": "Apr 11, 2025",
+      "type": "Update",
+      "description": "Version 6.8.7"
+    },
+    {
+      "date": "Apr 8, 2025",
+      "type": "Update",
+      "description": "Version 6.8.4"
+    },
+    {
+      "date": "Apr 7, 2025",
+      "type": "Update",
+      "description": "Version 6.8.3"
+    },
+    {
+      "date": "Apr 3, 2025",
+      "type": "Update",
+      "description": "Version 6.8.2"
+    },
+    {
+      "date": "Apr 1, 2025",
+      "type": "Update",
+      "description": "Version 6.7.9"
+    },
+    {
+      "date": "Mar 31, 2025",
+      "type": "Update",
+      "description": "Version 6.7.8"
+    },
+    {
+      "date": "Mar 28, 2025",
+      "type": "Update",
+      "description": "Version 6.7.7"
+    },
+    {
+      "date": "Mar 25, 2025",
+      "type": "Update",
+      "description": "Version 6.7.3"
+    },
+    {
+      "date": "Mar 24, 2025",
+      "type": "Update",
+      "description": "Version 6.7.2"
+    },
+    {
+      "date": "Mar 22, 2025",
+      "type": "Update",
+      "description": "Version 6.7.0"
+    },
+    {
+      "date": "Mar 20, 2025",
+      "type": "Update",
+      "description": "Version 6.6.9"
+    },
+    {
+      "date": "Mar 18, 2025",
+      "type": "Update",
+      "description": "Version 6.6.7"
+    },
+    {
+      "date": "Mar 14, 2025",
+      "type": "Update",
+      "description": "Version 6.6.4"
+    },
+    {
+      "date": "Mar 8, 2025",
+      "type": "Update",
+      "description": "Version 6.6.2"
+    },
+    {
+      "date": "Mar 6, 2025",
+      "type": "Update",
+      "description": "Version 6.6.0"
+    },
+    {
+      "date": "Mar 4, 2025",
+      "type": "Update",
+      "description": "Version 6.5.8"
+    },
+    {
+      "date": "Mar 1, 2025",
+      "type": "Update",
+      "description": "Version 6.5.7"
+    },
+    {
+      "date": "Feb 26, 2025",
+      "type": "Update",
+      "description": "Version 6.5.3"
+    },
+    {
+      "date": "Feb 22, 2025",
+      "type": "Update",
+      "description": "Version 6.5.1"
+    },
+    {
+      "date": "Feb 20, 2025",
+      "type": "Update",
+      "description": "Version 6.4.9"
+    },
+    {
+      "date": "Feb 18, 2025",
+      "type": "Update",
+      "description": "Version 6.4.8"
+    },
+    {
+      "date": "Feb 13, 2025",
+      "type": "Update",
+      "description": "Version 6.4.5"
+    },
+    {
+      "date": "Feb 11, 2025",
+      "type": "Update",
+      "description": "Version 6.4.4"
+    },
+    {
+      "date": "Feb 8, 2025",
+      "type": "Update",
+      "description": "Version 6.4.3"
+    },
+    {
+      "date": "Feb 6, 2025",
+      "type": "Update",
+      "description": "Version 6.4.2"
+    },
+    {
+      "date": "Jan 24, 2025",
+      "type": "Update",
+      "description": "Version 6.4.1"
+    },
+    {
+      "date": "Jan 22, 2025",
+      "type": "Update",
+      "description": "Version 6.4.0"
+    },
+    {
+      "date": "Jan 21, 2025",
+      "type": "Update",
+      "description": "Version 6.3.9"
+    }
+  ],
+  "country": "US",
+  "category": "Game",
+  "status": "success",
+  "url": "https://www.appbrain.com/app/body-color-swap/com.block.juggle",
+  "timestamp": "2025-06-12T02:14:46.236350",
+  "categories": "Game, Puzzle",
+  "downloads": 1544336,
+  "is_ad": "YES",
+  "is_pub": "YES",
+  "market_url": "https://play.google.com/store/apps/details?hl=en_US&gl=us&id=com.block.juggle",
+  "name": "Block Blast!",
+  "platform": "Android",
+  "position": 5,
+  "publisher_contacts": "match-support@hungrystudio.com, solitaire-support@hungrystudio.com, sudoku-support@hungrystudio.com, blockblast-support@hungrystudio.com, blockjourney-support@hungrystudio.com",
+  "publisher_name": "HungryStudio",
+  "publisher_website": "https://www.hungrystudio.com/",
+  "release_date": "2022-09-23",
+  "revenue_usd": 12,
+  "rpd": 0.001
+}

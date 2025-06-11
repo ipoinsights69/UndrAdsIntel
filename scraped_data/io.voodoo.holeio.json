@@ -1,0 +1,352 @@
+{
+  "app_name": "Hole.io for Android - Free App Download",
+  "package_name": "io.voodoo.holeio",
+  "Total downloads": "290 million",
+  "Recent downloads": "9.3 million",
+  "Rating": "3.06 based on 1.1 million ratings",
+  "Ranking": "Top ranked",
+  "APK size": "488.4 MB",
+  "Designed for Android": "7.0+",
+  "Ads": "Contains ads",
+  "developer_info": {
+    "name": "VOODOO",
+    "email": "holeio@voodoo.io",
+    "website": "https://www.voodoo.io"
+  },
+  "about_section": "Hole.io is an arcade game developed by VOODOO. The APK has been available since June 2018 . In the last 30 days, the app was downloaded about 9.3 million times. It's top ranked. It's rated 3.06 out of 5 stars, based on 1.1 million ratings. The last update of the app was on May 27, 2025 . Hole.io has a content rating \"Medium Maturity\" . Hole.io has an APK download size of 488.35 MB and the latest version available is 2.26.10 . Designed for Android version 7.0+ . Hole.io is FREE to download.",
+  "app_description": "Hole.io \u2013 Swallow Everything & Dominate the City!\nEnter the ultimate black hole battle and compete to become the biggest hole in town! Move your hungry black hole, swallow buildings, cars, and even opponents to grow bigger before time runs out. The more you absorb, the stronger you become. Can you outsize the competition and take over the arena?\nKey Features:\n- Addictive black hole gameplay \u2013 Swallow objects and expand\n- Real-time multiplayer battles \u2013 Compete against other players\n- Time-based challenges \u2013 Grow fast before the clock runs out\n- Custom skins \u2013 Choose your favorite black hole design\nDownload Hole.io now and prove you\u2019re the ultimate hole master in this fast-paced, city-eating battle!\nRecent changes:\n- Added  a new currency \"Skip It's!\" that can be used to gain rewards and boosts instead of watching Ads\n- Introduced a new progression system that awards you for eating the whole map!\n- Apartment buildings in the city maps now crumble into multiple pieces\n- Bug fixes and technical improvements ",
+  "api_details": {
+    "permissions": {},
+    "technologies": {
+      "Ad network libraries": [
+        "AdMob",
+        "Facebook Audience Network",
+        "Unity Ads",
+        "Open Measurement",
+        "AppLovin",
+        "Ironsource",
+        "Adjust",
+        "InMobi",
+        "Amazon Mobile Ads"
+      ],
+      "Social libraries": [
+        "Google Play Games Services"
+      ],
+      "Development tools": [
+        "Android Jetpack core",
+        "Android Architecture Components",
+        "Android Jetpack VersionedParcelable",
+        "Firebase",
+        "Android Jetpack Annotations",
+        "Android Jetpack Widgets",
+        "Android Jetpack AppCompat",
+        "AndroidX Activity",
+        "Android Activity Saved State",
+        "AndroidX Loader",
+        "Android Jetpack Media",
+        "Google Cloud Messaging (GCM)",
+        "Android Transition Support Library",
+        "Android Support Library collections",
+        "Android Support VectorDrawable",
+        "AndroidX Legacy: Support Library core utils",
+        "Kotlin",
+        "AndroidX Cursor Adapter",
+        "AndroidX Local Broadcast Manager",
+        "Android Support Library Print",
+        "Android Support Library Document File",
+        "AndroidX Legacy: Support Library core UI",
+        "Google gson",
+        "Android Support Library Async Layout Inflater",
+        "Android WorkManager",
+        "Okio",
+        "JetBrains Annotations",
+        "IntelliJ IDEA",
+        "AndroidX Multi-Dex Library",
+        "AndroidX ExifInterface",
+        "Picasso",
+        "Chromium",
+        "Google Guava",
+        "Google Protocol Buffers",
+        "Unity 3D",
+        "FMOD Ex Programmers API",
+        "The Checker Framework",
+        "Simple Logging Facade for Java (SLF4J)",
+        "Moshi",
+        "GameAnalytics",
+        "Comscore Analytics"
+      ]
+    },
+    "raw_html_snippet": "<div>\n    <h2>\n        Permissions\n    </h2>\n    \n        <div class=\"row app-permissions\">\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Network communication</b>\n                        <div>\n                            \n                                view network connections,\n                            \n                                view Wi-Fi connections,\n                            \n                                full network access,\n                            \n                                Google Play billing service,\n                            \n                                receive data from Internet\n                            \n                        </div>\n                    </div>\n                </div>\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n           ..."
+  },
+  "changelog": [
+    {
+      "date": "May 27, 2025",
+      "type": "Update",
+      "description": "Version 2.26.10"
+    },
+    {
+      "date": "May 2, 2025",
+      "type": "Update",
+      "description": "Version 2.25.11"
+    },
+    {
+      "date": "Apr 25, 2025",
+      "type": "Update",
+      "description": "Version 2.24.12"
+    },
+    {
+      "date": "Apr 22, 2025",
+      "type": "Update",
+      "description": "Version 2.24.9"
+    },
+    {
+      "date": "Apr 7, 2025",
+      "type": "Update",
+      "description": "Version 2.24.8"
+    },
+    {
+      "date": "Mar 20, 2025",
+      "type": "Update",
+      "description": "Version 2.23.7"
+    },
+    {
+      "date": "Mar 20, 2025",
+      "type": "Update",
+      "description": "Version 2.23.7"
+    },
+    {
+      "date": "Mar 17, 2025",
+      "type": "Update",
+      "description": "Version 2.23.6"
+    },
+    {
+      "date": "Mar 3, 2025",
+      "type": "Update",
+      "description": "Version 2.22.8"
+    },
+    {
+      "date": "Feb 25, 2025",
+      "type": "Update",
+      "description": "Version 2.22.7"
+    },
+    {
+      "date": "Feb 5, 2025",
+      "type": "Update",
+      "description": "Version 2.21.8"
+    },
+    {
+      "date": "Jan 31, 2025",
+      "type": "Update",
+      "description": "Version 2.21.7"
+    },
+    {
+      "date": "Jan 10, 2025",
+      "type": "Update",
+      "description": "Version 2.20.4"
+    },
+    {
+      "date": "Dec 13, 2024",
+      "type": "Update",
+      "description": "Version 2.19.3"
+    },
+    {
+      "date": "Nov 12, 2024",
+      "type": "Update",
+      "description": "Version 2.18.0"
+    },
+    {
+      "date": "Nov 4, 2024",
+      "type": "Update",
+      "description": "Version 2.18.0"
+    },
+    {
+      "date": "Oct 9, 2024",
+      "type": "Update",
+      "description": "Version 2.17.2"
+    },
+    {
+      "date": "Oct 4, 2024",
+      "type": "Update",
+      "description": "Version 2.17.1"
+    },
+    {
+      "date": "Oct 1, 2024",
+      "type": "Update",
+      "description": "Version 2.17.0"
+    },
+    {
+      "date": "Sep 4, 2024",
+      "type": "Update",
+      "description": "Version 2.16.0"
+    },
+    {
+      "date": "Aug 16, 2024",
+      "type": "Update",
+      "description": "Version 2.15.0"
+    },
+    {
+      "date": "Aug 1, 2024",
+      "type": "Update",
+      "description": "Version 2.14.1"
+    },
+    {
+      "date": "Jul 4, 2024",
+      "type": "Update",
+      "description": "Version 2.13.0"
+    },
+    {
+      "date": "Jun 17, 2024",
+      "type": "Update",
+      "description": "Version 2.12.0"
+    },
+    {
+      "date": "Jun 13, 2024",
+      "type": "Update",
+      "description": "Version 2.11.1"
+    },
+    {
+      "date": "May 30, 2024",
+      "type": "Update",
+      "description": "Version 2.11.0"
+    },
+    {
+      "date": "May 8, 2024",
+      "type": "Update",
+      "description": "Version 2.10.1"
+    },
+    {
+      "date": "Apr 29, 2024",
+      "type": "Update",
+      "description": "Version 2.10.0"
+    },
+    {
+      "date": "Mar 26, 2024",
+      "type": "Update",
+      "description": "Version 2.9.0"
+    },
+    {
+      "date": "Feb 22, 2024",
+      "type": "Update",
+      "description": "Version 2.8.0"
+    },
+    {
+      "date": "Dec 19, 2023",
+      "type": "Update",
+      "description": "Version 2.7.0"
+    },
+    {
+      "date": "Dec 11, 2023",
+      "type": "Update",
+      "description": "Version 2.6.0"
+    },
+    {
+      "date": "Nov 16, 2023",
+      "type": "Update",
+      "description": "Version 2.5"
+    },
+    {
+      "date": "Nov 6, 2023",
+      "type": "Update",
+      "description": "Version 2.4.1"
+    },
+    {
+      "date": "Oct 24, 2023",
+      "type": "Update",
+      "description": "Version 2.4"
+    },
+    {
+      "date": "Sep 20, 2023",
+      "type": "Update",
+      "description": "Version 2.3"
+    },
+    {
+      "date": "Sep 5, 2023",
+      "type": "Update",
+      "description": "Version 2.2.1"
+    },
+    {
+      "date": "Aug 11, 2023",
+      "type": "Update",
+      "description": "Version 2.1"
+    },
+    {
+      "date": "Jul 26, 2023",
+      "type": "Update",
+      "description": "Version 2.0"
+    },
+    {
+      "date": "Jul 11, 2023",
+      "type": "Update",
+      "description": "Version 1.28.5"
+    },
+    {
+      "date": "Jun 27, 2023",
+      "type": "Update",
+      "description": "Version 1.28.4"
+    },
+    {
+      "date": "Jun 20, 2023",
+      "type": "Update",
+      "description": "Version 1.28.3"
+    },
+    {
+      "date": "May 30, 2023",
+      "type": "Update",
+      "description": "Version 1.28.2"
+    },
+    {
+      "date": "May 16, 2023",
+      "type": "Update",
+      "description": "Version 1.28.1"
+    },
+    {
+      "date": "May 4, 2023",
+      "type": "Update",
+      "description": "Version 1.28.0"
+    },
+    {
+      "date": "Apr 12, 2023",
+      "type": "Update",
+      "description": "Version 1.27.2"
+    },
+    {
+      "date": "Apr 8, 2023",
+      "type": "Update",
+      "description": "Version 1.27.1"
+    },
+    {
+      "date": "Mar 17, 2023",
+      "type": "Update",
+      "description": "Version 1.26.0"
+    },
+    {
+      "date": "Mar 1, 2023",
+      "type": "Update",
+      "description": "Version 1.25.1"
+    },
+    {
+      "date": "Feb 3, 2023",
+      "type": "Update",
+      "description": "Version 1.24.1"
+    }
+  ],
+  "country": "US",
+  "category": "Game",
+  "status": "success",
+  "url": "https://www.appbrain.com/app/body-color-swap/io.voodoo.holeio",
+  "timestamp": "2025-06-12T02:19:25.045319",
+  "categories": "Game, Arcade",
+  "downloads": 572881,
+  "is_ad": "YES",
+  "is_pub": "YES",
+  "market_url": "https://play.google.com/store/apps/details?hl=en_US&gl=us&id=io.voodoo.holeio",
+  "name": "Hole.io",
+  "platform": "Android",
+  "position": 23,
+  "publisher_contacts": "ads@bereal.com, dpo@voodoo.io, info@movingeye.games, press@voodoo.io, privacy@adjust.com, privacy@gameanalytics.com, privacy@movingeye.games, support@tudamun.com, support@allinc.io, chetan.s@cymplstudios.com, team@gametator.com, hommadegames@gmail.com, contact.hegames@gmail.com, this-is-blast@voodoo.io, goosegroup03@126.com, gunship@ironequal.com, lawsonh@gmail.com, anthony@app-advisory.com, eugeniucurcudel@gmail.com, uboat@voodoo.io, gamefactoryusuf@gmail.com, support@trimatrastudio.com, support@voodoo.io, playakor@gmail.com, info@zeebagames.com, airdefense@dats.games, ballup@noorgames.com, khoren.j@gmail.com, info@rootcraft.net, shlechang406@gmail.com, plantopia@voodoo.io, info@rivvy.games, gameworthystudios@gmail.com, contact@furiousavocado.com, info@voodoo.io, reardenh2@gmail.com, dskyfriendsgames@gmail.com, i.k.nikitin@gmail.com, wowbabax@gmail.com, mehdi.elmoussali@gmail.com, nuribatuhansari@hotmail.com, support@vlbapps.com, developer@kiragan.com, support@partyupgames.com, konsordo@gmail.com, trofygames@gmail.com, hello@tarbooshgames.com, info@heseri.io, wormixart@gmail.com, simon@groogadgets.com, support@moc-support.freshdesk.com, contact@megashark.gg, contact@ohm-games.com, support@hotyetistudio.com, ianjs@ext.voodoo.io, dustin@voodoo.io, info@bluepencilgames.com, undeadman012@gmail.com, support@playphoria.io, huayi946@163.com, karol@orbitalknight.com, ccp@pubtraingames.com, oles.terletskiy@gmail.com, hello@crescivegames.com, dipayon@minigamelab.com, contact@jbm360.in, celltop@gmail.com, studio@voodoo.io, games@teamto.com, contact@h8hames.com, support@app-advisory.com, dev@phatfingers.io, contact@voodoo.io, newprojectsgames@gmail.com, info@epicorogames.com, brice@allinclusive-games.com, info@nopact.com, contact@cassette.am, holeio@voodoo.io, contact@ristretto-studios.com, smashlabllc@gmail.com, berkcanerol@gmail.com, monster-survivor-support@voodoo.io, sergeynagin@gmail.com, support@hypermode.gg, hello@stoneaxegames.com, contact@bere.al, madfatcat.com@gmail.com, homiebearstudio@gmail.com, illimanieuropeo@gmail.com, support@pubtraingames.com, minglefair@gmail.com, tummygamescompany@gmail.com, contact@foxcraft.io, admin@bbumgames.com, jayamohanan96@gmail.com, brice@allinc.io, andrey@voodoo.io, bp_support@aliyun.com, contact@zenith.games, jumpdunk3d@gmail.com, info@dalakgames.com, contact@h8games.com, kubra@crescivegames.com, contact@tapped.io, jack7268@gmail.com, help.oreonstudios@gmail.com, hello@phatfingers.io, contact@madapper.io",
+  "publisher_name": "VOODOO",
+  "publisher_website": "https://www.voodoo.io/",
+  "release_date": "2018-06-21",
+  "revenue_usd": 4121,
+  "rpd": 0.001
+}

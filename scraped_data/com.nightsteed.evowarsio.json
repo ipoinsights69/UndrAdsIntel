@@ -1,0 +1,323 @@
+{
+  "app_name": "EvoWars.io for Android - Free App Download",
+  "package_name": "com.nightsteed.evowarsio",
+  "Total downloads": "13 million",
+  "Recent downloads": "340 thousand",
+  "Rating": "4.07 based on 130 thousand ratings",
+  "Ranking": "Not ranked",
+  "APK size": "26.1 MB",
+  "Designed for Android": "7.0+",
+  "Ads": "Contains ads",
+  "developer_info": {
+    "name": "Night Steed S.C.",
+    "email": "contact@nightsteed.com",
+    "website": "https://nightsteed.com"
+  },
+  "about_section": "EvoWars.io is an action game developed by Night Steed S.C.. The APK has been available since March 2018 . In the last 30 days, the app was downloaded about 340 thousand times. It's currently not in the top ranks. It's rated 4.07 out of 5 stars, based on 130 thousand ratings. The last update of the app was on April 8, 2025 . EvoWars.io has a content rating \"Low Maturity\" . EvoWars.io has an APK download size of 26.10 MB and the latest version available is 2.0.123 . Designed for Android version 7.0+ . EvoWars.io is FREE to download.",
+  "app_description": "Welcome to EvoWars.io New Era!\nJump into the MULTIPLAYER, CROSS-PLATFORM MAYHEM and fight your way to legendary status!\nStart as a caveman and collect orbs while defeating opponents to evolve into a TERRIFYING, HUGE MEGAVOLUTION! With 39 unique evolutions, each battle brings you closer to the top.\nNew Era brings tons of new experiences! Unlock new weapons, tombs, emojis, and more by fighting matches and collecting chests.\nCHOOSE YOUR GAME MODE:\n* \ud83c\udfc6 Free For All: Battle everyone and emerge victorious.\n* \ud83e\udd1d Team Mode: Add friends to your party and fight team vs. team.\n* \u2694\ufe0f Duels: Prove you're the best in intense 1v1 battles!\nExperience the world\u2019s most popular IO brawler now with seamless cross-platform play. Whether on mobile or PC, your account and progress stay with you.\nRegular updates and events keep the game fresh with new content and exciting holiday specials like Halloween and Christmas.\nJoin the EvoWars.io community and rally under the call: \"Let's Fight! Kill! Evolve!\"\nDownload EvoWars.io now and start your evolution journey!\nRecent changes:\nBalance & Rewards Update!\n- The shop includes new IAPs and premium bundles.\n- The shop now offers timed free rewards.\n- The Premium account is now called VIP. \n- Evolutions now reach their maximum size at level 36 (Annihilator).\n- Megavolutions keep their dual weapon advantage, but no longer grow in size.\n- Fixed stats in Tournaments.\n- Fixed a bug where Apache upgrades showed the wrong currency.\n- Duel rewards increased!\n- Improved spawn system.\n- Fixed Leaderboard.",
+  "api_details": {
+    "permissions": {},
+    "technologies": {
+      "Ad network libraries": [
+        "AdMob"
+      ],
+      "Social libraries": [],
+      "Development tools": [
+        "Android Jetpack core",
+        "Android Architecture Components",
+        "Android Jetpack VersionedParcelable",
+        "Firebase",
+        "Android Jetpack Annotations",
+        "Android Jetpack Widgets",
+        "Android Jetpack AppCompat",
+        "AndroidX Activity",
+        "Android Activity Saved State",
+        "AndroidX Loader",
+        "Android Transition Support Library",
+        "Android Support Library collections",
+        "Android Support VectorDrawable",
+        "Kotlin",
+        "AndroidX Cursor Adapter",
+        "Android WorkManager",
+        "JetBrains Annotations",
+        "IntelliJ IDEA",
+        "Chromium",
+        "Google Guava",
+        "The Checker Framework",
+        "PhoneGap / Apache Cordova"
+      ]
+    },
+    "raw_html_snippet": "<div>\n    <h2>\n        Permissions\n    </h2>\n    \n        <div class=\"row app-permissions\">\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Network communication</b>\n                        <div>\n                            \n                                view network connections,\n                            \n                                full network access,\n                            \n                                Google Play billing service\n                            \n                        </div>\n                    </div>\n                </div>\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>System tools</b>\n                        <div>\n                            \n                                prevent phone from sleeping\n                      ..."
+  },
+  "changelog": [
+    {
+      "date": "Apr 8, 2025",
+      "type": "Update",
+      "description": "Version 2.0.123"
+    },
+    {
+      "date": "Apr 2, 2025",
+      "type": "Update",
+      "description": "Version 2.0.121"
+    },
+    {
+      "date": "Mar 14, 2025",
+      "type": "Update",
+      "description": "Version 2.0.101"
+    },
+    {
+      "date": "Mar 13, 2025",
+      "type": "Update",
+      "description": "Version 2.0.100"
+    },
+    {
+      "date": "Mar 7, 2025",
+      "type": "Update",
+      "description": "Version 2.0.94"
+    },
+    {
+      "date": "Jan 20, 2025",
+      "type": "Update",
+      "description": "Version 2.0.88"
+    },
+    {
+      "date": "Jan 14, 2025",
+      "type": "Update",
+      "description": "Version 2.0.86"
+    },
+    {
+      "date": "Dec 4, 2024",
+      "type": "Update",
+      "description": "Version 2.0.82"
+    },
+    {
+      "date": "Nov 27, 2024",
+      "type": "Update",
+      "description": "Version 2.0.80"
+    },
+    {
+      "date": "Nov 21, 2024",
+      "type": "Update",
+      "description": "Version 2.0.79"
+    },
+    {
+      "date": "Nov 18, 2024",
+      "type": "Update",
+      "description": "Version 2.0.77"
+    },
+    {
+      "date": "Nov 14, 2024",
+      "type": "Update",
+      "description": "Version 2.0.76"
+    },
+    {
+      "date": "Oct 31, 2024",
+      "type": "Update",
+      "description": "Version 2.0.74"
+    },
+    {
+      "date": "Oct 19, 2024",
+      "type": "Update",
+      "description": "Version 2.0.72"
+    },
+    {
+      "date": "Oct 7, 2024",
+      "type": "Update",
+      "description": "Version 2.0.66"
+    },
+    {
+      "date": "Oct 6, 2024",
+      "type": "Update",
+      "description": "Version 2.0.65"
+    },
+    {
+      "date": "Oct 2, 2024",
+      "type": "Update",
+      "description": "Version 2.0.63"
+    },
+    {
+      "date": "Sep 18, 2024",
+      "type": "Update",
+      "description": "Version 2.0.61"
+    },
+    {
+      "date": "Sep 12, 2024",
+      "type": "Update",
+      "description": "Version 2.0.60"
+    },
+    {
+      "date": "Sep 5, 2024",
+      "type": "Update",
+      "description": "Version 2.0.57"
+    },
+    {
+      "date": "Aug 29, 2024",
+      "type": "Update",
+      "description": "Version 2.0.53"
+    },
+    {
+      "date": "Aug 27, 2024",
+      "type": "Update",
+      "description": "Version 2.0.50"
+    },
+    {
+      "date": "Aug 19, 2024",
+      "type": "Update",
+      "description": "Version 2.0.41"
+    },
+    {
+      "date": "Aug 15, 2024",
+      "type": "Update",
+      "description": "Version 2.0.36"
+    },
+    {
+      "date": "Aug 5, 2024",
+      "type": "Update",
+      "description": "Version 2.0.32"
+    },
+    {
+      "date": "Aug 1, 2024",
+      "type": "Update",
+      "description": "Version 2.0.30"
+    },
+    {
+      "date": "Oct 12, 2023",
+      "type": "Update",
+      "description": "Version 1.9.37"
+    },
+    {
+      "date": "Aug 8, 2023",
+      "type": "Installs",
+      "description": "10,000,000+ installs"
+    },
+    {
+      "date": "Jul 15, 2023",
+      "type": "Update",
+      "description": "Version 1.9.32"
+    },
+    {
+      "date": "Jun 5, 2023",
+      "type": "Update",
+      "description": "Version 1.9.15"
+    },
+    {
+      "date": "Jan 28, 2023",
+      "type": "Update",
+      "description": "Version 1.8.35"
+    },
+    {
+      "date": "Jan 24, 2023",
+      "type": "Update",
+      "description": "Version 1.8.27"
+    },
+    {
+      "date": "Jan 18, 2023",
+      "type": "Update",
+      "description": "Version 1.8.15"
+    },
+    {
+      "date": "Jan 3, 2023",
+      "type": "Update",
+      "description": "Version 1.7.9"
+    },
+    {
+      "date": "Jan 1, 2023",
+      "type": "Update",
+      "description": "Version 1.7.8"
+    },
+    {
+      "date": "Dec 22, 2022",
+      "type": "Update",
+      "description": "Version 1.6.46"
+    },
+    {
+      "date": "Dec 13, 2022",
+      "type": "Update",
+      "description": "Version 1.6.39"
+    },
+    {
+      "date": "Nov 23, 2022",
+      "type": "Update",
+      "description": "Version 1.6.2"
+    },
+    {
+      "date": "Jul 15, 2021",
+      "type": "Update",
+      "description": "Version 1.4.42"
+    },
+    {
+      "date": "Jul 13, 2021",
+      "type": "Update",
+      "description": "Version 1.4.40"
+    },
+    {
+      "date": "Oct 5, 2020",
+      "type": "Installs",
+      "description": "5,000,000+ installs"
+    },
+    {
+      "date": "May 18, 2020",
+      "type": "Update",
+      "description": "Version 1.4.22"
+    },
+    {
+      "date": "May 16, 2020",
+      "type": "Update",
+      "description": "Version 1.4.21"
+    },
+    {
+      "date": "May 7, 2020",
+      "type": "Update",
+      "description": "Version 1.4.14"
+    },
+    {
+      "date": "Apr 4, 2020",
+      "type": "Update",
+      "description": "Version 1.4.13"
+    },
+    {
+      "date": "Mar 26, 2020",
+      "type": "Update",
+      "description": "Version 1.4.9"
+    },
+    {
+      "date": "Mar 25, 2020",
+      "type": "Update",
+      "description": "Version 1.4.6"
+    },
+    {
+      "date": "Mar 23, 2020",
+      "type": "Update",
+      "description": "Version 1.4.4"
+    },
+    {
+      "date": "Dec 14, 2019",
+      "type": "Update",
+      "description": "Version 1.4.3"
+    },
+    {
+      "date": "Dec 13, 2019",
+      "type": "Update",
+      "description": "Version 1.4.2"
+    }
+  ],
+  "country": "US",
+  "category": "Game",
+  "status": "success",
+  "url": "https://www.appbrain.com/app/body-color-swap/com.nightsteed.evowarsio",
+  "timestamp": "2025-06-12T02:24:50.346699",
+  "categories": "Game, Action",
+  "downloads": 363503,
+  "is_ad": "NO",
+  "is_pub": "YES",
+  "market_url": "https://play.google.com/store/apps/details?hl=en_US&gl=us&id=com.nightsteed.evowarsio",
+  "name": "EvoWars.io",
+  "platform": "Android",
+  "position": 53,
+  "publisher_contacts": "contact@nightsteed.com, tobyr@wtfgamesgroup.com",
+  "publisher_name": "Night Steed S.C.",
+  "publisher_website": "https://nightsteed.com",
+  "release_date": "2018-03-05",
+  "revenue_usd": 14,
+  "rpd": 0.001
+}

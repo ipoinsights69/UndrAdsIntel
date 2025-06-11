@@ -1,0 +1,295 @@
+{
+  "app_name": "Zombie Tsunami for Android - Free App Download",
+  "package_name": "net.mobigame.zombietsunami",
+  "Total downloads": "540 million",
+  "Recent downloads": "2.2 million",
+  "Rating": "4.50 based on 5.5 million ratings",
+  "Ranking": "Top ranked",
+  "APK size": "92.7 MB",
+  "Designed for Android": "5.0+",
+  "Suitable for": "Everyone",
+  "Ads": "Contains ads",
+  "developer_info": {
+    "name": "Mobigame SAS",
+    "email": "androidsupport.zombietsunami@mobigame.zendesk.com",
+    "website": "https://www.mobigame.net"
+  },
+  "about_section": "Zombie Tsunami is an arcade game developed by Mobigame SAS. The APK has been available since September 2013 . In the last 30 days, the app was downloaded about 2.2 million times. It's top ranked. It's rated 4.50 out of 5 stars, based on 5.5 million ratings. The last update of the app was on January 27, 2025 . Zombie Tsunami has a content rating \"Everyone\" . Zombie Tsunami has an APK download size of 92.67 MB and the latest version available is 4.6.3 . Designed for Android version 5.0+ . Zombie Tsunami is FREE to download.",
+  "app_description": "The zombies are revolting ! Attack the city with a horde of zombies, change pedestrians into zombies and create the largest horde.\nEat your friends, and challenge them to a crazy race by destroying everything in your path.\nZombie Tsunami has proudly exceeded 200 million players around the world.\n\"Zombie Tsunami is a game you really need to own\" (TouchArcade)\nFEATURES\n- \"One touch\" gameplay to control the entire hord\n- 10 delirious bonuses, ninjas, dragons, UFOs, and many more\n- Many upgrades to unlock\n- Raise zombie birds and use their powers\n- More than 300 missions to devour\n- 11 sets to travel in\n- Optimized for all Android models\nWhy not try our other games: EDGE, Cross Fingers, Perfect Cell, Truckers Delight.\nFollow us on twitter.com/Mobigame\nVisit us at http://www.mobigame.net\nRecent changes:\n- Winter events!\n- Bug fix and improvements\n- Haptic Feebacks\n- Blast Processing\nCheck out our Facebook page for more information about the new zombirds fusion: https://www.facebook.com/Mobigame-143172829084267/\nSpread the word, and follow us on Facebook, Twitter, or Mobigame.net for updates.\nThank you for playing Zombie Tsunami",
+  "api_details": {
+    "permissions": {},
+    "technologies": {},
+    "raw_html_snippet": "<div>\n    <h2>\n        Permissions\n    </h2>\n    \n        <div class=\"row app-permissions\">\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Development tools</b>\n                        <div>\n                            \n                                test access to protected storage\n                            \n                        </div>\n                    </div>\n                </div>\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Network communication</b>\n                        <div>\n                            \n                                view network connections,\n                            \n                                view Wi-Fi connections,\n                            \n                                full network access,\n                ..."
+  },
+  "changelog": [
+    {
+      "date": "Jan 27, 2025",
+      "type": "Update",
+      "description": "Version 4.6.3"
+    },
+    {
+      "date": "Jan 22, 2025",
+      "type": "Update",
+      "description": "Version 4.6.2"
+    },
+    {
+      "date": "Jan 20, 2025",
+      "type": "Update",
+      "description": "Version 4.6.0"
+    },
+    {
+      "date": "Dec 5, 2024",
+      "type": "Update",
+      "description": "Version 4.5.140"
+    },
+    {
+      "date": "Nov 20, 2024",
+      "type": "Update",
+      "description": "Version 4.5.138"
+    },
+    {
+      "date": "Nov 14, 2024",
+      "type": "Update",
+      "description": "Version 4.5.137"
+    },
+    {
+      "date": "Nov 13, 2024",
+      "type": "Update",
+      "description": "Version 4.5.136"
+    },
+    {
+      "date": "Jul 22, 2024",
+      "type": "Update",
+      "description": "Version 4.5.134"
+    },
+    {
+      "date": "Mar 6, 2024",
+      "type": "Installs",
+      "description": "500,000,000+ installs"
+    },
+    {
+      "date": "Jan 19, 2024",
+      "type": "Update",
+      "description": "Version 4.5.133"
+    },
+    {
+      "date": "Dec 11, 2023",
+      "type": "Update",
+      "description": "Version 4.5.132"
+    },
+    {
+      "date": "Dec 7, 2023",
+      "type": "Update",
+      "description": "Version 4.5.131"
+    },
+    {
+      "date": "Nov 30, 2023",
+      "type": "Update",
+      "description": "Version 4.5.130"
+    },
+    {
+      "date": "Apr 7, 2023",
+      "type": "Update",
+      "description": "Version 4.5.128"
+    },
+    {
+      "date": "Mar 30, 2023",
+      "type": "Update",
+      "description": "Version 4.5.126"
+    },
+    {
+      "date": "Mar 27, 2023",
+      "type": "Update",
+      "description": "Version 4.5.124"
+    },
+    {
+      "date": "Jan 19, 2023",
+      "type": "Update",
+      "description": "Version 4.5.123"
+    },
+    {
+      "date": "Dec 13, 2022",
+      "type": "Update",
+      "description": "Version 4.5.122"
+    },
+    {
+      "date": "Nov 22, 2022",
+      "type": "Update",
+      "description": "Version 4.5.121"
+    },
+    {
+      "date": "Nov 7, 2022",
+      "type": "Update",
+      "description": "Version 4.5.120"
+    },
+    {
+      "date": "Oct 26, 2022",
+      "type": "Update",
+      "description": "Version 4.5.119"
+    },
+    {
+      "date": "Oct 24, 2022",
+      "type": "Update",
+      "description": "Version 4.5.118"
+    },
+    {
+      "date": "Oct 19, 2022",
+      "type": "Update",
+      "description": "Version 4.5.117"
+    },
+    {
+      "date": "Jul 18, 2022",
+      "type": "Update",
+      "description": "Version 4.5.116"
+    },
+    {
+      "date": "Jul 12, 2022",
+      "type": "Update",
+      "description": "Version 4.5.114"
+    },
+    {
+      "date": "Jul 10, 2022",
+      "type": "Update",
+      "description": "Version 4.5.111"
+    },
+    {
+      "date": "Jul 8, 2022",
+      "type": "Update",
+      "description": "Version 4.5.110"
+    },
+    {
+      "date": "Jun 29, 2022",
+      "type": "Update",
+      "description": "Version 4.5.109"
+    },
+    {
+      "date": "Jun 25, 2022",
+      "type": "Update",
+      "description": "Version 4.5.108"
+    },
+    {
+      "date": "Jun 24, 2022",
+      "type": "Update",
+      "description": "Version 4.5.107"
+    },
+    {
+      "date": "Jun 13, 2022",
+      "type": "Update",
+      "description": "Version 4.5.106"
+    },
+    {
+      "date": "Jun 10, 2022",
+      "type": "Update",
+      "description": "Version 4.5.104"
+    },
+    {
+      "date": "May 31, 2022",
+      "type": "Update",
+      "description": "Version 4.5.103"
+    },
+    {
+      "date": "May 10, 2022",
+      "type": "Update",
+      "description": "Version 4.5.102"
+    },
+    {
+      "date": "May 4, 2022",
+      "type": "Update",
+      "description": "Version 4.5.101"
+    },
+    {
+      "date": "Apr 20, 2022",
+      "type": "Update",
+      "description": "Version 4.5.100"
+    },
+    {
+      "date": "Apr 8, 2022",
+      "type": "Update",
+      "description": "Version 4.5.99"
+    },
+    {
+      "date": "Mar 30, 2022",
+      "type": "Update",
+      "description": "Version 4.5.98"
+    },
+    {
+      "date": "Mar 23, 2022",
+      "type": "Update",
+      "description": "Version 4.5.97"
+    },
+    {
+      "date": "Mar 15, 2022",
+      "type": "Update",
+      "description": "Version 4.5.96"
+    },
+    {
+      "date": "Mar 3, 2022",
+      "type": "Update",
+      "description": "Version 4.5.95"
+    },
+    {
+      "date": "Feb 25, 2022",
+      "type": "Update",
+      "description": "Version 4.5.94"
+    },
+    {
+      "date": "Dec 13, 2021",
+      "type": "Update",
+      "description": "Version 4.5.93"
+    },
+    {
+      "date": "Dec 9, 2021",
+      "type": "Update",
+      "description": "Version 4.5.92"
+    },
+    {
+      "date": "Dec 6, 2021",
+      "type": "Update",
+      "description": "Version 4.5.9"
+    },
+    {
+      "date": "Dec 3, 2021",
+      "type": "Update",
+      "description": "Version 4.5.8"
+    },
+    {
+      "date": "Nov 26, 2021",
+      "type": "Update",
+      "description": "Version 4.5.6"
+    },
+    {
+      "date": "Apr 13, 2021",
+      "type": "Update",
+      "description": "Version 4.5.2"
+    },
+    {
+      "date": "Feb 5, 2021",
+      "type": "Update",
+      "description": "Version 4.5.0"
+    },
+    {
+      "date": "May 13, 2020",
+      "type": "Update",
+      "description": "Version 4.3.1"
+    }
+  ],
+  "country": "US",
+  "category": "Game",
+  "status": "success",
+  "url": "https://www.appbrain.com/app/body-color-swap/net.mobigame.zombietsunami",
+  "timestamp": "2025-06-12T02:21:55.404460",
+  "categories": "Game, Arcade",
+  "downloads": 433562,
+  "is_ad": "YES",
+  "is_pub": "YES",
+  "market_url": "https://play.google.com/store/apps/details?hl=en_US&gl=us&id=net.mobigame.zombietsunami",
+  "name": "Zombie Tsunami",
+  "platform": "Android",
+  "position": 40,
+  "publisher_contacts": "edge.ost@gmail.com, androidsupport.metro@mobigame.zendesk.com, support.wad@mobigame.zendesk.com, david@mobigame.net, androidsupport@mobigame.net, androidsupport.zombietsunami@mobigame.zendesk.com, androidsupport.idlerush@mobigame.zendesk.com",
+  "publisher_name": "Mobigame SAS",
+  "publisher_website": "https://www.mobigame.net",
+  "release_date": "2013-09-10",
+  "revenue_usd": 137,
+  "rpd": 0.001
+}

@@ -5,6 +5,7 @@ import io
 import uuid
 import threading
 import logging
+import psutil
 from datetime import datetime
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, send_file, send_from_directory, session
 from werkzeug.utils import secure_filename
@@ -64,17 +65,32 @@ def allowed_file(filename):
 def index():
     # Get statistics for dashboard
     try:
+        # Get system resource usage
+        cpu_percent = psutil.cpu_percent(interval=0.5)
+        memory = psutil.virtual_memory()
+        ram_percent = memory.percent
+        ram_used = f"{memory.used / (1024 * 1024 * 1024):.2f} GB"
+        ram_total = f"{memory.total / (1024 * 1024 * 1024):.2f} GB"
+        
         stats = {
             'total_apps': len(data_manager.get_all_apps()),
             'total_developers': len(set(app.get('developer_info', {}).get('name', '') for app in data_manager.get_all_apps())),
-            'recent_scrapes': 0  # This would be implemented with a proper tracking system
+            'recent_scrapes': 0,  # This would be implemented with a proper tracking system
+            'cpu_percent': cpu_percent,
+            'ram_percent': ram_percent,
+            'ram_used': ram_used,
+            'ram_total': ram_total
         }
     except Exception as e:
         logging.error(f"Error getting stats: {str(e)}")
         stats = {
             'total_apps': 0,
             'total_developers': 0,
-            'recent_scrapes': 0
+            'recent_scrapes': 0,
+            'cpu_percent': 0,
+            'ram_percent': 0,
+            'ram_used': '0 GB',
+            'ram_total': '0 GB'
         }
     return render_template('index.html', stats=stats)
 
@@ -830,6 +846,46 @@ def export():
         if 'category_filter' in request.form and request.form['category_filter']:
             filters['category_filter'] = request.form['category_filter']
         
+        # Is Ad filter
+        if 'is_ad_filter' in request.form and request.form['is_ad_filter']:
+            filters['is_ad_filter'] = request.form['is_ad_filter']
+        
+        # Is Publisher filter
+        if 'is_pub_filter' in request.form and request.form['is_pub_filter']:
+            filters['is_pub_filter'] = request.form['is_pub_filter']
+        
+        # Release Date filter
+        if 'release_date_min' in request.form and request.form['release_date_min']:
+            filters['release_date_min'] = request.form['release_date_min']
+        if 'release_date_max' in request.form and request.form['release_date_max']:
+            filters['release_date_max'] = request.form['release_date_max']
+        
+        # Downloads (numeric) filter
+        if 'downloads_min' in request.form and request.form['downloads_min']:
+            filters['downloads_min'] = request.form['downloads_min']
+        if 'downloads_max' in request.form and request.form['downloads_max']:
+            filters['downloads_max'] = request.form['downloads_max']
+        
+        # Revenue USD filter
+        if 'revenue_usd_min' in request.form and request.form['revenue_usd_min']:
+            filters['revenue_usd_min'] = request.form['revenue_usd_min']
+        if 'revenue_usd_max' in request.form and request.form['revenue_usd_max']:
+            filters['revenue_usd_max'] = request.form['revenue_usd_max']
+        
+        # RPD filter
+        if 'rpd_min' in request.form and request.form['rpd_min']:
+            filters['rpd_min'] = request.form['rpd_min']
+        if 'rpd_max' in request.form and request.form['rpd_max']:
+            filters['rpd_max'] = request.form['rpd_max']
+        
+        # Technology filters
+        if 'ad_network_libraries' in request.form and request.form['ad_network_libraries']:
+            filters['ad_network_libraries'] = request.form['ad_network_libraries']
+        if 'social_libraries' in request.form and request.form['social_libraries']:
+            filters['social_libraries'] = request.form['social_libraries']
+        if 'development_tools' in request.form and request.form['development_tools']:
+            filters['development_tools'] = request.form['development_tools']
+        
         # Export options
         if 'include_all_technologies' in request.form:
             filters['include_all_technologies'] = request.form['include_all_technologies']
@@ -893,7 +949,12 @@ def export():
     # Sort files by date (newest first)
     export_files.sort(key=lambda x: x['date'], reverse=True)
     
-    return render_template('export.html', export_files=export_files)
+    # Get filter options from available data
+    filter_options = data_manager.get_filter_options()
+    
+    return render_template('export.html', 
+                           export_files=export_files,
+                           filter_options=filter_options)
 
 
 @app.route('/download/<filename>')

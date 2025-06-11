@@ -2,139 +2,121 @@
 {% block title %}Upload Package Names{% endblock %}
 {% block content %}
 <div class="mb-8">
-    <h1 class="text-3xl font-bold text-gray-800 mb-4">Upload Package Names</h1>
+    <h1 class="text-4xl font-bold text-gray-800 mb-2">Upload Package Names</h1>
+    <p class="text-gray-600 mb-6">Upload a CSV file or enter package names to start scraping app data</p>
     
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="card">
-            <h2 class="text-xl font-semibold text-gray-800 mb-4">Upload CSV File</h2>
-            <form action="/upload" method="post" enctype="multipart/form-data" class="space-y-4">
-                <div>
-                    <label for="csv_file" class="block text-sm font-medium text-gray-700 mb-1">CSV File</label>
-                    <input type="file" name="csv_file" id="csv_file" accept=".csv" class="w-full border border-gray-300 rounded-lg p-2 focus:ring-primary-500 focus:border-primary-500">
-                    <p class="mt-1 text-sm text-gray-500">CSV file should have package names in the first column</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="card bg-gradient-to-br from-white to-gray-50">
+            <div class="flex items-center mb-4 text-primary-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                </svg>
+                <h2 class="text-xl font-semibold">Upload CSV File</h2>
+            </div>
+            <form id="csv-upload-form" enctype="multipart/form-data" class="space-y-5">
+                <div class="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+                    <label for="csv_file" class="block text-sm font-medium text-gray-700 mb-2">CSV File</label>
+                    <input type="file" name="csv_file" id="csv_file" accept=".csv" class="w-full p-2">
+                    <div class="mt-2 text-sm text-gray-500">
+                        <p class="mb-1">Expected CSV format:</p>
+                        <ul class="list-disc pl-5 mb-2">
+                            <li>Package names must be in the first column</li>
+                            <li>No header row required (but is accepted)</li>
+                            <li>One package name per row</li>
+                        </ul>
+                        <p class="mb-1">Example CSV content:</p>
+                        <pre class="bg-gray-100 p-2 rounded text-xs overflow-x-auto">com.facebook.katana
+com.instagram.android
+com.whatsapp
+com.spotify.music</pre>
+                        <p class="mt-2"><a href="/static/sample.csv" class="text-primary-600 hover:underline">Download sample CSV</a></p>
+                    </div>
                 </div>
                 
-                <!-- Country Selection -->
-                <div>
-                    <label for="country_csv" class="block text-sm font-medium text-gray-700 mb-1">Country</label>
-                    <select name="country" id="country_csv" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
-                        <option value="">Select Country</option>
-                        <option value="US">United States</option>
-                        <option value="GB">United Kingdom</option>
-                        <option value="CA">Canada</option>
-                        <option value="AU">Australia</option>
-                        <option value="IN">India</option>
-                        <option value="DE">Germany</option>
-                        <option value="FR">France</option>
-                        <option value="JP">Japan</option>
-                        <option value="BR">Brazil</option>
-                        <option value="RU">Russia</option>
-                        <option value="CN">China</option>
-                        <option value="KR">South Korea</option>
-                        <option value="IT">Italy</option>
-                        <option value="ES">Spain</option>
-                        <option value="MX">Mexico</option>
-                    </select>
+                <!-- Hidden fields for country and category -->
+                <input type="hidden" name="country" id="country-input" value="">
+                <input type="hidden" name="category" id="category-input" value="">
+                
+                <!-- Parsing status notification (hidden by default) -->
+                <div id="parsing-status" class="hidden bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 rounded-lg shadow-md mb-4">
+                    <div class="flex items-center">
+                        <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        <span id="parsing-message">Parsing CSV file...</span>
+                    </div>
                 </div>
                 
-                <!-- Category Selection -->
-                <div>
-                    <label for="category_csv" class="block text-sm font-medium text-gray-700 mb-1">Category</label>
-                    <select name="category" id="category_csv" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
-                        <option value="">Select Category</option>
-                        <option value="GAME">Games</option>
-                        <option value="SOCIAL">Social</option>
-                        <option value="COMMUNICATION">Communication</option>
-                        <option value="PRODUCTIVITY">Productivity</option>
-                        <option value="TOOLS">Tools</option>
-                        <option value="ENTERTAINMENT">Entertainment</option>
-                        <option value="EDUCATION">Education</option>
-                        <option value="FINANCE">Finance</option>
-                        <option value="SHOPPING">Shopping</option>
-                        <option value="TRAVEL_AND_LOCAL">Travel & Local</option>
-                        <option value="HEALTH_AND_FITNESS">Health & Fitness</option>
-                        <option value="PHOTOGRAPHY">Photography</option>
-                        <option value="MUSIC_AND_AUDIO">Music & Audio</option>
-                        <option value="VIDEO_PLAYERS">Video Players</option>
-                        <option value="MAPS_AND_NAVIGATION">Maps & Navigation</option>
-                        <option value="NEWS_AND_MAGAZINES">News & Magazines</option>
-                        <option value="BOOKS_AND_REFERENCE">Books & Reference</option>
-                        <option value="FOOD_AND_DRINK">Food & Drink</option>
-                        <option value="WEATHER">Weather</option>
-                        <option value="BUSINESS">Business</option>
-                    </select>
+                <!-- Success notification (hidden by default) -->
+                <div id="parsing-success" class="hidden bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded-lg shadow-md mb-4">
+                    <div class="flex items-center">
+                        <svg class="h-5 w-5 mr-3 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span id="success-message">CSV parsed successfully! Found <span id="package-count">0</span> package names.</span>
+                    </div>
                 </div>
                 
-                <button type="submit" class="btn-primary w-full flex items-center justify-center">
+                <!-- Error notification (hidden by default) -->
+                <div id="parsing-error" class="hidden bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded-lg shadow-md mb-4">
+                    <div class="flex items-center">
+                        <svg class="h-5 w-5 mr-3 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                        </svg>
+                        <span id="error-message">Error parsing CSV file.</span>
+                    </div>
+                </div>
+                
+                <button type="submit" id="upload-button" class="btn-primary w-full flex items-center justify-center py-3">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                     </svg>
-                    Upload and Start Scraping
+                    Upload and Parse CSV
+                </button>
+                
+                <!-- Start scraping button (hidden by default) -->
+                <button type="button" id="start-scraping-button" class="hidden btn-primary w-full flex items-center justify-center py-3 bg-green-600 hover:bg-green-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                    Start Scraping
                 </button>
             </form>
         </div>
         
-        <div class="card">
-            <h2 class="text-xl font-semibold text-gray-800 mb-4">Enter Package Names Manually</h2>
-            <form action="/upload" method="post" class="space-y-4">
-                <div>
-                    <label for="package_names" class="block text-sm font-medium text-gray-700 mb-1">Package Names</label>
-                    <textarea class="w-full border border-gray-300 rounded-lg p-2 focus:ring-primary-500 focus:border-primary-500" id="package_names" name="package_names" rows="5" placeholder="Enter one package name per line"></textarea>
-                    <p class="mt-1 text-sm text-gray-500">Example: com.facebook.katana</p>
+        <div class="card bg-gradient-to-br from-white to-gray-50">
+            <div class="flex items-center mb-4 text-primary-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                </svg>
+                <h2 class="text-xl font-semibold">Enter Package Names Manually</h2>
+            </div>
+            <form action="/upload" method="post" class="space-y-5">
+                <div class="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+                    <label for="package_names" class="block text-sm font-medium text-gray-700 mb-2">Package Names</label>
+                    <textarea class="w-full p-3" id="package_names" name="package_names" rows="6" placeholder="Enter one package name per line"></textarea>
+                    <div class="mt-2 text-sm text-gray-500">
+                        <p class="mb-1">Format instructions:</p>
+                        <ul class="list-disc pl-5 mb-2">
+                            <li>Enter one package name per line</li>
+                            <li>Use the full package identifier (e.g., com.company.appname)</li>
+                            <li>No commas or additional formatting needed</li>
+                        </ul>
+                        <p class="mb-1">Example package names:</p>
+                        <pre class="bg-gray-100 p-2 rounded text-xs overflow-x-auto">com.facebook.katana
+com.instagram.android
+com.whatsapp
+com.spotify.music</pre>
+                        <p class="mt-2">You can find package names in the Google Play Store URL after "id=" (e.g., https://play.google.com/store/apps/details?id=<strong>com.facebook.katana</strong>)</p>
+                    </div>
                 </div>
                 
-                <!-- Country Selection -->
-                <div>
-                    <label for="country_manual" class="block text-sm font-medium text-gray-700 mb-1">Country</label>
-                    <select name="country" id="country_manual" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
-                        <option value="">Select Country</option>
-                        <option value="US">United States</option>
-                        <option value="GB">United Kingdom</option>
-                        <option value="CA">Canada</option>
-                        <option value="AU">Australia</option>
-                        <option value="IN">India</option>
-                        <option value="DE">Germany</option>
-                        <option value="FR">France</option>
-                        <option value="JP">Japan</option>
-                        <option value="BR">Brazil</option>
-                        <option value="RU">Russia</option>
-                        <option value="CN">China</option>
-                        <option value="KR">South Korea</option>
-                        <option value="IT">Italy</option>
-                        <option value="ES">Spain</option>
-                        <option value="MX">Mexico</option>
-                    </select>
-                </div>
+                <!-- Hidden fields for country and category -->
+                <input type="hidden" name="country" value="">
+                <input type="hidden" name="category" value="">
                 
-                <!-- Category Selection -->
-                <div>
-                    <label for="category_manual" class="block text-sm font-medium text-gray-700 mb-1">Category</label>
-                    <select name="category" id="category_manual" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
-                        <option value="">Select Category</option>
-                        <option value="GAME">Games</option>
-                        <option value="SOCIAL">Social</option>
-                        <option value="COMMUNICATION">Communication</option>
-                        <option value="PRODUCTIVITY">Productivity</option>
-                        <option value="TOOLS">Tools</option>
-                        <option value="ENTERTAINMENT">Entertainment</option>
-                        <option value="EDUCATION">Education</option>
-                        <option value="FINANCE">Finance</option>
-                        <option value="SHOPPING">Shopping</option>
-                        <option value="TRAVEL_AND_LOCAL">Travel & Local</option>
-                        <option value="HEALTH_AND_FITNESS">Health & Fitness</option>
-                        <option value="PHOTOGRAPHY">Photography</option>
-                        <option value="MUSIC_AND_AUDIO">Music & Audio</option>
-                        <option value="VIDEO_PLAYERS">Video Players</option>
-                        <option value="MAPS_AND_NAVIGATION">Maps & Navigation</option>
-                        <option value="NEWS_AND_MAGAZINES">News & Magazines</option>
-                        <option value="BOOKS_AND_REFERENCE">Books & Reference</option>
-                        <option value="FOOD_AND_DRINK">Food & Drink</option>
-                        <option value="WEATHER">Weather</option>
-                        <option value="BUSINESS">Business</option>
-                    </select>
-                </div>
-                
-                <button type="submit" class="btn-primary w-full flex items-center justify-center">
+                <button type="submit" class="btn-primary w-full flex items-center justify-center py-3">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                     </svg>
@@ -155,12 +137,137 @@
 </div>
 
 <script>
-    document.getElementById('file').addEventListener('change', function() {
-        const fileName = this.files[0]?.name;
-        const fileLabel = document.getElementById('file-label');
+    // Store parsed data globally
+    let parsedData = null;
+    
+    // Handle CSV file upload and parsing
+    document.getElementById('csv-upload-form').addEventListener('submit', function(e) {
+        e.preventDefault();
         
+        const fileInput = document.getElementById('csv_file');
+        if (!fileInput.files || fileInput.files.length === 0) {
+            showError('Please select a CSV file to upload');
+            return;
+        }
+        
+        const file = fileInput.files[0];
+        if (!file.name.toLowerCase().endsWith('.csv')) {
+            showError('Please select a valid CSV file');
+            return;
+        }
+        
+        // Show parsing status
+        document.getElementById('parsing-status').classList.remove('hidden');
+        document.getElementById('parsing-success').classList.add('hidden');
+        document.getElementById('parsing-error').classList.add('hidden');
+        document.getElementById('start-scraping-button').classList.add('hidden');
+        
+        // Create form data
+        const formData = new FormData();
+        formData.append('file', file);
+        
+        // Send request to parse CSV
+        fetch('/parse_csv', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error parsing CSV: ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Store parsed data
+            parsedData = data;
+            
+            // Hide parsing status
+            document.getElementById('parsing-status').classList.add('hidden');
+            
+            // Show success message
+            const packageCount = data.rows ? data.rows.length : 0;
+            document.getElementById('package-count').textContent = packageCount;
+            document.getElementById('parsing-success').classList.remove('hidden');
+            
+            // Update hidden input fields with country and category from filters
+            if (data.filters) {
+                const country = data.filters.Country || '';
+                const category = data.filters.Category || '';
+                document.getElementById('country-input').value = country;
+                document.getElementById('category-input').value = category;
+            }
+            
+            // Show start scraping button
+            document.getElementById('start-scraping-button').classList.remove('hidden');
+            
+            // Hide upload button
+            document.getElementById('upload-button').classList.add('hidden');
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showError(error.message || 'Error parsing CSV file');
+        });
+    });
+    
+    // Handle start scraping button click
+    document.getElementById('start-scraping-button').addEventListener('click', function() {
+        if (!parsedData || !parsedData.rows || parsedData.rows.length === 0) {
+            showError('No package names found to scrape');
+            return;
+        }
+        
+        // Create form data for the actual upload
+        const formData = new FormData();
+        formData.append('csv_file', document.getElementById('csv_file').files[0]);
+        
+        // Add country and category if available in the parsed data
+        const country = parsedData.filters && parsedData.filters.Country ? parsedData.filters.Country : '';
+        const category = parsedData.filters && parsedData.filters.Category ? parsedData.filters.Category : '';
+        
+        // Update hidden input fields
+        document.getElementById('country-input').value = country;
+        document.getElementById('category-input').value = category;
+        
+        formData.append('country', country);
+        formData.append('category', category);
+        
+        // Submit to the original upload endpoint
+        fetch('/upload', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error starting scraping process');
+            }
+            // Redirect to logs page
+            window.location.href = '/logs';
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showError(error.message || 'Error starting scraping process');
+        });
+    });
+    
+    // Helper function to show error message
+    function showError(message) {
+        document.getElementById('parsing-status').classList.add('hidden');
+        document.getElementById('parsing-success').classList.add('hidden');
+        
+        document.getElementById('error-message').textContent = message;
+        document.getElementById('parsing-error').classList.remove('hidden');
+    }
+    
+    // Handle file input change to show filename
+    document.getElementById('csv_file').addEventListener('change', function() {
+        const fileName = this.files[0]?.name;
         if (fileName) {
-            fileLabel.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg><span>${fileName}</span>`;
+            // Reset UI state when a new file is selected
+            document.getElementById('parsing-status').classList.add('hidden');
+            document.getElementById('parsing-success').classList.add('hidden');
+            document.getElementById('parsing-error').classList.add('hidden');
+            document.getElementById('start-scraping-button').classList.add('hidden');
+            document.getElementById('upload-button').classList.remove('hidden');
         }
     });
 </script>

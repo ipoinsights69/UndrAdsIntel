@@ -1,11 +1,6 @@
-package_name
-com.facebook.katana
-com.instagram.android
-com.whatsapp
-com.spotify.music
-com.netflix.mediaclient
-com.amazon.mShop.android.shopping
-com.google.android.youtube
-com.snapchat.android
-com.twitter.android
-com.pinterest
+sep=,
+Filters:,Platform: Android. Country: Vietnam. Category: Game. Period: 11 Mar 2025 - 8 Jun 2025. Downloads: 10000 - 100000000. Revenue: All. In-App Purchases: All. Deleted Apps: All. SDK: All. RPD: All. Search by name: Is not set. Extended Lists: All. Tags: All. HQ Location: All. Ad Activity: All. Rating: All. Gender: All. Release date: 11 Jun 2025 - 11 Jun 2025
+Position,Name,Platform,Downloads,Revenue (USD),RPD,Is Ad,Is Pub,Market Url,Release date,Categories,Publisher name,Publisher website,Publisher contacts
+1,Free Fire MAX,Android,3105428,1254789,0.40,YES,NO,https://play.google.com/store/apps/details?id=com.dts.freefiremax,2021-09-28,Game,GARENA INTERNATIONAL I PRIVATE LIMITED,,support@garena.com
+2,Garena Liên Quân Mobile,Android,2502171,1024601,0.41,YES,NO,https://play.google.com/store/apps/details?id=com.garena.game.kgvn,2016-12-14,Game,Garena Mobile Private,,congdong@garena.vn
+3,PUBG MOBILE VN,Android,1852963,987452,0.53,YES,NO,https://play.google.com/store/apps/details?id=com.vng.pubgmobile,2018-03-19,Game,VNG Game Publishing,,support@vng.com.vn

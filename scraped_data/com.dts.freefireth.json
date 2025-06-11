@@ -1,0 +1,328 @@
+{
+  "app_name": "Free Fire: 8th Anniversary! for Android - Free App Download",
+  "package_name": "com.dts.freefireth",
+  "Total downloads": "1.8 billion",
+  "Recent downloads": "17 million",
+  "Rating": "4.22 based on 120 million ratings",
+  "Ranking": "Top ranked",
+  "APK size": "314.7 MB",
+  "Designed for Android": "5.0+",
+  "Ads": "NO ads",
+  "developer_info": {
+    "name": "Garena International I",
+    "email": "freefire@garena.com",
+    "website": null
+  },
+  "about_section": "Free Fire: 8th Anniversary! is an action game developed by Garena International I. The APK has been available since September 2017 . In the last 30 days, the app was downloaded about 17 million times. It's top ranked. It's rated 4.22 out of 5 stars, based on 120 million ratings. The last update of the app was on May 14, 2025 . Free Fire: 8th Anniversary! has a content rating \"High Maturity\" . Free Fire: 8th Anniversary! has an APK download size of 314.68 MB and the latest version available is 1.111.1 . Designed for Android version 5.0+ . Free Fire: 8th Anniversary! is FREE to download.",
+  "app_description": "The 8th Anniversary is here!\n[New Map: Solara]\nWelcome to Solara, a vibrant summer-themed port town. With dazzling jacaranda trees and charming subtropical scenery, this map features breathtaking twin peaks and an exciting slide system, along with deep combat strategies and exploration opportunities. Whether you're weaving through the winding blossom-filled streets or enjoying romantic moments beneath the Ferris wheel, Solara offers endless possibilities!\n[8th Anniversary]\nThe Infinity Train bound for the 8th Anniversary is about to journey across all maps, inviting every brave Survivor to join. This is more than just an adventure\u2014it\u2019s a grand invitation to the Infinity Ring! Compete for exclusive Infinite Items, ignite your passion, and push your limits!\n[Camera System]\nOur new camera system offers a variety of tools and creative options to help you easily capture stunning in-game scenes and make unique memories with friends. Capture your exclusive gaming moments!\n[Free Custom Room]\nAll players can freely create custom rooms and battle with friends!\nFree Fire is a world-famous survival shooter game available on mobile. Each 10-minute game places you on a remote island where you are pit against 49 other players, all seeking survival. Players freely choose their starting point with their parachute, and aim to stay in the safe zone for as long as possible. Drive vehicles to explore the vast map, hide in the wild, or become invisible by proning under grass or rifts. Ambush, snipe, survive, there is only one goal: to survive and answer the call of duty.\nFree Fire, Battle In Style!\n[Survival shooter in its original form]\nSearch for weapons, stay in the play zone, loot your enemies and become the last man standing. Along the way, go for legendary airdrops while avoiding airstrikes to gain that little edge against other players.\n[10 minutes, 50 players, epic survival goodness awaits]\nFast and Lite gameplay - Within 10 minutes, a new survivor will emerge. Will you go beyond the call of duty and be the one under the shining lite?\n[4-man squad, with in-game voice chat]\nCreate squads of up to 4 players and establish communication with your squad at the very first moment. Answer the call of duty and lead your friends to victory and be the last team standing at the apex.\n[Clash Squad]\nA fast paced 4v4 game mode! Manage your economy, purchase weapons, and defeat the enemy squad!\n[Realistic and smooth graphics]\nEasy to use controls and smooth graphics promises the optimum survival experience you will find on mobile to help you immortalize your name among the legends. \n[Contact us]\nCustomer Service: https://ffsupport.garena.com/hc/en-us\nRecent changes:\n[New Map: Solara] Featuring spectacular twin peaks and an exciting slide system, this map offers rich combat strategies and exploration!\n[8th Anniversary] The Infinity Train invites every brave Survivor to join the journey!\n[Camera System] Use various camera tools to create unique memories with friends!\n[Free Custom Room] All players can freely create and host custom rooms!\n[Prime System] To thank players for their support, Prime grants exclusive privileges and rewards based on past top-ups.",
+  "api_details": {
+    "permissions": {},
+    "technologies": {
+      "Ad network libraries": [
+        "AppsFlyer"
+      ],
+      "Social libraries": [
+        "Facebook",
+        "Google Play Games Services",
+        "Twitter Kit",
+        "VKontakte SDK",
+        "TikTok open SDK"
+      ],
+      "Development tools": [
+        "Android Jetpack core",
+        "Android Architecture Components",
+        "Android Jetpack VersionedParcelable",
+        "Firebase",
+        "Android Jetpack Annotations",
+        "Android Jetpack Widgets",
+        "Android Jetpack AppCompat",
+        "AndroidX Activity",
+        "Android Activity Saved State",
+        "AndroidX Loader",
+        "Android Jetpack Media",
+        "Google Cloud Messaging (GCM)",
+        "Android Support VectorDrawable",
+        "Kotlin",
+        "Google gson",
+        "Android WorkManager",
+        "Okio",
+        "JetBrains Annotations",
+        "Chromium",
+        "Unity 3D",
+        "FMOD Ex Programmers API"
+      ]
+    },
+    "raw_html_snippet": "<div>\n    <h2>\n        Permissions\n    </h2>\n    \n        <div class=\"row app-permissions\">\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Development tools</b>\n                        <div>\n                            \n                                test access to protected storage\n                            \n                        </div>\n                    </div>\n                </div>\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Network communication</b>\n                        <div>\n                            \n                                view network connections,\n                            \n                                view Wi-Fi connections,\n                            \n                                pair with Bluetooth devices,\n        ..."
+  },
+  "changelog": [
+    {
+      "date": "May 14, 2025",
+      "type": "Update",
+      "description": "Version 1.111.1"
+    },
+    {
+      "date": "Feb 19, 2025",
+      "type": "Update",
+      "description": "Version 1.109.1"
+    },
+    {
+      "date": "Nov 27, 2024",
+      "type": "Update",
+      "description": "Version 1.108.1"
+    },
+    {
+      "date": "Sep 9, 2024",
+      "type": "Update",
+      "description": "Version 1.107.0"
+    },
+    {
+      "date": "Aug 27, 2024",
+      "type": "Update",
+      "description": "Version 1.106.1"
+    },
+    {
+      "date": "Jun 19, 2024",
+      "type": "Update",
+      "description": "Version 1.105.1"
+    },
+    {
+      "date": "Apr 3, 2024",
+      "type": "Update",
+      "description": "Version 1.104.1"
+    },
+    {
+      "date": "Jan 12, 2024",
+      "type": "Update",
+      "description": "Version 1.103.1"
+    },
+    {
+      "date": "Oct 19, 2023",
+      "type": "Update",
+      "description": "Version 1.102.1"
+    },
+    {
+      "date": "Sep 15, 2023",
+      "type": "Update",
+      "description": "Version 1.101.1"
+    },
+    {
+      "date": "Aug 1, 2023",
+      "type": "Update",
+      "description": "Version 1.100.1"
+    },
+    {
+      "date": "May 26, 2023",
+      "type": "Update",
+      "description": "Version 1.99.1"
+    },
+    {
+      "date": "Mar 17, 2023",
+      "type": "Update",
+      "description": "Version 1.98.1"
+    },
+    {
+      "date": "Jan 7, 2023",
+      "type": "Update",
+      "description": "Version 1.97.1"
+    },
+    {
+      "date": "Nov 11, 2022",
+      "type": "Update",
+      "description": "Version 1.94.1"
+    },
+    {
+      "date": "Sep 9, 2022",
+      "type": "Update",
+      "description": "Version 1.93.1"
+    },
+    {
+      "date": "Jul 15, 2022",
+      "type": "Update",
+      "description": "Version 1.92.1"
+    },
+    {
+      "date": "May 19, 2022",
+      "type": "Update",
+      "description": "Version 1.90.1"
+    },
+    {
+      "date": "Mar 31, 2022",
+      "type": "Update",
+      "description": "Version 1.81.0"
+    },
+    {
+      "date": "Mar 17, 2022",
+      "type": "Update",
+      "description": "Version 1.80.0"
+    },
+    {
+      "date": "Feb 9, 2022",
+      "type": "Update",
+      "description": "Version 1.70.0"
+    },
+    {
+      "date": "Jan 14, 2022",
+      "type": "Update",
+      "description": "Version 1.69.1"
+    },
+    {
+      "date": "Nov 26, 2021",
+      "type": "Update",
+      "description": "Version 1.68.1"
+    },
+    {
+      "date": "Nov 1, 2021",
+      "type": "Update",
+      "description": "Version 1.67.0"
+    },
+    {
+      "date": "Oct 15, 2021",
+      "type": "Update",
+      "description": "Version 1.66.0"
+    },
+    {
+      "date": "Sep 17, 2021",
+      "type": "Update",
+      "description": "Version 1.65.1"
+    },
+    {
+      "date": "Jul 30, 2021",
+      "type": "Update",
+      "description": "Version 1.64.1"
+    },
+    {
+      "date": "Jul 12, 2021",
+      "type": "Installs",
+      "description": "1,000,000,000+ installs"
+    },
+    {
+      "date": "Jun 3, 2021",
+      "type": "Update",
+      "description": "Version 1.62.2"
+    },
+    {
+      "date": "Apr 8, 2021",
+      "type": "Update",
+      "description": "Version 1.60.1"
+    },
+    {
+      "date": "Feb 8, 2021",
+      "type": "Update",
+      "description": "Version 1.59.5"
+    },
+    {
+      "date": "Jan 28, 2021",
+      "type": "Update",
+      "description": "Version 1.59.1"
+    },
+    {
+      "date": "Dec 9, 2020",
+      "type": "Update",
+      "description": "Version 1.57.0"
+    },
+    {
+      "date": "Dec 3, 2020",
+      "type": "Update",
+      "description": "Version 1.56.1"
+    },
+    {
+      "date": "Sep 28, 2020",
+      "type": "Update",
+      "description": "Version 1.54.1"
+    },
+    {
+      "date": "Sep 17, 2020",
+      "type": "Update",
+      "description": "Version 1.53.2"
+    },
+    {
+      "date": "Aug 7, 2020",
+      "type": "Update",
+      "description": "Version 1.52.0"
+    },
+    {
+      "date": "Jul 29, 2020",
+      "type": "Update",
+      "description": "Version 1.51.2"
+    },
+    {
+      "date": "Jul 8, 2020",
+      "type": "Update",
+      "description": "Version 1.50.0"
+    },
+    {
+      "date": "Jun 15, 2020",
+      "type": "Update",
+      "description": "Version 1.49.0"
+    },
+    {
+      "date": "May 29, 2020",
+      "type": "Update",
+      "description": "Version 1.48.1"
+    },
+    {
+      "date": "Apr 2, 2020",
+      "type": "Update",
+      "description": "Version 1.47.0"
+    },
+    {
+      "date": "Feb 20, 2020",
+      "type": "Update",
+      "description": "Version 1.46.0"
+    },
+    {
+      "date": "Feb 3, 2020",
+      "type": "Installs",
+      "description": "500,000,000+ installs"
+    },
+    {
+      "date": "Jan 15, 2020",
+      "type": "Update",
+      "description": "Version 1.44.0"
+    },
+    {
+      "date": "Dec 6, 2019",
+      "type": "Update",
+      "description": "Version 1.43.0"
+    },
+    {
+      "date": "Oct 12, 2019",
+      "type": "Update",
+      "description": "Version 1.41.0"
+    },
+    {
+      "date": "Aug 13, 2019",
+      "type": "Update",
+      "description": "Version 1.39.0"
+    },
+    {
+      "date": "Jul 14, 2019",
+      "type": "Update",
+      "description": "Version 1.38.2"
+    },
+    {
+      "date": "Jun 27, 2019",
+      "type": "Update",
+      "description": "Version 1.37.0"
+    }
+  ],
+  "country": "US",
+  "category": "Game",
+  "status": "success",
+  "url": "https://www.appbrain.com/app/body-color-swap/com.dts.freefireth",
+  "timestamp": "2025-06-12T02:13:49.509741",
+  "categories": "Game, Action",
+  "downloads": 1832555,
+  "is_ad": "YES",
+  "is_pub": "NO",
+  "market_url": "https://play.google.com/store/apps/details?hl=en_US&gl=us&id=com.dts.freefireth",
+  "name": "Free Fire: 8th Anniversary!",
+  "platform": "Android",
+  "position": 3,
+  "publisher_contacts": "dpo.sg@garena.com, FFSecurity@garena.com, ask@booyah.live, freefire@garena.com, freefiremax@garena.com, latamspeeddriftergarena@gmail.com",
+  "publisher_name": "Garena International I",
+  "publisher_website": null,
+  "release_date": "2017-10-01",
+  "revenue_usd": 1503772,
+  "rpd": 0.82
+}

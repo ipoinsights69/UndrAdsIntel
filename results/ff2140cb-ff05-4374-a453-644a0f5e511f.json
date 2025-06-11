@@ -1,11 +1,12 @@
 {
-  "job_id": "37b45d8c-1f0d-489a-8294-7abd0d90075d",
-  "timestamp": "2025-06-12 00:49:06",
+  "job_id": "ff2140cb-ff05-4374-a453-644a0f5e511f",
+  "timestamp": "2025-06-12 01:18:41",
   "package_names": [
     "com.garena.game.kgvn"
   ],
-  "country": "Vietnam",
+  "country": "US",
   "category": "Game",
+  "skipped_duplicates": 0,
   "results": {
     "com.garena.game.kgvn": {
       "app_name": "Garena Li\u00ean Qu\u00e2n Mobile for Android - Free App Download",
@@ -328,11 +329,11 @@
           "description": "Version 1.21.1.2"
         }
       ],
-      "country": "Vietnam",
+      "country": "US",
       "category": "Game",
       "status": "success",
       "url": "https://www.appbrain.com/app/body-color-swap/com.garena.game.kgvn",
-      "timestamp": "2025-06-12T00:49:06.448288",
+      "timestamp": "2025-06-12T01:18:41.581395",
       "categories": "Game, Action",
       "downloads": 2502171,
       "is_ad": "YES",
@@ -343,7 +344,7 @@
       "position": 2,
       "publisher_contacts": "congdong@garena.vn, congdong@ved.com.vn, hoptac@garena.vn, lqm_congdong@garena.vn, lqm_congdong@ved.com.vn, codm.cs@garena.com, fairytail@garena.com, caithetranhhung@ved.com.vn, garenaundawn@garena.com, garenamobileprivate@gmail.com, hotro@ved.com.vn",
       "publisher_name": "Garena Mobile Private",
-      "publisher_website": NaN,
+      "publisher_website": null,
       "release_date": "2016-12-14",
       "revenue_usd": 1024601,
       "rpd": 0.41

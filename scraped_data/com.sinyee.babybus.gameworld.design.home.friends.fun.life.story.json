@@ -1,0 +1,258 @@
+{
+  "app_name": "Game World: Life Story for Android - Free App Download",
+  "package_name": "com.sinyee.babybus.gameworld.design.home.friends.fun.life.story",
+  "Total downloads": "17 million",
+  "Recent downloads": "4.5 million",
+  "Rating": "4.74 based on 89 thousand ratings",
+  "Ranking": "Top ranked",
+  "APK size": "266.1 MB",
+  "Designed for Android": "5.0+",
+  "Suitable for": "Everyone",
+  "Ads": "Contains ads",
+  "developer_info": {
+    "name": "BabyBus",
+    "email": "ser@babybus.com",
+    "website": "http://www.babybus.com"
+  },
+  "about_section": "Game World: Life Story is an educational game developed by BabyBus. The APK has been available since September 2024 . In the last 30 days, the app was downloaded about 4.5 million times. It's top ranked. It's rated 4.74 out of 5 stars, based on 89 thousand ratings. The last update of the app was on June 4, 2025 . Game World: Life Story has a content rating \"Everyone\" . Game World: Life Story has an APK download size of 266.12 MB and the latest version available is 8.72.09.11 . Designed for Android version 5.0+ . Game World: Life Story is FREE to download.",
+  "app_description": "Welcome to the most creative and realistic role-play game of 2025! It's a world filled with freedom, fantasy, and unlimited creativity! You can play all kinds of roles to explore this fantasy world, tackle fun puzzles, and meet various friends. Want to build your ideal home or go on adventures with your friends? Here, you can collect, create, direct your own fun stories, and let your imagination run wild!\nCREATE COUNTLESS CHARACTERS\nThe game world offers a huge selection of items and clothing styles, allowing you to unleash your creativity. You can design any characters from the ground up, customizing their skin tone, body shape, hairstyle, facial features, and much more. Start your dress-up game now! Select from hundreds of stylish outfits to dress up your characters. Bring them to life with various expressions, actions, and walking poses!\nDESIGN YOUR DREAM HOUSE\nWhat style of house do you like? In the game world, you can use our house design feature to design your dream house the way you like it! Create a swimming pool, princess house, game house, supermarket, and more. Experience the fun of girl games and house games to spice up your life! Plus, you can buy new furniture and decorations to make your dream house always look new and fresh!\nACT OUT YOUR LIFE STORIES\nYou can explore every corner of the game world! Go shopping at the mall, take care of babies at the daycare center, go study at the high school, design hairstyles at the hair salon, and more! Imagine yourself as a doctor, a teacher, a doll, a princess, or any character you want to be! Experience different lives in the way you like! Discover the hidden secrets of the game world through various role-play games!\nUNLOCK EXCLUSIVE HOLIDAY SURPRISES\nEvery holiday in the game world is a great celebration! Whether it's Halloween, Christmas, or New Year, you can unlock your exclusive holiday event! Collect mysterious gifts, get beautiful dress-up items, take on the sign-in task, and so much more! Enrich your life world and make your mini world game more exciting!\nHere, everything is decided by you! Whether you want to dive into a house game, learn to your heart's content in a school game, show off your fashion sense in a dress-up game, or enjoy parenting in a baby game, it's all possible in this world game!\nFEATURES:\n- New scenes are unlocked every week: the game is updated regularly to make sure there's always a new place to explore;\n- Play with the baby, girl, animal, doll, and other characters in the game world;\n- Tons of items to choose from: thousands of DIY items, allowing you to create your own character and dream space;\n- High degree of freedom: there is no limit in the game, and your creativity rules the world;\n- Treasure hunt: find hidden coins to unlock more fun content;\n- Unique \u201cmobile phone\u201d functions: ordering takeout, taking photos, recording, and sharing for a real-life sense;\n- High-tech gift center: you can receive mysterious, surprising gifts from time to time;\n- Time control: switch between day and night at will;\n- Free scenes: explore the whole world for free;\n- Simulates the real scenes: close-to-life scene design;\n- Massive dress-up items: all kinds of dress-up styles to meet your needs;\n- Play offline anytime, anywhere: no internet required; start your exciting life anytime, anywhere!\n\u2014\u2014\u2014\u2014\u2014\nContact us: service@joltrixtech.com\nrednote: Game World Official\nRecent changes:\nBig Update: Luxury Airport & Car Upgrade!\nNew Airport Scenes:\n1st Floor\u2014Arrivals: Check flight info, greet travelers, and maybe spot a celebrity!\n2nd Floor\u2014Departures: Drop off bags and go through security. Watch out for forbidden items!\n3rd Floor\u2014Waiting Area: Shop duty-free, grab a bite, and buy souvenirs!\nBoarding Experience: Lifelike cabins and two flight options!\nCar Upgrade:\nLuxury sports cars, taxis, and more roll out! Open your phone and call the ride you want!",
+  "api_details": {
+    "permissions": {},
+    "technologies": {
+      "Ad network libraries": [
+        "AdMob",
+        "Unity Ads",
+        "Open Measurement",
+        "Ironsource",
+        "InMobi"
+      ],
+      "Social libraries": [],
+      "Development tools": [
+        "Android Jetpack core",
+        "Android Architecture Components",
+        "Android Jetpack VersionedParcelable",
+        "Firebase",
+        "Android Jetpack Annotations",
+        "Android Jetpack Widgets",
+        "Android Jetpack AppCompat",
+        "AndroidX Activity",
+        "Android Activity Saved State",
+        "AndroidX Loader",
+        "Android Jetpack Media",
+        "Android Transition Support Library",
+        "Android Support Library collections",
+        "Android Support VectorDrawable",
+        "AndroidX Legacy: Support Library core utils",
+        "Kotlin",
+        "AndroidX Cursor Adapter",
+        "AndroidX Local Broadcast Manager",
+        "Android Support Library Print",
+        "Android Support Library Document File",
+        "AndroidX Legacy: Support Library core UI",
+        "Google gson",
+        "Android Support Library Async Layout Inflater",
+        "Android WorkManager",
+        "Okio",
+        "JetBrains Annotations",
+        "IntelliJ IDEA",
+        "Glide",
+        "AndroidX Multi-Dex Library",
+        "AndroidX ExifInterface",
+        "Picasso",
+        "Retrofit",
+        "Chromium",
+        "Google Guava",
+        "ReactiveX",
+        "Google Protocol Buffers",
+        "Unity 3D",
+        "FMOD Ex Programmers API",
+        "The Checker Framework",
+        "Reactive Streams",
+        "Apache Commons Codec",
+        "Disk LRU Cache"
+      ]
+    },
+    "raw_html_snippet": "<div>\n    <h2>\n        Permissions\n    </h2>\n    \n        <div class=\"row app-permissions\">\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Network communication</b>\n                        <div>\n                            \n                                view network connections,\n                            \n                                view Wi-Fi connections,\n                            \n                                download files without notification,\n                            \n                                full network access,\n                            \n                                Google Play billing service\n                            \n                        </div>\n                    </div>\n                </div>\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n  ..."
+  },
+  "changelog": [
+    {
+      "date": "Jun 4, 2025",
+      "type": "Update",
+      "description": "Version 8.72.09.11"
+    },
+    {
+      "date": "May 23, 2025",
+      "type": "Update",
+      "description": "Version 8.72.09.00"
+    },
+    {
+      "date": "May 14, 2025",
+      "type": "Update",
+      "description": "Version 8.72.08.30"
+    },
+    {
+      "date": "Apr 27, 2025",
+      "type": "Update",
+      "description": "Version 8.72.08.20"
+    },
+    {
+      "date": "Apr 18, 2025",
+      "type": "Installs",
+      "description": "10,000,000+ installs"
+    },
+    {
+      "date": "Apr 15, 2025",
+      "type": "Update",
+      "description": "Version 8.72.08.00"
+    },
+    {
+      "date": "Apr 8, 2025",
+      "type": "Update",
+      "description": "Version 8.72.07.20"
+    },
+    {
+      "date": "Mar 31, 2025",
+      "type": "Update",
+      "description": "Version 8.72.07.12"
+    },
+    {
+      "date": "Mar 24, 2025",
+      "type": "Update",
+      "description": "Version 8.72.07.10"
+    },
+    {
+      "date": "Mar 17, 2025",
+      "type": "Update",
+      "description": "Version 8.72.07.00"
+    },
+    {
+      "date": "Mar 13, 2025",
+      "type": "Installs",
+      "description": "5,000,000+ installs"
+    },
+    {
+      "date": "Mar 12, 2025",
+      "type": "Update",
+      "description": "Version 8.71.06.30"
+    },
+    {
+      "date": "Mar 4, 2025",
+      "type": "Update",
+      "description": "Version 8.71.06.20"
+    },
+    {
+      "date": "Feb 19, 2025",
+      "type": "Update",
+      "description": "Version 8.71.06.00"
+    },
+    {
+      "date": "Feb 5, 2025",
+      "type": "Update",
+      "description": "Version 8.71.05.40"
+    },
+    {
+      "date": "Jan 21, 2025",
+      "type": "Update",
+      "description": "Version 8.71.05.20"
+    },
+    {
+      "date": "Jan 8, 2025",
+      "type": "Update",
+      "description": "Version 8.71.05.00"
+    },
+    {
+      "date": "Dec 31, 2024",
+      "type": "Update",
+      "description": "Version 8.71.04.40"
+    },
+    {
+      "date": "Dec 18, 2024",
+      "type": "Update",
+      "description": "Version 8.71.04.20"
+    },
+    {
+      "date": "Dec 11, 2024",
+      "type": "Update",
+      "description": "Version 8.71.04.10"
+    },
+    {
+      "date": "Dec 4, 2024",
+      "type": "Update",
+      "description": "Version 8.71.04.00"
+    },
+    {
+      "date": "Nov 26, 2024",
+      "type": "Update",
+      "description": "Version 8.70.03.11"
+    },
+    {
+      "date": "Nov 20, 2024",
+      "type": "Update",
+      "description": "Version 8.70.03.10"
+    },
+    {
+      "date": "Nov 12, 2024",
+      "type": "Update",
+      "description": "Version 8.70.03.00"
+    },
+    {
+      "date": "Oct 28, 2024",
+      "type": "Update",
+      "description": "Version 8.70.02.10"
+    },
+    {
+      "date": "Oct 23, 2024",
+      "type": "Update",
+      "description": "Version 8.70.02.00"
+    },
+    {
+      "date": "Oct 9, 2024",
+      "type": "Update",
+      "description": "Version 8.70.01.20"
+    },
+    {
+      "date": "Sep 28, 2024",
+      "type": "Installs",
+      "description": "1,000,000+ installs"
+    },
+    {
+      "date": "Sep 26, 2024",
+      "type": "Update",
+      "description": "Version 8.70.01.10"
+    },
+    {
+      "date": "Sep 18, 2024",
+      "type": "Update",
+      "description": "Version 8.70.01.01"
+    },
+    {
+      "date": "Sep 16, 2024",
+      "type": "Installs",
+      "description": "500,000+ installs"
+    },
+    {
+      "date": "Sep 13, 2024",
+      "type": "New App",
+      "description": "Version 8.70.01.00 in EDUCATIONAL for Free"
+    }
+  ],
+  "country": "US",
+  "category": "Game",
+  "status": "success",
+  "url": "https://www.appbrain.com/app/body-color-swap/com.sinyee.babybus.gameworld.design.home.friends.fun.life.story",
+  "timestamp": "2025-06-12T02:23:16.015313",
+  "categories": "Game, Educational",
+  "downloads": 410746,
+  "is_ad": "NO",
+  "is_pub": "YES",
+  "market_url": "https://play.google.com/store/apps/details?hl=en_US&gl=us&id=com.sinyee.babybus.gameworld.design.home.friends.fun.life.story",
+  "name": "Game World: Life Story",
+  "platform": "Android",
+  "position": 46,
+  "publisher_contacts": "babybus@rickert.law, babypandaworld@babybus.com, privacy@babybus.com, ser@babybus.com, service@babybus.com, ser@mamaragames.com, sinyeeandroid@gmail.com, babybusplay@babybus.com, babybustv01@gmail.com",
+  "publisher_name": "BabyBus",
+  "publisher_website": "http://www.babybus.com",
+  "release_date": "2024-09-13",
+  "revenue_usd": 149,
+  "rpd": 0.001
+}

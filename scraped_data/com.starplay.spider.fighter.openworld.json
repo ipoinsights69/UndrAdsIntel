@@ -1,0 +1,346 @@
+{
+  "app_name": "Spider Fighter 3: Action Game for Android - Free App Download",
+  "package_name": "com.starplay.spider.fighter.openworld",
+  "Total downloads": "130 million",
+  "Recent downloads": "6.7 million",
+  "Rating": "4.58 based on 620 thousand ratings",
+  "Ranking": "Top ranked",
+  "APK size": "222.7 MB",
+  "Designed for Android": "7.0+",
+  "Ads": "Contains ads",
+  "developer_info": {
+    "name": "Starplay DMCC",
+    "email": "support@starplay.games",
+    "website": "https://starplay.games/"
+  },
+  "about_section": "Spider Fighter 3: Action Game is an action game developed by Starplay DMCC. The APK has been available since December 2022 . In the last 30 days, the app was downloaded about 6.7 million times. It's top ranked. It's rated 4.58 out of 5 stars, based on 620 thousand ratings. The last update of the app was on June 2, 2025 . Spider Fighter 3: Action Game has a content rating \"Medium Maturity\" . Spider Fighter 3: Action Game has an APK download size of 222.68 MB and the latest version available is 3.45.7 . Designed for Android version 7.0+ . Spider Fighter 3: Action Game is FREE to download.",
+  "app_description": "Are you ready to become the ultimate spider hero and take on the fight for justice in the game of the highly anticipated movie? You'll step into the shoes of the iconic spider hero and battle against notorious city gangs and nefarious villains to save the city from destruction.\nWith this game, you'll experience the rush of hero action as you use your spider abilities to swing through the streets, dodge obstacles, and defeat enemies in epic battles. The game boasts stunning graphics and an immersive storyline that brings the world of the spider hero to life like never before. Explore iconic locations from the movie and comics, such as Times Square, and come face-to-face with various villains.\nAs you progress through the game, you'll unlock new abilities and suits, each with their own unique powers and abilities. From the classic suit to the advanced iron suit, you'll have the power to take on any challenge the city gangs throws at you. Act unpredictably with your fast flying attack, defeat rivals and gain experience to the next superhero level!\nThe game also features an open-world sandbox mode, where you can swing around the city, complete side missions, and challenge yourself with different challenges, all while discovering hidden secrets and collectibles. It's a perfect way to explore the city and take a break from the main storyline.\nThis is more than just a game, it's an epic spider hero experience. It's the perfect opportunity for fans of the comics, movies, and action-packed games to immerse themselves in the world of the spider hero, become a part of the legend and fight like a true superhero. With its engaging gameplay, stunning graphics, and an epic storyline, it's the ultimate spider hero experience. Download now and join the fight to save the city as the ultimate spider hero!\nRecent changes:\nGameplay improvements, bug fixes and performance optimization. \nOur team reads all reviews and always tries to make the game better. Please leave us some feedback if you love what we do and feel free to suggest any improvements.",
+  "api_details": {
+    "permissions": {},
+    "technologies": {
+      "Ad network libraries": [
+        "AdMob",
+        "Facebook Audience Network",
+        "Unity Ads",
+        "Open Measurement",
+        "AppLovin",
+        "Ironsource",
+        "Adjust"
+      ],
+      "Social libraries": [
+        "Facebook"
+      ],
+      "Development tools": [
+        "Android Jetpack core",
+        "Android Architecture Components",
+        "Android Jetpack VersionedParcelable",
+        "Firebase",
+        "Android Jetpack Annotations",
+        "Android Jetpack Widgets",
+        "Android Jetpack AppCompat",
+        "AndroidX Activity",
+        "Android Activity Saved State",
+        "AndroidX Loader",
+        "Android Jetpack Media",
+        "Android Transition Support Library",
+        "Android Support Library collections",
+        "Android Support VectorDrawable",
+        "AndroidX Legacy: Support Library core utils",
+        "Kotlin",
+        "AndroidX Cursor Adapter",
+        "AndroidX Local Broadcast Manager",
+        "Android Support Library Print",
+        "Android Support Library Document File",
+        "AndroidX Legacy: Support Library core UI",
+        "Google gson",
+        "Android Support Library Async Layout Inflater",
+        "Android WorkManager",
+        "Okio",
+        "JetBrains Annotations",
+        "IntelliJ IDEA",
+        "AndroidX ExifInterface",
+        "Google ZXing",
+        "Chromium",
+        "Google Guava",
+        "BoltsFramework",
+        "Google Protocol Buffers",
+        "Unity 3D",
+        "FMOD Ex Programmers API",
+        "The Checker Framework",
+        "Simple Logging Facade for Java (SLF4J)"
+      ]
+    },
+    "raw_html_snippet": "<div>\n    <h2>\n        Permissions\n    </h2>\n    \n        <div class=\"row app-permissions\">\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Network communication</b>\n                        <div>\n                            \n                                view network connections,\n                            \n                                view Wi-Fi connections,\n                            \n                                full network access,\n                            \n                                Google Play billing service\n                            \n                        </div>\n                    </div>\n                </div>\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Hardware controls</b>\n                        <div>\n                     ..."
+  },
+  "changelog": [
+    {
+      "date": "Jun 2, 2025",
+      "type": "Update",
+      "description": "Version 3.45.7"
+    },
+    {
+      "date": "May 27, 2025",
+      "type": "Update",
+      "description": "Version 3.45.1"
+    },
+    {
+      "date": "May 21, 2025",
+      "type": "Update",
+      "description": "Version 3.45.0"
+    },
+    {
+      "date": "May 14, 2025",
+      "type": "Update",
+      "description": "Version 3.44.10"
+    },
+    {
+      "date": "Apr 28, 2025",
+      "type": "Update",
+      "description": "Version 3.44.0"
+    },
+    {
+      "date": "Apr 9, 2025",
+      "type": "Update",
+      "description": "Version 3.43.30"
+    },
+    {
+      "date": "Apr 8, 2025",
+      "type": "Update",
+      "description": "Version 3.43.25"
+    },
+    {
+      "date": "Apr 4, 2025",
+      "type": "Update",
+      "description": "Version 3.43.20"
+    },
+    {
+      "date": "Mar 27, 2025",
+      "type": "Update",
+      "description": "Version 3.43.10"
+    },
+    {
+      "date": "Mar 24, 2025",
+      "type": "Update",
+      "description": "Version 3.43.0"
+    },
+    {
+      "date": "Mar 11, 2025",
+      "type": "Update",
+      "description": "Version 3.42.30"
+    },
+    {
+      "date": "Feb 27, 2025",
+      "type": "Update",
+      "description": "Version 3.42.26"
+    },
+    {
+      "date": "Feb 18, 2025",
+      "type": "Update",
+      "description": "Version 3.42.25"
+    },
+    {
+      "date": "Feb 17, 2025",
+      "type": "Installs",
+      "description": "100,000,000+ installs"
+    },
+    {
+      "date": "Feb 10, 2025",
+      "type": "Update",
+      "description": "Version 3.42.20"
+    },
+    {
+      "date": "Feb 3, 2025",
+      "type": "Update",
+      "description": "Version 3.42.11"
+    },
+    {
+      "date": "Jan 22, 2025",
+      "type": "Update",
+      "description": "Version 3.42.0"
+    },
+    {
+      "date": "Dec 16, 2024",
+      "type": "Update",
+      "description": "Version 3.41.15"
+    },
+    {
+      "date": "Dec 10, 2024",
+      "type": "Update",
+      "description": "Version 3.41.12"
+    },
+    {
+      "date": "Nov 28, 2024",
+      "type": "Update",
+      "description": "Version 3.41.10"
+    },
+    {
+      "date": "Nov 25, 2024",
+      "type": "Update",
+      "description": "Version 3.41.5"
+    },
+    {
+      "date": "Nov 19, 2024",
+      "type": "Update",
+      "description": "Version 3.41.0"
+    },
+    {
+      "date": "Nov 8, 2024",
+      "type": "Update",
+      "description": "Version 3.40.20"
+    },
+    {
+      "date": "Oct 29, 2024",
+      "type": "Update",
+      "description": "Version 3.40.10"
+    },
+    {
+      "date": "Oct 18, 2024",
+      "type": "Update",
+      "description": "Version 3.40.0"
+    },
+    {
+      "date": "Oct 16, 2024",
+      "type": "Update",
+      "description": "Version 3.39.100"
+    },
+    {
+      "date": "Oct 11, 2024",
+      "type": "Update",
+      "description": "Version 3.39.90"
+    },
+    {
+      "date": "Oct 9, 2024",
+      "type": "Update",
+      "description": "Version 3.39.80"
+    },
+    {
+      "date": "Oct 2, 2024",
+      "type": "Update",
+      "description": "Version 3.39.75"
+    },
+    {
+      "date": "Sep 23, 2024",
+      "type": "Update",
+      "description": "Version 3.39.70"
+    },
+    {
+      "date": "Sep 19, 2024",
+      "type": "Update",
+      "description": "Version 3.39.60"
+    },
+    {
+      "date": "Sep 12, 2024",
+      "type": "Update",
+      "description": "Version 3.39.50"
+    },
+    {
+      "date": "Aug 28, 2024",
+      "type": "Update",
+      "description": "Version 3.39.14"
+    },
+    {
+      "date": "Aug 22, 2024",
+      "type": "Update",
+      "description": "Version 3.39.13"
+    },
+    {
+      "date": "Aug 15, 2024",
+      "type": "Installs",
+      "description": "50,000,000+ installs"
+    },
+    {
+      "date": "Aug 6, 2024",
+      "type": "Update",
+      "description": "Version 3.39.10"
+    },
+    {
+      "date": "Jul 25, 2024",
+      "type": "Update",
+      "description": "Version 3.39.5"
+    },
+    {
+      "date": "Jul 19, 2024",
+      "type": "Update",
+      "description": "Version 3.38.2"
+    },
+    {
+      "date": "Jul 12, 2024",
+      "type": "Update",
+      "description": "Version 3.38.0"
+    },
+    {
+      "date": "Jul 5, 2024",
+      "type": "Update",
+      "description": "Version 3.37.10"
+    },
+    {
+      "date": "Jun 21, 2024",
+      "type": "Update",
+      "description": "Version 3.37.5"
+    },
+    {
+      "date": "Jun 14, 2024",
+      "type": "Update",
+      "description": "Version 3.37.0"
+    },
+    {
+      "date": "Jun 11, 2024",
+      "type": "Update",
+      "description": "Version 3.36.5"
+    },
+    {
+      "date": "May 30, 2024",
+      "type": "Update",
+      "description": "Version 3.36.1"
+    },
+    {
+      "date": "May 23, 2024",
+      "type": "Update",
+      "description": "Version 3.36.0"
+    },
+    {
+      "date": "May 8, 2024",
+      "type": "Update",
+      "description": "Version 3.35.0"
+    },
+    {
+      "date": "Apr 30, 2024",
+      "type": "Update",
+      "description": "Version 3.34.5"
+    },
+    {
+      "date": "Apr 24, 2024",
+      "type": "Update",
+      "description": "Version 3.34.0"
+    },
+    {
+      "date": "Apr 10, 2024",
+      "type": "Update",
+      "description": "Version 3.33.5"
+    },
+    {
+      "date": "Apr 2, 2024",
+      "type": "Update",
+      "description": "Version 3.33.0"
+    }
+  ],
+  "country": "US",
+  "category": "Game",
+  "status": "success",
+  "url": "https://www.appbrain.com/app/body-color-swap/com.starplay.spider.fighter.openworld",
+  "timestamp": "2025-06-12T02:30:25.500627",
+  "categories": "Game, Action",
+  "downloads": 269497,
+  "is_ad": "YES",
+  "is_pub": "YES",
+  "market_url": "https://play.google.com/store/apps/details?hl=en_US&gl=us&id=com.starplay.spider.fighter.openworld",
+  "name": "Spider Fighter 3: Action Game",
+  "platform": "Android",
+  "position": 85,
+  "publisher_contacts": "eben@eyebytes.com, micah@micahrich.com, playmasters.pro@gmail.com, support@starplay.games, ay@starplay.games",
+  "publisher_name": "Starplay DMCC",
+  "publisher_website": "https://starplay.games/",
+  "release_date": "2022-12-14",
+  "revenue_usd": 229,
+  "rpd": 0.001
+}

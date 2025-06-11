@@ -1,0 +1,325 @@
+{
+  "app_name": "Car Race for Android - Free App Download",
+  "package_name": "com.dino.race.master",
+  "Total downloads": "270 million",
+  "Recent downloads": "7.1 million",
+  "Rating": "4.62 based on 360 thousand ratings",
+  "Ranking": "Top ranked",
+  "APK size": "144.5 MB",
+  "Designed for Android": "7.0+",
+  "Suitable for": "Everyone",
+  "Ads": "Contains ads",
+  "developer_info": {
+    "name": "iKame Games - Zego Studio",
+    "email": "info@zegostudio.com",
+    "website": "https://zegostudio.com/"
+  },
+  "about_section": "Car Race is a racing game developed by iKame Games - Zego Studio. The APK has been available since October 2021 . In the last 30 days, the app was downloaded about 7.1 million times. It's top ranked. It's rated 4.62 out of 5 stars, based on 360 thousand ratings. The last update of the app was on May 7, 2025 . Car Race has a content rating \"Everyone\" . Car Race has an APK download size of 144.52 MB and the latest version available is 1.302 . Designed for Android version 7.0+ . Car Race is FREE to download.",
+  "app_description": "Car Race: Super-fun car racing game on mobile!\nAre you looking for the thrill of driving luxury supercars, engaging in fast, furious and realistic driving experiences? Do you want to become a raing master in the wackiest, winningest car game? Keep this addictive car game in your pocket and you'll get to experience everything you desire and never know what's coming next around the track's twists and turns.\nCollect coins to unlock high-end vehicles, customize your own supercars, explore breathtaking environments, compete against top racers worldwide and time-limited events in this car racing game. Get your car prepped, fine tune your ride, keep your foot on the gas and race against other players from all over the world.\nBe the racing master in this amazing extreme car game!\n \nWith this Car Race 3D game, you can:\n- Experience many unique levels with a huge range of different surfaces and obstacles to race over and around at breakneck speed.\n- Go head-to-head against top racing master around the world in real-time challenges to get more rewards and coins for upgrades. \n- Customize your dream supercars by selecting authentic engines, luxury add-ons, and bold designs.\n- Explore special modes and take on exciting challenges to prove car master skills in the car game\n- Enjoy outstanding 3D graphics and the rich sound world of Car Race 3D that make you feel like you're driving a real car racing, with supercar details, environments, and crash effects while playing the car game.\nThe perfect car racing game experience!\nDo not miss out a racing game that\u2019s easy to play, provides real driving challenges, and offers excitement and endless variation, cools cars and dangerous rivals, all in ultimate races that can be run in a matter of minutes.\nJoin the car game today to find out if you can become the racing master of our most adventurous, amusing and challenging tracks!\nRecent changes:\nVersion 1.302: Update levels.",
+  "api_details": {
+    "permissions": {},
+    "technologies": {
+      "Ad network libraries": [
+        "AdMob",
+        "Facebook Audience Network",
+        "Unity Ads",
+        "Open Measurement",
+        "AppLovin",
+        "Adjust",
+        "InMobi"
+      ],
+      "Social libraries": [],
+      "Development tools": [
+        "Android Jetpack core",
+        "Android Architecture Components",
+        "Firebase",
+        "Android Jetpack Annotations",
+        "Android Jetpack Widgets",
+        "Android Jetpack AppCompat",
+        "AndroidX Activity",
+        "Android Jetpack Media",
+        "Google Cloud Messaging (GCM)",
+        "Android Transition Support Library",
+        "Kotlin",
+        "Android WorkManager",
+        "AndroidX Widget ViewPager2",
+        "IntelliJ IDEA",
+        "Volley",
+        "The Checker Framework",
+        "AndroidSVG"
+      ]
+    },
+    "raw_html_snippet": "<div>\n    <h2>\n        Permissions\n    </h2>\n    \n        <div class=\"row app-permissions\">\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Network communication</b>\n                        <div>\n                            \n                                view network connections,\n                            \n                                view Wi-Fi connections,\n                            \n                                full network access,\n                            \n                                Google Play billing service,\n                            \n                                receive data from Internet\n                            \n                        </div>\n                    </div>\n                </div>\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n           ..."
+  },
+  "changelog": [
+    {
+      "date": "May 7, 2025",
+      "type": "Update",
+      "description": "Version 1.302"
+    },
+    {
+      "date": "Apr 29, 2025",
+      "type": "Update",
+      "description": "Version 1.301"
+    },
+    {
+      "date": "Apr 25, 2025",
+      "type": "Update",
+      "description": "Version 1.300"
+    },
+    {
+      "date": "Mar 12, 2025",
+      "type": "Update",
+      "description": "Version 1.297"
+    },
+    {
+      "date": "Mar 11, 2025",
+      "type": "Update",
+      "description": "Version 1.296"
+    },
+    {
+      "date": "Feb 5, 2025",
+      "type": "Update",
+      "description": "Version 1.291"
+    },
+    {
+      "date": "Jan 21, 2025",
+      "type": "Update",
+      "description": "Version 1.290"
+    },
+    {
+      "date": "Jan 13, 2025",
+      "type": "Update",
+      "description": "Version 1.289"
+    },
+    {
+      "date": "Jan 8, 2025",
+      "type": "Update",
+      "description": "Version 1.288"
+    },
+    {
+      "date": "Dec 31, 2024",
+      "type": "Update",
+      "description": "Version 1.286"
+    },
+    {
+      "date": "Dec 19, 2024",
+      "type": "Update",
+      "description": "Version 1.284"
+    },
+    {
+      "date": "Dec 12, 2024",
+      "type": "Update",
+      "description": "Version 1.283"
+    },
+    {
+      "date": "Dec 11, 2024",
+      "type": "Update",
+      "description": "Version 1.282"
+    },
+    {
+      "date": "Dec 3, 2024",
+      "type": "Update",
+      "description": "Version 1.281"
+    },
+    {
+      "date": "Nov 26, 2024",
+      "type": "Update",
+      "description": "Version 1.279"
+    },
+    {
+      "date": "Nov 20, 2024",
+      "type": "Update",
+      "description": "Version 1.275"
+    },
+    {
+      "date": "Nov 11, 2024",
+      "type": "Update",
+      "description": "Version 1.272"
+    },
+    {
+      "date": "Nov 11, 2024",
+      "type": "Update",
+      "description": "Version 1.272"
+    },
+    {
+      "date": "Oct 27, 2024",
+      "type": "Update",
+      "description": "Version 1.268"
+    },
+    {
+      "date": "Oct 8, 2024",
+      "type": "Update",
+      "description": "Version 1.263"
+    },
+    {
+      "date": "Sep 30, 2024",
+      "type": "Update",
+      "description": "Version 1.260"
+    },
+    {
+      "date": "Sep 23, 2024",
+      "type": "Update",
+      "description": "Version 1.258"
+    },
+    {
+      "date": "Aug 30, 2024",
+      "type": "Update",
+      "description": "Version 1.252"
+    },
+    {
+      "date": "Aug 26, 2024",
+      "type": "Update",
+      "description": "Version 1.251"
+    },
+    {
+      "date": "Aug 19, 2024",
+      "type": "Update",
+      "description": "Version 1.250"
+    },
+    {
+      "date": "Aug 13, 2024",
+      "type": "Update",
+      "description": "Version 1.247"
+    },
+    {
+      "date": "Aug 5, 2024",
+      "type": "Update",
+      "description": "Version 1.242"
+    },
+    {
+      "date": "Aug 1, 2024",
+      "type": "Update",
+      "description": "Version 1.241"
+    },
+    {
+      "date": "Jul 30, 2024",
+      "type": "Update",
+      "description": "Version 1.240"
+    },
+    {
+      "date": "Jul 15, 2024",
+      "type": "Update",
+      "description": "Version 1.237"
+    },
+    {
+      "date": "Jul 7, 2024",
+      "type": "Update",
+      "description": "Version 1.235"
+    },
+    {
+      "date": "Jul 2, 2024",
+      "type": "Update",
+      "description": "Version 1.234"
+    },
+    {
+      "date": "Jun 28, 2024",
+      "type": "Update",
+      "description": "Version 1.233"
+    },
+    {
+      "date": "Jun 26, 2024",
+      "type": "Update",
+      "description": "Version 1.232"
+    },
+    {
+      "date": "Jun 14, 2024",
+      "type": "Update",
+      "description": "Version 1.228"
+    },
+    {
+      "date": "Jun 13, 2024",
+      "type": "Update",
+      "description": "Version 1.227"
+    },
+    {
+      "date": "Jun 3, 2024",
+      "type": "Update",
+      "description": "Version 1.226"
+    },
+    {
+      "date": "May 31, 2024",
+      "type": "Update",
+      "description": "Version 1.224"
+    },
+    {
+      "date": "May 16, 2024",
+      "type": "Update",
+      "description": "Version 1.220"
+    },
+    {
+      "date": "May 15, 2024",
+      "type": "Update",
+      "description": "Version 1.219"
+    },
+    {
+      "date": "May 10, 2024",
+      "type": "Update",
+      "description": "Version 1.216"
+    },
+    {
+      "date": "Apr 26, 2024",
+      "type": "Update",
+      "description": "Version 1.212"
+    },
+    {
+      "date": "Apr 23, 2024",
+      "type": "Update",
+      "description": "Version 1.211"
+    },
+    {
+      "date": "Apr 17, 2024",
+      "type": "Update",
+      "description": "Version 1.209"
+    },
+    {
+      "date": "Apr 11, 2024",
+      "type": "Update",
+      "description": "Version 1.207"
+    },
+    {
+      "date": "Apr 1, 2024",
+      "type": "Update",
+      "description": "Version 1.205"
+    },
+    {
+      "date": "Mar 29, 2024",
+      "type": "Update",
+      "description": "Version 1.204"
+    },
+    {
+      "date": "Mar 23, 2024",
+      "type": "Update",
+      "description": "Version 1.201"
+    },
+    {
+      "date": "Mar 22, 2024",
+      "type": "Update",
+      "description": "Version 1.199"
+    },
+    {
+      "date": "Mar 6, 2024",
+      "type": "Update",
+      "description": "Version 1.190"
+    }
+  ],
+  "country": "US",
+  "category": "Game",
+  "status": "success",
+  "url": "https://www.appbrain.com/app/body-color-swap/com.dino.race.master",
+  "timestamp": "2025-06-12T02:25:34.487999",
+  "categories": "Game, Racing",
+  "downloads": 354466,
+  "is_ad": "YES",
+  "is_pub": "YES",
+  "market_url": "https://play.google.com/store/apps/details?hl=en_US&gl=us&id=com.dino.race.master",
+  "name": "Car Race",
+  "platform": "Android",
+  "position": 57,
+  "publisher_contacts": "farmcity@zegostudio.com, gamesupport@ikameglobal.com, info@zegostudio.com, zego.studio@gmail.com",
+  "publisher_name": "iKame Games - Zego Studio",
+  "publisher_website": "https://zegostudio.com/",
+  "release_date": "2021-09-28",
+  "revenue_usd": 582,
+  "rpd": 0.001
+}

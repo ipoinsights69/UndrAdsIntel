@@ -1,0 +1,230 @@
+{
+  "app_name": "Makeup Beauty - Makeup Game for Android - Free App Download",
+  "package_name": "diy.makeup.artist.jogo.maquiagem.maquillaje.makyaj.oyunu",
+  "Total downloads": "41 million",
+  "Recent downloads": "2.8 million",
+  "Rating": "4.44 based on 98 thousand ratings",
+  "Ranking": "Top ranked",
+  "APK size": "85.1 MB",
+  "Designed for Android": "5.0+",
+  "Ads": "Contains ads",
+  "developer_info": {
+    "name": "ZeroMaze",
+    "email": "zeromaze-official@outlook.com",
+    "website": "http://zeromazestudio.com"
+  },
+  "about_section": "Makeup Beauty - Makeup Game is a simulation game developed by ZeroMaze. The APK has been available since March 2023 . In the last 30 days, the app was downloaded about 2.8 million times. It's top ranked. It's rated 4.44 out of 5 stars, based on 98 thousand ratings. The last update of the app was on May 15, 2025 . Makeup Beauty - Makeup Game has a content rating \"Medium Maturity\" . Makeup Beauty - Makeup Game has an APK download size of 85.06 MB and the latest version available is 2.8601 . Designed for Android version 5.0+ . Makeup Beauty - Makeup Game is FREE to download.",
+  "app_description": "Looking for fun and immersive makeover games for girls? Look no further than Makeup Beauty! \ud83d\udc84\ud83d\udc69\ud83c\udfa8 As a makeup stylist in makeover games, you'll have the chance to help a variety of girls with their makeover and styling needs, all while improving your own skills and working your way towards becoming the ultimate designer of ASMR makeup.\ud83d\udc85\ud83c\udf80\nWith our makeup games, you'll enjoy a range of Dress Up Games features that make the Makeup games both entertaining and realistic. Here are just a few of the ASMR makeup game highlights:\ud83c\udf1f\nExperience Realistic Makeup Games Effects: \nWith realistic sound, visuals, and touch effects in makeup games, you'll feel like you're truly in a professional makeover studio. The Makeover Games ' ASMR makeup features make for a truly immersive experience, and you're sure to find yourself feeling relaxed and satisfied as you work on your clients' makeover with our ASMR makeup game.\ud83d\ude0c\ud83d\udc86\nCustomize Your Looks with ASMR makeup:\nWith nearly 100 different makeover kits available, you'll have endless options for creating unique and stylish looks with makeover games. Mix and match different combinations of makeover and accessories in our Dress Up Games to create over a thousand different styles, and let your creativity run wild with makeover games!\ud83c\udfa8\u2728\nCharacter-Driven Storylines in makeup games: \nWith a diverse cast of over ten girls, each with their own unique story, you'll get to experience a range of different urban youth coming-of-age stories with our makeup games. Follow each character's journey as they grow, love, and live their lives, and help them along the way with your expert makeover skills in our ASMR makeup games.\u2764\ufe0f\ud83d\udc69\nA Huge Selection of cosmetic in makeup games:\nWith over a hundred different makeover kits to choose from, you'll have plenty of opportunities to experiment and try out new looks. Collect new makeover kits as you progress through Dress Up Games, and build up your own personal collection of tools and cosmetics to use in your makeover games.\ud83d\udc84\ud83d\udc85\ud83d\udc5d\nWhether you're a fan of makeup games for girls, Makeover Games, Dress Up Games or Fashion Games, Makeup Beauty is the perfect choice. With realistic ASMR makeover effects, mix-and-match makeup games features, and diverse cast of characters and stories, makeover studio is sure to keep you entertained for hours on end. So why wait? Download ASMR makeup games today and start your journey towards becoming a master makeover stylist!\ud83e\udd29\ud83d\udcf2\nRecent changes:\n-New Gameplay.\nWelcome to the exciting world of Makeup Beauty, the ultimate makeover game for all makeup enthusiasts out there! ",
+  "api_details": {
+    "permissions": {},
+    "technologies": {
+      "Ad network libraries": [
+        "AdMob",
+        "Facebook Audience Network",
+        "Unity Ads",
+        "Open Measurement",
+        "AppLovin",
+        "AppsFlyer",
+        "Ironsource",
+        "InMobi",
+        "Chartboost",
+        "Amazon Mobile Ads"
+      ],
+      "Social libraries": [],
+      "Development tools": [
+        "Android Jetpack core",
+        "Android Architecture Components",
+        "Android Jetpack VersionedParcelable",
+        "Firebase",
+        "Android Jetpack Annotations",
+        "Android Jetpack Widgets",
+        "Android Jetpack AppCompat",
+        "AndroidX Activity",
+        "Android Activity Saved State",
+        "AndroidX Loader",
+        "Android Jetpack Media",
+        "Google Cloud Messaging (GCM)",
+        "Android Transition Support Library",
+        "Android Support Library collections",
+        "Android Support VectorDrawable",
+        "AndroidX Legacy: Support Library core utils",
+        "Kotlin",
+        "AndroidX Cursor Adapter",
+        "AndroidX Local Broadcast Manager",
+        "Android Support Library Print",
+        "Android Support Library Document File",
+        "AndroidX Legacy: Support Library core UI",
+        "Google gson",
+        "Android Support Library Async Layout Inflater",
+        "Android WorkManager",
+        "Okio",
+        "JetBrains Annotations",
+        "IntelliJ IDEA",
+        "AndroidX Multi-Dex Library",
+        "AndroidX ExifInterface",
+        "Picasso",
+        "Retrofit",
+        "Chromium",
+        "Google Guava",
+        "Google Protocol Buffers",
+        "Volley",
+        "The Checker Framework",
+        "greenrobot EventBus",
+        "OneSignal",
+        "Cocos2D-X"
+      ]
+    },
+    "raw_html_snippet": "<div>\n    <h2>\n        Permissions\n    </h2>\n    \n        <div class=\"row app-permissions\">\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Development tools</b>\n                        <div>\n                            \n                                test access to protected storage\n                            \n                        </div>\n                    </div>\n                </div>\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Network communication</b>\n                        <div>\n                            \n                                view network connections,\n                            \n                                view Wi-Fi connections,\n                            \n                                full network access,\n                ..."
+  },
+  "changelog": [
+    {
+      "date": "May 15, 2025",
+      "type": "Update",
+      "description": "Version 2.8601"
+    },
+    {
+      "date": "Jan 23, 2025",
+      "type": "Update",
+      "description": "Version 2.8501"
+    },
+    {
+      "date": "Dec 3, 2024",
+      "type": "Update",
+      "description": "Version 2.8401"
+    },
+    {
+      "date": "Sep 12, 2024",
+      "type": "Update",
+      "description": "Version 2.8301"
+    },
+    {
+      "date": "Aug 16, 2024",
+      "type": "Update",
+      "description": "Version 2.8201"
+    },
+    {
+      "date": "Aug 13, 2024",
+      "type": "Update",
+      "description": "Version 2.8101"
+    },
+    {
+      "date": "Jul 25, 2024",
+      "type": "Update",
+      "description": "Version 2.7101"
+    },
+    {
+      "date": "Jul 11, 2024",
+      "type": "Update",
+      "description": "Version 2.6101"
+    },
+    {
+      "date": "Jun 28, 2024",
+      "type": "Update",
+      "description": "Version 2.5101"
+    },
+    {
+      "date": "Dec 29, 2023",
+      "type": "Update",
+      "description": "Version 2.4101"
+    },
+    {
+      "date": "Oct 22, 2023",
+      "type": "Installs",
+      "description": "10,000,000+ installs"
+    },
+    {
+      "date": "Sep 25, 2023",
+      "type": "Update",
+      "description": "Version 2.3101"
+    },
+    {
+      "date": "Aug 4, 2023",
+      "type": "Update",
+      "description": "Version 2.2101"
+    },
+    {
+      "date": "Jul 23, 2023",
+      "type": "Installs",
+      "description": "5,000,000+ installs"
+    },
+    {
+      "date": "Jul 5, 2023",
+      "type": "Update",
+      "description": "Version 2.1101"
+    },
+    {
+      "date": "Jul 5, 2023",
+      "type": "Update",
+      "description": "Version 2.1101"
+    },
+    {
+      "date": "Jun 16, 2023",
+      "type": "Update",
+      "description": "Version 1.9101"
+    },
+    {
+      "date": "May 30, 2023",
+      "type": "Update",
+      "description": "Version 1.8101"
+    },
+    {
+      "date": "May 13, 2023",
+      "type": "Installs",
+      "description": "1,000,000+ installs"
+    },
+    {
+      "date": "May 12, 2023",
+      "type": "Update",
+      "description": "Version 1.7101"
+    },
+    {
+      "date": "Apr 29, 2023",
+      "type": "Installs",
+      "description": "500,000+ installs"
+    },
+    {
+      "date": "Apr 27, 2023",
+      "type": "Update",
+      "description": "Version 1.6102"
+    },
+    {
+      "date": "Apr 12, 2023",
+      "type": "Installs",
+      "description": "100,000+ installs"
+    },
+    {
+      "date": "Apr 4, 2023",
+      "type": "Update",
+      "description": "Version 1.2102"
+    },
+    {
+      "date": "Mar 28, 2023",
+      "type": "Installs",
+      "description": "10,000+ installs"
+    },
+    {
+      "date": "Mar 18, 2023",
+      "type": "New App",
+      "description": "Version 1.1101 in SIMULATION for Free"
+    }
+  ],
+  "country": "US",
+  "category": "Game",
+  "status": "success",
+  "url": "https://www.appbrain.com/app/body-color-swap/diy.makeup.artist.jogo.maquiagem.maquillaje.makyaj.oyunu",
+  "timestamp": "2025-06-12T02:25:22.379108",
+  "categories": "Game, Simulation",
+  "downloads": 354648,
+  "is_ad": "YES",
+  "is_pub": "YES",
+  "market_url": "https://play.google.com/store/apps/details?hl=en_US&gl=us&id=diy.makeup.artist.jogo.maquiagem.maquillaje.makyaj.oyunu",
+  "name": "Makeup Beauty - Makeup Game",
+  "platform": "Android",
+  "position": 56,
+  "publisher_contacts": "official@outlook.com, zeromaze0231@gmail.com, zeromaze-official@outlook.com",
+  "publisher_name": "ZeroMaze",
+  "publisher_website": "http://zeromazestudio.com",
+  "release_date": "2023-03-18",
+  "revenue_usd": 353,
+  "rpd": 0.001
+}

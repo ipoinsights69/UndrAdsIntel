@@ -207,6 +207,105 @@ def export_data(format_type, filters=None, export_name=None):
                 app_category = app.get('category', '')
                 if app_category != filters['category_filter']:
                     include_app = False
+            
+            # Is Ad filter
+            if filters.get('is_ad_filter') and filters['is_ad_filter']:
+                app_is_ad = app.get('is_ad', '')
+                if app_is_ad != filters['is_ad_filter']:
+                    include_app = False
+            
+            # Is Publisher filter
+            if filters.get('is_pub_filter') and filters['is_pub_filter']:
+                app_is_pub = app.get('is_pub', '')
+                if app_is_pub != filters['is_pub_filter']:
+                    include_app = False
+            
+            # Release Date filter
+            if filters.get('release_date_min') and app.get('release_date'):
+                try:
+                    app_release_date = datetime.strptime(app.get('release_date', ''), '%Y-%m-%d')
+                    min_date = datetime.strptime(filters['release_date_min'], '%Y-%m-%d')
+                    if app_release_date < min_date:
+                        include_app = False
+                except (ValueError, TypeError):
+                    # If we can't parse the date, skip this filter
+                    pass
+                    
+            if filters.get('release_date_max') and app.get('release_date'):
+                try:
+                    app_release_date = datetime.strptime(app.get('release_date', ''), '%Y-%m-%d')
+                    max_date = datetime.strptime(filters['release_date_max'], '%Y-%m-%d')
+                    if app_release_date > max_date:
+                        include_app = False
+                except (ValueError, TypeError):
+                    # If we can't parse the date, skip this filter
+                    pass
+            
+            # Revenue USD filter
+            if app.get('revenue_usd'):
+                try:
+                    revenue = float(app.get('revenue_usd', 0))
+                    
+                    # Min Revenue filter
+                    if filters.get('revenue_usd_min') and float(filters['revenue_usd_min']) > revenue:
+                        include_app = False
+                    
+                    # Max Revenue filter
+                    if filters.get('revenue_usd_max') and float(filters['revenue_usd_max']) < revenue:
+                        include_app = False
+                except (ValueError, TypeError):
+                    # If we can't parse the revenue, skip this filter
+                    pass
+            
+            # RPD (Revenue Per Download) filter
+            if app.get('rpd'):
+                try:
+                    rpd = float(app.get('rpd', 0))
+                    
+                    # Min RPD filter
+                    if filters.get('rpd_min') and float(filters['rpd_min']) > rpd:
+                        include_app = False
+                    
+                    # Max RPD filter
+                    if filters.get('rpd_max') and float(filters['rpd_max']) < rpd:
+                        include_app = False
+                except (ValueError, TypeError):
+                    # If we can't parse the RPD, skip this filter
+                    pass
+            
+            # Downloads (numeric) filter
+            if app.get('downloads'):
+                try:
+                    downloads = int(app.get('downloads', 0))
+                    
+                    # Min Downloads filter
+                    if filters.get('downloads_min') and int(filters['downloads_min']) > downloads:
+                        include_app = False
+                    
+                    # Max Downloads filter
+                    if filters.get('downloads_max') and int(filters['downloads_max']) < downloads:
+                        include_app = False
+                except (ValueError, TypeError):
+                    # If we can't parse the downloads, skip this filter
+                    pass
+                    
+            # Ad Network Libraries filter
+            if filters.get('ad_network_libraries') and app.get('api_details', {}).get('technologies', {}).get('Ad network libraries'):
+                ad_libraries = app.get('api_details', {}).get('technologies', {}).get('Ad network libraries', [])
+                if filters['ad_network_libraries'] not in ad_libraries:
+                    include_app = False
+            
+            # Social Libraries filter
+            if filters.get('social_libraries') and app.get('api_details', {}).get('technologies', {}).get('Social libraries'):
+                social_libraries = app.get('api_details', {}).get('technologies', {}).get('Social libraries', [])
+                if filters['social_libraries'] not in social_libraries:
+                    include_app = False
+            
+            # Development Tools filter
+            if filters.get('development_tools') and app.get('api_details', {}).get('technologies', {}).get('Development tools'):
+                dev_tools = app.get('api_details', {}).get('technologies', {}).get('Development tools', [])
+                if filters['development_tools'] not in dev_tools:
+                    include_app = False
                     
             
             # If all filters passed, include the app
@@ -501,3 +600,89 @@ def _parse_rating(rating_str):
         return 0
     
     return float(match.group(1))
+
+
+def get_filter_options():
+    """Get unique values for each filter field from the data.
+    
+    Returns:
+        dict: A dictionary containing unique values for each filter field
+    """
+    apps = get_all_apps()
+    
+    # Initialize dictionaries to store unique values
+    filter_options = {
+        'countries': set(),
+        'categories': set(),
+        'ads_options': set(),
+        'is_ad_options': set(),
+        'is_pub_options': set(),
+        'android_versions': set(),
+        'rankings': set(),
+        'ad_network_libraries': set(),
+        'social_libraries': set(),
+        'development_tools': set()
+    }
+    
+    # Extract unique values from each app
+    for app in apps:
+        # Country
+        if app.get('country'):
+            filter_options['countries'].add(app.get('country'))
+        
+        # Category
+        if app.get('category'):
+            filter_options['categories'].add(app.get('category'))
+        
+        # Ads
+        if app.get('Ads'):
+            filter_options['ads_options'].add(app.get('Ads'))
+        
+        # Is Ad
+        if app.get('is_ad'):
+            filter_options['is_ad_options'].add(app.get('is_ad'))
+        
+        # Is Publisher
+        if app.get('is_pub'):
+            filter_options['is_pub_options'].add(app.get('is_pub'))
+        
+        # Android Version
+        if app.get('Designed for Android'):
+            filter_options['android_versions'].add(app.get('Designed for Android'))
+        
+        # Ranking
+        if app.get('Ranking'):
+            filter_options['rankings'].add(app.get('Ranking'))
+        
+        # Technology filters
+        if app.get('api_details', {}).get('technologies', {}):
+            technologies = app.get('api_details', {}).get('technologies', {})
+            
+            # Ad Network Libraries
+            if technologies.get('Ad network libraries'):
+                for lib in technologies.get('Ad network libraries', []):
+                    filter_options['ad_network_libraries'].add(lib)
+            
+            # Social Libraries
+            if technologies.get('Social libraries'):
+                for lib in technologies.get('Social libraries', []):
+                    filter_options['social_libraries'].add(lib)
+            
+            # Development Tools
+            if technologies.get('Development tools'):
+                for tool in technologies.get('Development tools', []):
+                    filter_options['development_tools'].add(tool)
+    
+    # Convert sets to sorted lists for template rendering
+    return {
+        'countries': sorted(list(filter_options['countries'])),
+        'categories': sorted(list(filter_options['categories'])),
+        'ads_options': sorted(list(filter_options['ads_options'])),
+        'is_ad_options': sorted(list(filter_options['is_ad_options'])),
+        'is_pub_options': sorted(list(filter_options['is_pub_options'])),
+        'android_versions': sorted(list(filter_options['android_versions']), key=lambda x: float(x.replace('+', '')) if x.replace('+', '').replace('.', '').isdigit() else 0),
+        'rankings': sorted(list(filter_options['rankings'])),
+        'ad_network_libraries': sorted(list(filter_options['ad_network_libraries'])),
+        'social_libraries': sorted(list(filter_options['social_libraries'])),
+        'development_tools': sorted(list(filter_options['development_tools']))
+    }

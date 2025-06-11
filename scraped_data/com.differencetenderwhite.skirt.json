@@ -1,0 +1,331 @@
+{
+  "app_name": "Block Puzzle Jewel for Android - Free App Download",
+  "package_name": "com.differencetenderwhite.skirt",
+  "Total downloads": "380 million",
+  "Recent downloads": "1.2 million",
+  "Rating": "4.49 based on 1.7 million ratings",
+  "Ranking": "Highly ranked",
+  "APK size": "78.1 MB",
+  "Designed for Android": "6.0+",
+  "Suitable for": "Everyone",
+  "Ads": "Contains ads",
+  "developer_info": {
+    "name": "hua weiwei",
+    "email": "hucuawe@gmail.com",
+    "website": "http://huaweiwei.net/"
+  },
+  "about_section": "Block Puzzle Jewel is a puzzle game developed by hua weiwei. The APK has been available since February 2016 . In the last 30 days, the app was downloaded about 1.2 million times. It's highly ranked. It's rated 4.49 out of 5 stars, based on 1.7 million ratings. The last update of the app was on March 31, 2025 . Block Puzzle Jewel has a content rating \"Everyone\" . Block Puzzle Jewel has an APK download size of 78.06 MB and the latest version available is 109.0 . Designed for Android version 6.0+ . Block Puzzle Jewel is FREE to download.",
+  "app_description": "The goal is to drop blocks in order to create and destroy full lines on the screen both vertically and horizontally. Don't forget to keep the blocks from filling the screen in this addictive puzzle game.",
+  "api_details": {
+    "permissions": {},
+    "technologies": {
+      "Ad network libraries": [
+        "AdMob",
+        "Facebook Audience Network",
+        "Unity Ads",
+        "Open Measurement",
+        "Ironsource",
+        "Adjust",
+        "Amazon Mobile Ads",
+        "PubNative"
+      ],
+      "Social libraries": [
+        "Facebook",
+        "Google Play Games Services"
+      ],
+      "Development tools": [
+        "Android Jetpack core",
+        "Android Architecture Components",
+        "Android Jetpack VersionedParcelable",
+        "Firebase",
+        "Android Jetpack Annotations",
+        "Android Jetpack Widgets",
+        "Android Jetpack AppCompat",
+        "AndroidX Activity",
+        "Android Activity Saved State",
+        "Android Jetpack Media",
+        "Kotlin",
+        "Google gson",
+        "Android WorkManager",
+        "Chromium",
+        "Google Protocol Buffers",
+        "Android Asynchronous Http Client",
+        "HttpClient for Android",
+        "Cocos2D-X",
+        "EasyPermissions"
+      ]
+    },
+    "raw_html_snippet": "<div>\n    <h2>\n        Permissions\n    </h2>\n    \n        <div class=\"row app-permissions\">\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Development tools</b>\n                        <div>\n                            \n                                test access to protected storage,\n                            \n                                read sensitive log data\n                            \n                        </div>\n                    </div>\n                </div>\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Your location</b>\n                        <div>\n                            \n                                approximate (network-based) location,\n                            \n                                precise (GPS) location\n         ..."
+  },
+  "changelog": [
+    {
+      "date": "Mar 31, 2025",
+      "type": "Update",
+      "description": "Version 112.0"
+    },
+    {
+      "date": "Mar 11, 2025",
+      "type": "Update",
+      "description": "Version 109.0"
+    },
+    {
+      "date": "Feb 10, 2025",
+      "type": "Update",
+      "description": "Version 108.0"
+    },
+    {
+      "date": "Feb 7, 2025",
+      "type": "Update",
+      "description": "Version 107.0"
+    },
+    {
+      "date": "Feb 6, 2025",
+      "type": "Update",
+      "description": "Version 106.0"
+    },
+    {
+      "date": "Dec 27, 2024",
+      "type": "Update",
+      "description": "Version 105.0"
+    },
+    {
+      "date": "Dec 7, 2024",
+      "type": "Update",
+      "description": "Version 104.0"
+    },
+    {
+      "date": "Dec 6, 2024",
+      "type": "Update",
+      "description": "Version 103.0"
+    },
+    {
+      "date": "Oct 31, 2024",
+      "type": "Update",
+      "description": "Version 102.0"
+    },
+    {
+      "date": "Oct 24, 2024",
+      "type": "Update",
+      "description": "Version 101.0"
+    },
+    {
+      "date": "Oct 8, 2024",
+      "type": "Update",
+      "description": "Version 99.0"
+    },
+    {
+      "date": "Sep 29, 2024",
+      "type": "Update",
+      "description": "Version 98.0"
+    },
+    {
+      "date": "Sep 18, 2024",
+      "type": "Update",
+      "description": "Version 97.0"
+    },
+    {
+      "date": "Sep 14, 2024",
+      "type": "Update",
+      "description": "Version 95.0"
+    },
+    {
+      "date": "Sep 6, 2024",
+      "type": "Update",
+      "description": "Version 94.0"
+    },
+    {
+      "date": "Jul 21, 2024",
+      "type": "Update",
+      "description": "Version 93.0"
+    },
+    {
+      "date": "Jul 1, 2024",
+      "type": "Update",
+      "description": "Version 91.0"
+    },
+    {
+      "date": "Jun 27, 2024",
+      "type": "Update",
+      "description": "Version 90.0"
+    },
+    {
+      "date": "Jun 24, 2024",
+      "type": "Update",
+      "description": "Version 87.0"
+    },
+    {
+      "date": "Apr 16, 2024",
+      "type": "Update",
+      "description": "Version 85.0"
+    },
+    {
+      "date": "Apr 12, 2024",
+      "type": "Update",
+      "description": "Version 84.0"
+    },
+    {
+      "date": "Mar 20, 2024",
+      "type": "Update",
+      "description": "Version 83.0"
+    },
+    {
+      "date": "Mar 12, 2024",
+      "type": "Update",
+      "description": "Version 82.0"
+    },
+    {
+      "date": "Mar 5, 2024",
+      "type": "Update",
+      "description": "Version 81.0"
+    },
+    {
+      "date": "Feb 29, 2024",
+      "type": "Update",
+      "description": "Version 80.0"
+    },
+    {
+      "date": "Feb 22, 2024",
+      "type": "Update",
+      "description": "Version 79.0"
+    },
+    {
+      "date": "Feb 5, 2024",
+      "type": "Update",
+      "description": "Version 77.0"
+    },
+    {
+      "date": "Dec 19, 2023",
+      "type": "Update",
+      "description": "Version 75.0"
+    },
+    {
+      "date": "Oct 21, 2023",
+      "type": "Update",
+      "description": "Version 74.0"
+    },
+    {
+      "date": "Sep 26, 2023",
+      "type": "Update",
+      "description": "Version 72.0"
+    },
+    {
+      "date": "Sep 21, 2023",
+      "type": "Update",
+      "description": "Version 71.0"
+    },
+    {
+      "date": "Sep 14, 2023",
+      "type": "Update",
+      "description": "Version 70.0"
+    },
+    {
+      "date": "May 12, 2023",
+      "type": "Update",
+      "description": "Version 68.0"
+    },
+    {
+      "date": "Jan 18, 2023",
+      "type": "Update",
+      "description": "Version 67.0"
+    },
+    {
+      "date": "Oct 9, 2022",
+      "type": "Update",
+      "description": "Version 65.0"
+    },
+    {
+      "date": "Aug 8, 2022",
+      "type": "Update",
+      "description": "Version 64.0"
+    },
+    {
+      "date": "Aug 5, 2022",
+      "type": "Update",
+      "description": "Version 63.0"
+    },
+    {
+      "date": "Aug 2, 2022",
+      "type": "Update",
+      "description": "Version 62.0"
+    },
+    {
+      "date": "May 19, 2022",
+      "type": "Update",
+      "description": "Version 61.0"
+    },
+    {
+      "date": "Apr 23, 2022",
+      "type": "Update",
+      "description": "Version 60.0"
+    },
+    {
+      "date": "Apr 13, 2022",
+      "type": "Update",
+      "description": "Version 59.0"
+    },
+    {
+      "date": "Dec 14, 2021",
+      "type": "Update",
+      "description": "Version 58.0"
+    },
+    {
+      "date": "Oct 22, 2021",
+      "type": "Update",
+      "description": "Version 57.0"
+    },
+    {
+      "date": "Jul 29, 2021",
+      "type": "Update",
+      "description": "Version 55.0"
+    },
+    {
+      "date": "Jul 9, 2021",
+      "type": "Update",
+      "description": "Version 54.0"
+    },
+    {
+      "date": "Jun 30, 2021",
+      "type": "Update",
+      "description": "Version 51.0"
+    },
+    {
+      "date": "Mar 23, 2021",
+      "type": "Update",
+      "description": "Version 50.0"
+    },
+    {
+      "date": "Mar 5, 2021",
+      "type": "Update",
+      "description": "Version 47.0"
+    },
+    {
+      "date": "Nov 29, 2020",
+      "type": "Update",
+      "description": "Version 45.0"
+    },
+    {
+      "date": "Nov 29, 2020",
+      "type": "Update",
+      "description": "Version 45.0"
+    }
+  ],
+  "country": "US",
+  "category": "Game",
+  "status": "success",
+  "url": "https://www.appbrain.com/app/body-color-swap/com.differencetenderwhite.skirt",
+  "timestamp": "2025-06-12T02:22:28.356867",
+  "categories": "Game, Puzzle",
+  "downloads": 426269,
+  "is_ad": "YES",
+  "is_pub": "YES",
+  "market_url": "https://play.google.com/store/apps/details?hl=en_US&gl=us&id=com.differencetenderwhite.skirt",
+  "name": "Block Puzzle Jewel",
+  "platform": "Android",
+  "position": 42,
+  "publisher_contacts": "hucuawe@gmail.com",
+  "publisher_name": "hua weiwei",
+  "publisher_website": "http://huaweiwei.net/",
+  "release_date": "2016-01-29",
+  "revenue_usd": 0,
+  "rpd": 0.0
+}

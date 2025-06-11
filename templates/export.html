@@ -23,191 +23,309 @@
     </div>
     <div id="filters-container" class="p-4">
         <form id="export-filters-form" class="space-y-6">
-            <!-- First Row: Ads, Ranking, Developer -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <!-- Ads Filter -->
-                <div class="filter-group">
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Ads</label>
-                    <select name="ads_filter" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
-                        <option value="">All</option>
-                        <option value="Contains ads">Contains ads</option>
-                        <option value="No ads">No ads</option>
-                    </select>
+            <!-- Filter Categories Tabs -->
+            <div class="border-b border-gray-200">
+                <nav class="-mb-px flex space-x-4" aria-label="Tabs">
+                    <button type="button" class="filter-tab active-tab border-primary-500 text-primary-600 whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm" data-target="basic-filters">Basic Info</button>
+                    <button type="button" class="filter-tab border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm" data-target="metrics-filters">Metrics</button>
+                    <button type="button" class="filter-tab border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm" data-target="tech-filters">Technologies</button>
+                    <button type="button" class="filter-tab border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm" data-target="revenue-filters">Revenue</button>
+                </nav>
+            </div>
+
+            <!-- Basic Filters Section -->
+            <div id="basic-filters" class="filter-section">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <!-- Developer Filter -->
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Developer</label>
+                        <input type="text" name="developer" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200" placeholder="Enter developer name">
+                    </div>
+                    
+                    <!-- Country Filter -->
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Country</label>
+                        <select name="country_filter" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                            <option value="">All Countries</option>
+                            {% for country in filter_options.countries %}
+                            <option value="{{ country }}">{{ country }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    
+                    <!-- Category Filter -->
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Category</label>
+                        <select name="category_filter" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                            <option value="">All Categories</option>
+                            {% for category in filter_options.categories %}
+                            <option value="{{ category }}">{{ category }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                    <!-- Ads Filter -->
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Ads</label>
+                        <select name="ads_filter" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                            <option value="">All</option>
+                            {% for ads_option in filter_options.ads_options %}
+                            <option value="{{ ads_option }}">{{ ads_option }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    
+                    <!-- Is Ad Filter (New) -->
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Is Ad</label>
+                        <select name="is_ad_filter" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                            <option value="">All</option>
+                            {% for is_ad_option in filter_options.is_ad_options %}
+                            <option value="{{ is_ad_option }}">{{ is_ad_option }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    
+                    <!-- Is Pub Filter (New) -->
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Is Publisher</label>
+                        <select name="is_pub_filter" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                            <option value="">All</option>
+                            {% for is_pub_option in filter_options.is_pub_options %}
+                            <option value="{{ is_pub_option }}">{{ is_pub_option }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                    <!-- Ads Filter -->
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Ads</label>
+                        <select name="ads_filter" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                            <option value="">All</option>
+                            <option value="Contains ads">Contains ads</option>
+                            <option value="No ads">No ads</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Is Ad Filter (New) -->
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Is Ad</label>
+                        <select name="is_ad_filter" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                            <option value="">All</option>
+                            <option value="YES">Yes</option>
+                            <option value="NO">No</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Is Pub Filter (New) -->
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Is Publisher</label>
+                        <select name="is_pub_filter" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                            <option value="">All</option>
+                            <option value="YES">Yes</option>
+                            <option value="NO">No</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                    <!-- APK Size Filter -->
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">APK Size (MB)</label>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <div class="relative">
+                                    <input type="number" name="apk_size_min" min="0" step="0.1" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200 pl-3 pr-8" placeholder="Min size">
+                                    <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 text-xs">MB</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="relative">
+                                    <input type="number" name="apk_size_max" min="0" step="0.1" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200 pl-3 pr-8" placeholder="Max size">
+                                    <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 text-xs">MB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Android Version Filter -->
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Minimum Android Version</label>
+                        <select name="android_version_min" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                            <option value="">All</option>
+                            {% for android_version in filter_options.android_versions %}
+                            <option value="{{ android_version|replace("+", "") }}">{{ android_version }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Release Date Filter (New) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Release Date (From)</label>
+                        <input type="date" name="release_date_min" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                    </div>
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Release Date (To)</label>
+                        <input type="date" name="release_date_max" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Metrics Filters Section -->
+            <div id="metrics-filters" class="filter-section hidden">
+                <!-- Rating Filter -->
+                <div class="filter-group p-4 bg-gray-50 rounded-lg border border-gray-200">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">App Rating</label>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs text-gray-500 mb-1">Minimum Rating</label>
+                            <div class="relative">
+                                <input type="number" name="rating_min" min="0" max="5" step="0.1" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200 pl-3 pr-8" placeholder="Min rating (e.g. 4.0)">
+                                <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 text-xs">★</span>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs text-gray-500 mb-1">Maximum Rating</label>
+                            <div class="relative">
+                                <input type="number" name="rating_max" min="0" max="5" step="0.1" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200 pl-3 pr-8" placeholder="Max rating (e.g. 5.0)">
+                                <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 text-xs">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-2 text-xs text-gray-500">Filter apps by their rating value (from 0 to 5 stars)</div>
+                </div>
+                
+                <!-- Downloads Filters -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                    <!-- Total Downloads -->
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Total Downloads</label>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div>
+                                <input type="number" name="total_downloads_min" min="0" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200" placeholder="Min">
+                            </div>
+                            <div>
+                                <select name="total_downloads_min_unit" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                                    <option value="thousand">Thousand</option>
+                                    <option value="million">Million</option>
+                                    <option value="billion">Billion</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Recent Downloads -->
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Recent Downloads</label>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div>
+                                <input type="number" name="recent_downloads_min" min="0" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200" placeholder="Min">
+                            </div>
+                            <div>
+                                <select name="recent_downloads_min_unit" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                                    <option value="thousand">Thousand</option>
+                                    <option value="million">Million</option>
+                                    <option value="billion">Billion</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Downloads (Numeric) Filter (New) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Downloads (Numeric Min)</label>
+                        <input type="number" name="downloads_min" min="0" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200" placeholder="Minimum downloads">
+                    </div>
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Downloads (Numeric Max)</label>
+                        <input type="number" name="downloads_max" min="0" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200" placeholder="Maximum downloads">
+                    </div>
                 </div>
                 
                 <!-- Ranking Filter -->
-                <div class="filter-group">
+                <div class="filter-group mt-4">
                     <label class="block text-sm font-medium text-gray-700 mb-1">Ranking</label>
                     <select name="ranking_filter" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
                         <option value="">All</option>
-                        <option value="Top ranked">Top ranked</option>
-                        <option value="High ranked">High ranked</option>
-                        <option value="Medium ranked">Medium ranked</option>
-                        <option value="Low ranked">Low ranked</option>
+                        {% for ranking in filter_options.rankings %}
+                        <option value="{{ ranking }}">{{ ranking }}</option>
+                        {% endfor %}
                     </select>
                 </div>
-                
-                <!-- Developer Filter -->
-                <div class="filter-group">
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Developer</label>
-                    <input type="text" name="developer" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200" placeholder="Enter developer name">
-                </div>
             </div>
-            
-            <!-- Second Row: APK Size, Android Version, Country, Category -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- APK Size Filter -->
+
+            <!-- Technologies Filters Section -->
+            <div id="tech-filters" class="filter-section hidden">
+                <!-- Ad Network Libraries Filter (New) -->
                 <div class="filter-group">
-                    <label class="block text-sm font-medium text-gray-700 mb-1">APK Size (MB)</label>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div>
-                            <div class="relative">
-                                <input type="number" name="apk_size_min" min="0" step="0.1" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200 pl-3 pr-8" placeholder="Min size">
-                                <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 text-xs">MB</span>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="relative">
-                                <input type="number" name="apk_size_max" min="0" step="0.1" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200 pl-3 pr-8" placeholder="Max size">
-                                <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 text-xs">MB</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Android Version Filter -->
-                <div class="filter-group">
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Minimum Android Version</label>
-                    <select name="android_version_min" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Ad Network Libraries</label>
+                    <select name="ad_network_libraries" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
                         <option value="">All</option>
-                        <option value="4.0">Android 4.0+</option>
-                        <option value="5.0">Android 5.0+</option>
-                        <option value="6.0">Android 6.0+</option>
-                        <option value="7.0">Android 7.0+</option>
-                        <option value="8.0">Android 8.0+</option>
-                        <option value="9.0">Android 9.0+</option>
-                        <option value="10.0">Android 10.0+</option>
-                        <option value="11.0">Android 11.0+</option>
-                        <option value="12.0">Android 12.0+</option>
-                        <option value="13.0">Android 13.0+</option>
-                    </select>
-                </div>
-            </div>
-            
-            <!-- Third Row: Country and Category -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- Country Filter -->
-                <div class="filter-group">
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Country</label>
-                    <select name="country_filter" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
-                        <option value="">All Countries</option>
-                        <option value="US">United States</option>
-                        <option value="GB">United Kingdom</option>
-                        <option value="CA">Canada</option>
-                        <option value="AU">Australia</option>
-                        <option value="IN">India</option>
-                        <option value="DE">Germany</option>
-                        <option value="FR">France</option>
-                        <option value="JP">Japan</option>
-                        <option value="BR">Brazil</option>
-                        <option value="RU">Russia</option>
-                        <option value="CN">China</option>
-                        <option value="KR">South Korea</option>
-                        <option value="IT">Italy</option>
-                        <option value="ES">Spain</option>
-                        <option value="MX">Mexico</option>
+                        {% for ad_network in filter_options.ad_network_libraries %}
+                        <option value="{{ ad_network }}">{{ ad_network }}</option>
+                        {% endfor %}
                     </select>
                 </div>
                 
-                <!-- Category Filter -->
-                <div class="filter-group">
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Category</label>
-                    <select name="category_filter" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
-                        <option value="">All Categories</option>
-                        <option value="GAME">Games</option>
-                        <option value="SOCIAL">Social</option>
-                        <option value="COMMUNICATION">Communication</option>
-                        <option value="PRODUCTIVITY">Productivity</option>
-                        <option value="TOOLS">Tools</option>
-                        <option value="ENTERTAINMENT">Entertainment</option>
-                        <option value="EDUCATION">Education</option>
-                        <option value="FINANCE">Finance</option>
-                        <option value="SHOPPING">Shopping</option>
-                        <option value="TRAVEL_AND_LOCAL">Travel & Local</option>
-                        <option value="HEALTH_AND_FITNESS">Health & Fitness</option>
-                        <option value="PHOTOGRAPHY">Photography</option>
-                        <option value="MUSIC_AND_AUDIO">Music & Audio</option>
-                        <option value="VIDEO_PLAYERS">Video Players</option>
-                        <option value="MAPS_AND_NAVIGATION">Maps & Navigation</option>
-                        <option value="NEWS_AND_MAGAZINES">News & Magazines</option>
-                        <option value="BOOKS_AND_REFERENCE">Books & Reference</option>
-                        <option value="FOOD_AND_DRINK">Food & Drink</option>
-                        <option value="WEATHER">Weather</option>
-                        <option value="BUSINESS">Business</option>
+                <!-- Social Libraries Filter (New) -->
+                <div class="filter-group mt-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Social Libraries</label>
+                    <select name="social_libraries" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                        <option value="">All</option>
+                        {% for social_library in filter_options.social_libraries %}
+                        <option value="{{ social_library }}">{{ social_library }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                
+                <!-- Development Tools Filter (New) -->
+                <div class="filter-group mt-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Development Tools</label>
+                    <select name="development_tools" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
+                        <option value="">All</option>
+                        {% for dev_tool in filter_options.development_tools %}
+                        <option value="{{ dev_tool }}">{{ dev_tool }}</option>
+                        {% endfor %}
                     </select>
                 </div>
             </div>
-            
-            <!-- Rating Filter -->
-            <div class="filter-group p-4 bg-gray-50 rounded-lg border border-gray-200">
-                <label class="block text-sm font-medium text-gray-700 mb-2">App Rating</label>
+
+            <!-- Revenue Filters Section -->
+            <div id="revenue-filters" class="filter-section hidden">
+                <!-- Revenue USD Filter (New) -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs text-gray-500 mb-1">Minimum Rating</label>
-                        <div class="relative">
-                            <input type="number" name="rating_min" min="0" max="5" step="0.1" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200 pl-3 pr-8" placeholder="Min rating (e.g. 4.0)">
-                            <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 text-xs">★</span>
-                        </div>
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Revenue USD (Min)</label>
+                        <input type="number" name="revenue_usd_min" min="0" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200" placeholder="Minimum revenue">
                     </div>
-                    <div>
-                        <label class="block text-xs text-gray-500 mb-1">Maximum Rating</label>
-                        <div class="relative">
-                            <input type="number" name="rating_max" min="0" max="5" step="0.1" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200 pl-3 pr-8" placeholder="Max rating (e.g. 5.0)">
-                            <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 text-xs">★</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-2 text-xs text-gray-500">Filter apps by their rating value (from 0 to 5 stars)</div>
-            </div>
-            
-            <!-- Third Row: Downloads -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- Total Downloads -->
-                <div class="filter-group">
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Total Downloads</label>
-                    <div class="grid grid-cols-2 gap-2">
-                        <div>
-                            <input type="number" name="total_downloads_min" min="0" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200" placeholder="Min">
-                        </div>
-                        <div>
-                            <select name="total_downloads_min_unit" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
-                                <option value="thousand">Thousand</option>
-                                <option value="million">Million</option>
-                                <option value="billion">Billion</option>
-                            </select>
-                        </div>
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Revenue USD (Max)</label>
+                        <input type="number" name="revenue_usd_max" min="0" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200" placeholder="Maximum revenue">
                     </div>
                 </div>
                 
-                <!-- Recent Downloads -->
-                <div class="filter-group">
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Recent Downloads</label>
-                    <div class="grid grid-cols-2 gap-2">
-                        <div>
-                            <input type="number" name="recent_downloads_min" min="0" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200" placeholder="Min">
-                        </div>
-                        <div>
-                            <select name="recent_downloads_min_unit" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200">
-                                <option value="thousand">Thousand</option>
-                                <option value="million">Million</option>
-                                <option value="billion">Billion</option>
-                            </select>
-                        </div>
+                <!-- RPD (Revenue Per Download) Filter (New) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">RPD (Min)</label>
+                        <input type="number" name="rpd_min" min="0" step="0.01" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200" placeholder="Minimum RPD">
+                    </div>
+                    <div class="filter-group">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">RPD (Max)</label>
+                        <input type="number" name="rpd_max" min="0" step="0.01" class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200" placeholder="Maximum RPD">
                     </div>
                 </div>
             </div>
             
-            <!-- Fourth Row: Export Options -->
+            <!-- Export Options -->
             <div class="filter-group p-4 bg-gray-50 rounded-lg border border-gray-200">
                 <label class="block text-sm font-medium text-gray-700 mb-2">Export Options</label>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -464,6 +582,41 @@
                 toggleText.textContent = 'Show Filters';
                 toggleIcon.classList.add('rotate-180');
             }
+        });
+        
+        // Filter tabs functionality
+        const filterTabs = document.querySelectorAll('.filter-tab');
+        const filterSections = document.querySelectorAll('.filter-section');
+        
+        filterTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Remove active class from all tabs
+                filterTabs.forEach(t => {
+                    t.classList.remove('active-tab');
+                    t.classList.remove('border-primary-500');
+                    t.classList.remove('text-primary-600');
+                    t.classList.add('border-transparent');
+                    t.classList.add('text-gray-500');
+                });
+                
+                // Add active class to clicked tab
+                this.classList.add('active-tab');
+                this.classList.add('border-primary-500');
+                this.classList.add('text-primary-600');
+                this.classList.remove('border-transparent');
+                this.classList.remove('text-gray-500');
+                
+                // Hide all filter sections
+                filterSections.forEach(section => {
+                    section.classList.add('hidden');
+                });
+                
+                // Show the target section
+                const targetSection = document.getElementById(this.dataset.target);
+                if (targetSection) {
+                    targetSection.classList.remove('hidden');
+                }
+            });
         });
         
         // Apply filters to all export forms with visual feedback

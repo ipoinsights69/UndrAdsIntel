@@ -186,8 +186,11 @@ def scrape_app_data(package_name, country='', category='', additional_data=None)
         if additional_data:
             # Add CSV data fields to the app_data
             for key, value in additional_data.items():
-                # Don't overwrite existing keys unless they're empty
-                if key not in app_data or not app_data[key]:
+                # Always use country from additional_data if available
+                if key == 'country' and value:
+                    app_data[key] = value
+                # For other fields, don't overwrite existing keys unless they're empty
+                elif key not in app_data or not app_data[key]:
                     app_data[key] = value
         
         # Save the raw HTML for future processing if needed
