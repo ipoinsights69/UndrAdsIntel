@@ -71,12 +71,13 @@ def search_apps(query):
     return results
 
 
-def export_data(format_type, filters=None):
+def export_data(format_type, filters=None, export_name=None):
     """Export data in the specified format with optional filters.
     
     Args:
         format_type (str): The format to export (csv, json, excel)
         filters (dict): Optional filters to apply to the data
+        export_name (str, optional): Custom name for the export file
         
     Returns:
         str: The path to the exported file
@@ -248,7 +249,12 @@ def export_data(format_type, filters=None):
             flattened_data.append(flat_app)
         
         # Create CSV file
-        filename = f'app_data_{timestamp}.csv'
+        if export_name:
+            # Sanitize the export name to ensure it's a valid filename
+            safe_name = re.sub(r'[^\w\-\.]', '_', export_name)
+            filename = f'{safe_name}.csv'
+        else:
+            filename = f'app_data_{timestamp}.csv'
         filepath = os.path.join('exports', filename)
         
         if flattened_data:
@@ -289,7 +295,12 @@ def export_data(format_type, filters=None):
             processed_apps.append(processed_app)
         
         # Create JSON file
-        filename = f'app_data_{timestamp}.json'
+        if export_name:
+            # Sanitize the export name to ensure it's a valid filename
+            safe_name = re.sub(r'[^\w\-\.]', '_', export_name)
+            filename = f'{safe_name}.json'
+        else:
+            filename = f'app_data_{timestamp}.json'
         filepath = os.path.join('exports', filename)
         
         with open(filepath, 'w', encoding='utf-8') as jsonfile:
@@ -299,7 +310,12 @@ def export_data(format_type, filters=None):
     
     elif format_type == 'excel':
         # Create Excel file
-        filename = f'app_data_{timestamp}.xlsx'
+        if export_name:
+            # Sanitize the export name to ensure it's a valid filename
+            safe_name = re.sub(r'[^\w\-\.]', '_', export_name)
+            filename = f'{safe_name}.xlsx'
+        else:
+            filename = f'app_data_{timestamp}.xlsx'
         filepath = os.path.join('exports', filename)
         
         workbook = openpyxl.Workbook()

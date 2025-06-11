@@ -1,0 +1,929 @@
+{
+  "job_id": "3dc3505a-13fa-47a3-bae8-b4f155c9d98d",
+  "timestamp": "2025-06-11 19:16:12",
+  "package_names": [
+    "package_name",
+    "com.facebook.katana",
+    "com.instagram.android",
+    "com.whatsapp",
+    "com.spotify.music",
+    "com.netflix.mediaclient",
+    "com.amazon.mShop.android.shopping",
+    "com.google.android.youtube",
+    "com.snapchat.android",
+    "com.twitter.android",
+    "com.pinterest"
+  ],
+  "results": {
+    "package_name": {
+      "package_name": "package_name",
+      "status": "error",
+      "error": "HTTP Error: 404",
+      "timestamp": "2025-06-11T19:15:48.992453"
+    },
+    "com.facebook.katana": {
+      "app_name": "Facebook for Android - Free App Download",
+      "package_name": "com.facebook.katana",
+      "Total downloads": "11 billion",
+      "Recent downloads": "120 million",
+      "Rating": "4.36 based on 160 million ratings",
+      "Ranking": "Top ranked",
+      "APK size": "86.9 MB",
+      "Designed for Android": "4.1+",
+      "Ads": "Contains ads",
+      "developer_info": {
+        "name": "Meta Platforms, Inc.",
+        "email": "facebook.android@fb.com",
+        "website": null
+      },
+      "about_section": "Facebook is a social app developed by Meta Platforms, Inc.. The APK has been available since before 2010 . In the last 30 days, the app was downloaded about 120 million times. It's top ranked. It's rated 4.36 out of 5 stars, based on 160 million ratings. The last update of the app was on May 29, 2025 . Facebook has a content rating \"Medium Maturity\" . Facebook has an APK download size of 86.95 MB and the latest version available is 515.1.0.62.90 . Designed for Android version 4.1+ . Facebook is FREE to download.",
+      "app_description": "Where real people propel your curiosity. Whether you\u2019re thrifting gear, showing a reel to that group who gets it, or sharing laughs over fun images reimagined by AI, Facebook helps you make things happen like no other social network.\nExplore and expand your interests: \n* Ask Meta AI to search topics that matter to you, and get instant results more interactive than just text\n* Shop Marketplace for deals and hidden gems to nurture your hobbies\n* Personalize your Feed to see more of what you like, less of what you don\u2019t\n* Dive into reels and videos for how-to\u2019s or quick entertainment\nConnect with people and communities:\n* Join groups to learn tips from real people who\u2019ve been there, done that\n* Turn on sharing to Instagram to save time\n* Privately message relatable posts that only your BFF will get or that Reels trend everyone\u2019s talking about\nShare your world:\n* Use generative AI to delight friends with custom images, or just get help writing posts\n* Customize your profile to choose how you show up and who sees your posts\n* Effortlessly create reels from trending templates, or showcase your creativity with a full suite of editing tools\n* Capture moments on the fly with stories\nSome features may not be available in your country or region. \nTerms & Policies: https://www.facebook.com/policies_center\nLearn how we're working to help keep our communities safe across Meta technologies at the Meta Safety Center: https://about.meta.com/actions/safety",
+      "api_details": {
+        "permissions": {},
+        "technologies": {
+          "Ad network libraries": [],
+          "Social libraries": [],
+          "Development tools": [
+            "Google Cloud Messaging (GCM)",
+            "Yoga",
+            "Litho"
+          ]
+        },
+        "raw_html_snippet": "<div>\n    <h2>\n        Permissions\n    </h2>\n    \n        <div class=\"row app-permissions\">\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Development tools</b>\n                        <div>\n                            \n                                test access to protected storage\n                            \n                        </div>\n                    </div>\n                </div>\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Your personal information</b>\n                        <div>\n                            \n                                read calendar events plus confidential information,\n                            \n                                read call log,\n                            \n                                read your contac..."
+      },
+      "changelog": [
+        {
+          "date": "May 29, 2025",
+          "type": "Update",
+          "description": "Version 515.1.0.62.90"
+        },
+        {
+          "date": "May 21, 2025",
+          "type": "Update",
+          "description": "Version 514.0.0.65.72"
+        },
+        {
+          "date": "May 14, 2025",
+          "type": "Update",
+          "description": "Version 513.1.0.66.92"
+        },
+        {
+          "date": "May 6, 2025",
+          "type": "Update",
+          "description": "Version 512.0.0.64.75"
+        },
+        {
+          "date": "Apr 30, 2025",
+          "type": "Update",
+          "description": "Version 511.0.0.73.36"
+        },
+        {
+          "date": "Apr 24, 2025",
+          "type": "Update",
+          "description": "Version 510.0.0.72.41"
+        },
+        {
+          "date": "Apr 16, 2025",
+          "type": "Update",
+          "description": "Version 509.0.0.67.28"
+        },
+        {
+          "date": "Apr 10, 2025",
+          "type": "Update",
+          "description": "Version 508.0.0.74.47"
+        },
+        {
+          "date": "Apr 1, 2025",
+          "type": "Update",
+          "description": "Version 507.0.0.66.49"
+        },
+        {
+          "date": "Mar 26, 2025",
+          "type": "Update",
+          "description": "Version 505.0.0.57.45"
+        },
+        {
+          "date": "Mar 18, 2025",
+          "type": "Update",
+          "description": "Version 505.0.0.57.45"
+        },
+        {
+          "date": "Mar 12, 2025",
+          "type": "Update",
+          "description": "Version 504.0.0.69.64"
+        },
+        {
+          "date": "Mar 4, 2025",
+          "type": "Update",
+          "description": "Version 503.0.0.69.76"
+        },
+        {
+          "date": "Feb 25, 2025",
+          "type": "Update",
+          "description": "Version 502.0.0.66.79"
+        },
+        {
+          "date": "Feb 19, 2025",
+          "type": "Update",
+          "description": "Version 501.0.0.61.70"
+        },
+        {
+          "date": "Feb 11, 2025",
+          "type": "Update",
+          "description": "Version 500.0.0.57.50"
+        },
+        {
+          "date": "Feb 5, 2025",
+          "type": "Update",
+          "description": "Version 498.1.0.64.74"
+        },
+        {
+          "date": "Feb 1, 2025",
+          "type": "Update",
+          "description": "Version 498.1.0.64.74"
+        },
+        {
+          "date": "Jan 28, 2025",
+          "type": "Update",
+          "description": "Version 498.0.0.54.74"
+        },
+        {
+          "date": "Jan 22, 2025",
+          "type": "Update",
+          "description": "Version 497.0.0.47.36"
+        },
+        {
+          "date": "Jan 14, 2025",
+          "type": "Update",
+          "description": "Version 496.0.0.45.65"
+        },
+        {
+          "date": "Jan 7, 2025",
+          "type": "Update",
+          "description": "Version 495.0.0.45.201"
+        },
+        {
+          "date": "Dec 17, 2024",
+          "type": "Update",
+          "description": "Version 493.0.0.72.158"
+        },
+        {
+          "date": "Dec 11, 2024",
+          "type": "Update",
+          "description": "Version 493.0.0.72.158"
+        },
+        {
+          "date": "Dec 4, 2024",
+          "type": "Update",
+          "description": "Version 492.0.0.127.80"
+        },
+        {
+          "date": "Nov 19, 2024",
+          "type": "Update",
+          "description": "Version 491.0.0.58.78"
+        },
+        {
+          "date": "Nov 12, 2024",
+          "type": "Update",
+          "description": "Version 490.0.0.63.82"
+        },
+        {
+          "date": "Nov 5, 2024",
+          "type": "Update",
+          "description": "Version 489.0.0.66.81"
+        },
+        {
+          "date": "Nov 4, 2024",
+          "type": "Installs",
+          "description": "10,000,000,000+ installs"
+        },
+        {
+          "date": "Oct 31, 2024",
+          "type": "Update",
+          "description": "Version 488.0.0.78.79"
+        },
+        {
+          "date": "Oct 24, 2024",
+          "type": "Update",
+          "description": "Version 487.1.0.74.74"
+        },
+        {
+          "date": "Oct 15, 2024",
+          "type": "Update",
+          "description": "Version 486.0.0.66.70"
+        },
+        {
+          "date": "Oct 8, 2024",
+          "type": "Update",
+          "description": "Version 485.0.0.70.77"
+        },
+        {
+          "date": "Oct 2, 2024",
+          "type": "Update",
+          "description": "Version 484.0.0.63.83"
+        },
+        {
+          "date": "Sep 24, 2024",
+          "type": "Update",
+          "description": "Version 483.0.0.51.72"
+        },
+        {
+          "date": "Sep 18, 2024",
+          "type": "Update",
+          "description": "Version 481.0.0.61.80"
+        },
+        {
+          "date": "Sep 12, 2024",
+          "type": "Update",
+          "description": "Version 481.0.0.61.80"
+        },
+        {
+          "date": "Sep 4, 2024",
+          "type": "Update",
+          "description": "Version 480.0.0.54.88"
+        },
+        {
+          "date": "Aug 29, 2024",
+          "type": "Update",
+          "description": "Version 479.0.0.48.89"
+        },
+        {
+          "date": "Aug 19, 2024",
+          "type": "Update",
+          "description": "Version 478.0.0.41.86"
+        },
+        {
+          "date": "Aug 14, 2024",
+          "type": "Update",
+          "description": "Version 477.0.0.56.80"
+        },
+        {
+          "date": "Aug 6, 2024",
+          "type": "Update",
+          "description": "Version 476.0.0.49.74"
+        },
+        {
+          "date": "Jul 31, 2024",
+          "type": "Update",
+          "description": "Version 475.1.0.46.82"
+        },
+        {
+          "date": "Jul 29, 2024",
+          "type": "Update",
+          "description": "Version 475.0.0.40.82"
+        },
+        {
+          "date": "Jul 24, 2024",
+          "type": "Update",
+          "description": "Version 474.0.0.52.74"
+        },
+        {
+          "date": "Jul 16, 2024",
+          "type": "Update",
+          "description": "Version 473.0.0.41.81"
+        },
+        {
+          "date": "Jul 9, 2024",
+          "type": "Update",
+          "description": "Version 472.0.0.45.79"
+        },
+        {
+          "date": "Jul 2, 2024",
+          "type": "Update",
+          "description": "Version 471.0.0.35.80"
+        },
+        {
+          "date": "Jun 27, 2024",
+          "type": "Update",
+          "description": "Version 470.0.0.61.82"
+        },
+        {
+          "date": "Jun 21, 2024",
+          "type": "Update",
+          "description": "Version 469.2.0.51.80"
+        }
+      ],
+      "status": "success",
+      "url": "https://www.appbrain.com/app/body-color-swap/com.facebook.katana",
+      "timestamp": "2025-06-11T19:15:57.632139"
+    },
+    "com.instagram.android": {
+      "app_name": "Instagram for Android - Free App Download",
+      "package_name": "com.instagram.android",
+      "Total downloads": "6.3 billion",
+      "Recent downloads": "100 million",
+      "Rating": "3.94 based on 160 million ratings",
+      "Ranking": "Top ranked",
+      "APK size": "98.5 MB",
+      "Designed for Android": "9.0+",
+      "Ads": "Contains ads",
+      "developer_info": {
+        "name": "Instagram",
+        "email": "instagram-android@meta.com",
+        "website": "http://help.instagram.com/"
+      },
+      "about_section": "Instagram is a social app developed by Instagram. The APK has been available since April 2012 . In the last 30 days, the app was downloaded about 100 million times. It's top ranked. It's rated 3.94 out of 5 stars, based on 160 million ratings. The last update of the app was on June 3, 2025 . Instagram has a content rating \"Medium Maturity\" . Instagram has an APK download size of 98.54 MB and the latest version available is 383.1.0.48.78 . Designed for Android version 9.0+ . Instagram is FREE to download.",
+      "app_description": "Little moments lead to big friendships. Share yours on Instagram. \n\u2014From Meta\nConnect with friends, find other fans, and see what people around you are up to and into. Explore your interests and post what's going on, from your daily moments to life's highlights.\nShare what you\u2019re up to and into on Insta\u00ae.\n- Keep up with friends on the fly with Stories and Notes that disappear after 24 hours.\n- Start group chats and share unfiltered moments with your Close Friends.\n- Share memories from recent events or trips in Feed.\n- Turn your life into a movie and discover short, entertaining videos on Instagram with Reels.\n- Customize your posts with exclusive templates, music, stickers and filters.\nDive into your interests.\n- Watch videos from your favorite Creators and discover new content that\u2019s personalized to your interests.\n- Get inspired by photos and videos from new accounts in Explore.\n- Discover brands and small businesses, and shop products that are relevant to your personal style.\nSome Instagram features may not be available in your country or region.\nTerms and Policies - https://help.instagram.com/581066165581870\nConsumer Health Privacy Policy: https://privacycenter.instagram.com/policies/health\nLearn how we're working to help keep our communities safe across Meta technologies at the Instagram Safety Center: https://about.instagram.com/safety",
+      "api_details": {
+        "permissions": {},
+        "technologies": {
+          "Ad network libraries": [],
+          "Social libraries": [
+            "Facebook"
+          ],
+          "Development tools": [
+            "Android Jetpack core",
+            "Android Architecture Components",
+            "Android Jetpack VersionedParcelable",
+            "Firebase",
+            "Android Jetpack Widgets",
+            "Android Jetpack AppCompat",
+            "AndroidX Activity",
+            "AndroidX Loader",
+            "Android Jetpack Media",
+            "Google Cloud Messaging (GCM)",
+            "Android Transition Support Library",
+            "Kotlin",
+            "Google gson",
+            "Android WorkManager",
+            "AndroidX Widget ViewPager2",
+            "Glide",
+            "Chromium",
+            "Google Protocol Buffers",
+            "Google Analytics",
+            "Lottie",
+            "Yoga",
+            "React Native",
+            "FasterXML Jackson",
+            "Simple Logging Facade for Java (SLF4J)",
+            "Android GIF Drawable",
+            "Litho",
+            "PyTorch"
+          ]
+        },
+        "raw_html_snippet": "<div>\n    <h2>\n        Permissions\n    </h2>\n    \n        <div class=\"row app-permissions\">\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Development tools</b>\n                        <div>\n                            \n                                test access to protected storage\n                            \n                        </div>\n                    </div>\n                </div>\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Your personal information</b>\n                        <div>\n                            \n                                read call log,\n                            \n                                read your contacts,\n                            \n                                read your own contact card,\n                    ..."
+      },
+      "changelog": [
+        {
+          "date": "Jun 3, 2025",
+          "type": "Update",
+          "description": "Version 383.1.0.48.78"
+        },
+        {
+          "date": "May 27, 2025",
+          "type": "Update",
+          "description": "Version 382.0.0.49.84"
+        },
+        {
+          "date": "May 20, 2025",
+          "type": "Update",
+          "description": "Version 381.2.0.53.84"
+        },
+        {
+          "date": "May 13, 2025",
+          "type": "Update",
+          "description": "Version 380.0.0.49.84"
+        },
+        {
+          "date": "May 7, 2025",
+          "type": "Update",
+          "description": "Version 379.1.0.43.80"
+        },
+        {
+          "date": "May 5, 2025",
+          "type": "Update",
+          "description": "Version 379.0.0.41.80"
+        },
+        {
+          "date": "Apr 29, 2025",
+          "type": "Update",
+          "description": "Version 378.0.0.52.68"
+        },
+        {
+          "date": "Apr 22, 2025",
+          "type": "Update",
+          "description": "Version 377.1.0.48.63"
+        },
+        {
+          "date": "Apr 17, 2025",
+          "type": "Update",
+          "description": "Version 376.1.0.55.68"
+        },
+        {
+          "date": "Apr 14, 2025",
+          "type": "Update",
+          "description": "Version 376.0.0.51.68"
+        },
+        {
+          "date": "Apr 7, 2025",
+          "type": "Update",
+          "description": "Version 375.0.0.38.66"
+        },
+        {
+          "date": "Mar 31, 2025",
+          "type": "Update",
+          "description": "Version 374.0.0.43.67"
+        },
+        {
+          "date": "Mar 27, 2025",
+          "type": "Update",
+          "description": "Version 373.0.0.46.67"
+        },
+        {
+          "date": "Mar 17, 2025",
+          "type": "Update",
+          "description": "Version 372.0.0.48.60"
+        },
+        {
+          "date": "Mar 10, 2025",
+          "type": "Update",
+          "description": "Version 371.0.0.36.89"
+        },
+        {
+          "date": "Mar 5, 2025",
+          "type": "Update",
+          "description": "Version 370.1.0.43.96"
+        },
+        {
+          "date": "Mar 4, 2025",
+          "type": "Update",
+          "description": "Version 370.0.0.42.96"
+        },
+        {
+          "date": "Feb 25, 2025",
+          "type": "Update",
+          "description": "Version 369.0.0.46.101"
+        },
+        {
+          "date": "Feb 20, 2025",
+          "type": "Update",
+          "description": "Version 368.0.0.45.96"
+        },
+        {
+          "date": "Feb 10, 2025",
+          "type": "Update",
+          "description": "Version 367.0.0.43.89"
+        },
+        {
+          "date": "Feb 3, 2025",
+          "type": "Update",
+          "description": "Version 366.0.0.34.86"
+        },
+        {
+          "date": "Jan 27, 2025",
+          "type": "Update",
+          "description": "Version 365.0.0.40.94"
+        },
+        {
+          "date": "Jan 20, 2025",
+          "type": "Update",
+          "description": "Version 364.0.0.35.86"
+        },
+        {
+          "date": "Jan 17, 2025",
+          "type": "Update",
+          "description": "Version 364.0.0.18.86"
+        },
+        {
+          "date": "Jan 13, 2025",
+          "type": "Update",
+          "description": "Version 363.0.0.29.80"
+        },
+        {
+          "date": "Jan 7, 2025",
+          "type": "Update",
+          "description": "Version 362.0.0.33.241"
+        },
+        {
+          "date": "Dec 16, 2024",
+          "type": "Update",
+          "description": "Version 361.0.0.46.88"
+        },
+        {
+          "date": "Dec 10, 2024",
+          "type": "Update",
+          "description": "Version 360.0.0.52.192"
+        },
+        {
+          "date": "Dec 6, 2024",
+          "type": "Update",
+          "description": "Version 359.2.0.64.89"
+        },
+        {
+          "date": "Nov 25, 2024",
+          "type": "Update",
+          "description": "Version 359.0.0.59.89"
+        },
+        {
+          "date": "Nov 18, 2024",
+          "type": "Update",
+          "description": "Version 358.0.0.51.97"
+        },
+        {
+          "date": "Nov 13, 2024",
+          "type": "Update",
+          "description": "Version 357.1.0.52.100"
+        },
+        {
+          "date": "Nov 11, 2024",
+          "type": "Update",
+          "description": "Version 357.0.0.51.100"
+        },
+        {
+          "date": "Nov 4, 2024",
+          "type": "Update",
+          "description": "Version 356.0.0.41.101"
+        },
+        {
+          "date": "Oct 31, 2024",
+          "type": "Update",
+          "description": "Version 355.1.0.46.103"
+        },
+        {
+          "date": "Oct 22, 2024",
+          "type": "Update",
+          "description": "Version 354.2.0.47.100"
+        },
+        {
+          "date": "Oct 18, 2024",
+          "type": "Update",
+          "description": "Version 353.2.0.49.90"
+        },
+        {
+          "date": "Oct 15, 2024",
+          "type": "Update",
+          "description": "Version 353.1.0.47.90"
+        },
+        {
+          "date": "Oct 10, 2024",
+          "type": "Update",
+          "description": "Version 352.1.0.41.100"
+        },
+        {
+          "date": "Oct 5, 2024",
+          "type": "Update",
+          "description": "Version 351.1.0.42.106"
+        },
+        {
+          "date": "Sep 30, 2024",
+          "type": "Update",
+          "description": "Version 351.0.0.41.106"
+        },
+        {
+          "date": "Sep 23, 2024",
+          "type": "Update",
+          "description": "Version 350.1.0.46.93"
+        },
+        {
+          "date": "Sep 17, 2024",
+          "type": "Update",
+          "description": "Version 349.3.0.42.104"
+        },
+        {
+          "date": "Sep 16, 2024",
+          "type": "Update",
+          "description": "Version 349.0.0.39.104"
+        },
+        {
+          "date": "Sep 9, 2024",
+          "type": "Update",
+          "description": "Version 348.0.0.46.105"
+        },
+        {
+          "date": "Sep 6, 2024",
+          "type": "Update",
+          "description": "Version 347.3.0.41.103"
+        },
+        {
+          "date": "Sep 3, 2024",
+          "type": "Update",
+          "description": "Version 347.0.0.40.103"
+        },
+        {
+          "date": "Aug 30, 2024",
+          "type": "Update",
+          "description": "Version 346.1.0.46.104"
+        },
+        {
+          "date": "Aug 26, 2024",
+          "type": "Update",
+          "description": "Version 346.0.0.45.104"
+        },
+        {
+          "date": "Aug 19, 2024",
+          "type": "Update",
+          "description": "Version 345.0.0.48.95"
+        }
+      ],
+      "status": "success",
+      "url": "https://www.appbrain.com/app/body-color-swap/com.instagram.android",
+      "timestamp": "2025-06-11T19:16:04.301992"
+    },
+    "com.whatsapp": {
+      "app_name": "WhatsApp Messenger for Android - Free App Download",
+      "package_name": "com.whatsapp",
+      "Total downloads": "10 billion",
+      "Recent downloads": "130 million",
+      "Rating": "4.43 based on 200 million ratings",
+      "Ranking": "Top ranked",
+      "APK size": "69.5 MB",
+      "Designed for Android": "5.0+",
+      "Suitable for": "Everyone",
+      "Ads": "NO ads",
+      "developer_info": {
+        "name": "WhatsApp LLC",
+        "email": "android@support.whatsapp.com",
+        "website": null
+      },
+      "about_section": "WhatsApp Messenger is a communication app developed by WhatsApp LLC. The APK has been available since October 2010 . In the last 30 days, the app was downloaded about 130 million times. It's top ranked. It's rated 4.43 out of 5 stars, based on 200 million ratings. The last update of the app was on June 2, 2025 . WhatsApp Messenger has a content rating \"Everyone\" . WhatsApp Messenger has an APK download size of 69.50 MB and the latest version available is 2.25.16.84 . Designed for Android version 5.0+ . WhatsApp Messenger is FREE to download.",
+      "app_description": "WhatsApp from Meta is a FREE messaging and video calling app. It\u2019s used by over 2B people in more than 180 countries. It\u2019s simple, reliable, and private, so you can easily keep in touch with your friends and family. WhatsApp works across mobile and desktop even on slow connections, with no subscription fees*.\nPrivate messaging across the world\nYour personal messages and calls to friends and family are end-to-end encrypted. No one outside of your chats, not even WhatsApp, can read or listen to them.\nSimple and secure connections, right away\nAll you need is your phone number, no user names or logins. You can quickly view your contacts who are on WhatsApp and start messaging.\nHigh quality voice and video calls\nMake secure video and voice calls with up to 8 people for free*. Your calls work across mobile devices using your phone\u2019s Internet service, even on slow connections.\nGroup chats to keep you in contact\nStay in touch with your friends and family. End-to-end encrypted group chats let you share messages, photos, videos and documents across mobile and desktop.\nStay connected in real time\nShare your location with only those in your individual or group chat, and stop sharing at any time. Or record a voice message to connect quickly.\nShare daily moments through Status\nStatus allows you to share text, photos, video and GIF updates that disappear after 24 hours. You can choose to share status posts with all your contacts or just selected ones.\nUse WhatsApp on your Wear OS watch to continue conversations, reply to messages, and take calls - all from your wrist. And, leverage tiles and complications to easily access your chats and send voice messages.\n*Data charges may apply. Contact your provider for details.\n---------------------------------------------------------\nIf you have any feedback or questions, please go to WhatsApp > Settings > Help > Contact Us\nTerms of Service: https://www.whatsapp.com/legal/terms-of-service\n \n Learn more about messaging privately: https://www.whatsapp.com/privacy\n \n Learn more about WhatsApp safety: https://www.whatsapp.com/security\nRecent changes:\n\u2022 Chat Themes allow you to customize your bubble color and wallpaper. Choose from pre-set themes, new wallpapers, or mix and match. Go to \u2018Settings\u2019 > \u2018Chats\u2019 > \u2018Default chat theme\u2019 to change it everywhere or \u2018Chat themes\u2019 in Contact or Group info to change it for a specific chat.\nThese features will roll out over the coming weeks. Thanks for using WhatsApp!",
+      "api_details": {
+        "permissions": {},
+        "technologies": {
+          "Ad network libraries": [],
+          "Social libraries": [
+            "Facebook"
+          ],
+          "Development tools": [
+            "Android Jetpack core",
+            "Android Architecture Components",
+            "Android Jetpack VersionedParcelable",
+            "Firebase",
+            "Android Jetpack Widgets",
+            "Android Jetpack AppCompat",
+            "Android Jetpack Media",
+            "Google Cloud Messaging (GCM)",
+            "Android Transition Support Library",
+            "Kotlin",
+            "Android WorkManager",
+            "AndroidX Widget ViewPager2",
+            "Google Maps SDK",
+            "Chromium",
+            "Google Protocol Buffers",
+            "Lottie",
+            "Yoga",
+            "Simple Logging Facade for Java (SLF4J)",
+            "Spongy Castle - Bouncy Castle for Android",
+            "Litho"
+          ]
+        },
+        "raw_html_snippet": "<div>\n    <h2>\n        Permissions\n    </h2>\n    \n        <div class=\"row app-permissions\">\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Development tools</b>\n                        <div>\n                            \n                                test access to protected storage\n                            \n                        </div>\n                    </div>\n                </div>\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Your personal information</b>\n                        <div>\n                            \n                                read call log,\n                            \n                                read your contacts,\n                            \n                                read your own contact card,\n                    ..."
+      },
+      "changelog": [
+        {
+          "date": "Jun 2, 2025",
+          "type": "Update",
+          "description": "Version 2.25.16.84"
+        },
+        {
+          "date": "May 27, 2025",
+          "type": "Update",
+          "description": "Version 2.25.16.82"
+        },
+        {
+          "date": "May 13, 2025",
+          "type": "Update",
+          "description": "Version 2.25.15.80"
+        },
+        {
+          "date": "May 5, 2025",
+          "type": "Update",
+          "description": "Version 2.25.14.76"
+        },
+        {
+          "date": "Apr 28, 2025",
+          "type": "Update",
+          "description": "Version 2.25.13.74"
+        },
+        {
+          "date": "Apr 21, 2025",
+          "type": "Update",
+          "description": "Version 2.25.12.74"
+        },
+        {
+          "date": "Apr 16, 2025",
+          "type": "Update",
+          "description": "Version 2.25.11.75"
+        },
+        {
+          "date": "Apr 2, 2025",
+          "type": "Update",
+          "description": "Version 2.25.9.78"
+        },
+        {
+          "date": "Mar 25, 2025",
+          "type": "Update",
+          "description": "Version 2.25.8.84"
+        },
+        {
+          "date": "Mar 18, 2025",
+          "type": "Update",
+          "description": "Version 2.25.7.80"
+        },
+        {
+          "date": "Mar 14, 2025",
+          "type": "Installs",
+          "description": "10,000,000,000+ installs"
+        },
+        {
+          "date": "Mar 10, 2025",
+          "type": "Update",
+          "description": "Version 2.25.6.74"
+        },
+        {
+          "date": "Mar 5, 2025",
+          "type": "Update",
+          "description": "Version 2.25.5.74"
+        },
+        {
+          "date": "Feb 28, 2025",
+          "type": "Update",
+          "description": "Version 2.25.4.77"
+        },
+        {
+          "date": "Feb 26, 2025",
+          "type": "Update",
+          "description": "Version 2.25.4.75"
+        },
+        {
+          "date": "Feb 19, 2025",
+          "type": "Update",
+          "description": "Version 2.25.3.82"
+        },
+        {
+          "date": "Feb 7, 2025",
+          "type": "Update",
+          "description": "Version 2.25.2.85"
+        },
+        {
+          "date": "Jan 21, 2025",
+          "type": "Update",
+          "description": "Version 2.25.1.75"
+        },
+        {
+          "date": "Dec 16, 2024",
+          "type": "Update",
+          "description": "Version 2.24.25.77"
+        },
+        {
+          "date": "Dec 11, 2024",
+          "type": "Update",
+          "description": "Version 2.24.24.79"
+        },
+        {
+          "date": "Dec 4, 2024",
+          "type": "Update",
+          "description": "Version 2.24.24.77"
+        },
+        {
+          "date": "Nov 18, 2024",
+          "type": "Update",
+          "description": "Version 2.24.23.78"
+        },
+        {
+          "date": "Nov 4, 2024",
+          "type": "Update",
+          "description": "Version 2.24.22.78"
+        },
+        {
+          "date": "Oct 21, 2024",
+          "type": "Update",
+          "description": "Version 2.24.21.79"
+        },
+        {
+          "date": "Oct 9, 2024",
+          "type": "Update",
+          "description": "Version 2.24.20.89"
+        },
+        {
+          "date": "Sep 25, 2024",
+          "type": "Update",
+          "description": "Version 2.24.19.86"
+        },
+        {
+          "date": "Sep 13, 2024",
+          "type": "Update",
+          "description": "Version 2.24.18.80"
+        },
+        {
+          "date": "Sep 9, 2024",
+          "type": "Update",
+          "description": "Version 2.24.18.76"
+        },
+        {
+          "date": "Aug 30, 2024",
+          "type": "Update",
+          "description": "Version 2.24.17.79"
+        },
+        {
+          "date": "Aug 26, 2024",
+          "type": "Update",
+          "description": "Version 2.24.17.76"
+        },
+        {
+          "date": "Aug 12, 2024",
+          "type": "Update",
+          "description": "Version 2.24.16.76"
+        },
+        {
+          "date": "Jul 29, 2024",
+          "type": "Update",
+          "description": "Version 2.24.15.78"
+        },
+        {
+          "date": "Jul 19, 2024",
+          "type": "Update",
+          "description": "Version 2.24.14.81"
+        },
+        {
+          "date": "Jul 15, 2024",
+          "type": "Update",
+          "description": "Version 2.24.14.76"
+        },
+        {
+          "date": "Jul 1, 2024",
+          "type": "Update",
+          "description": "Version 2.24.13.77"
+        },
+        {
+          "date": "Jun 17, 2024",
+          "type": "Update",
+          "description": "Version 2.24.12.78"
+        },
+        {
+          "date": "Jun 3, 2024",
+          "type": "Update",
+          "description": "Version 2.24.11.79"
+        },
+        {
+          "date": "May 24, 2024",
+          "type": "Update",
+          "description": "Version 2.24.10.85"
+        },
+        {
+          "date": "May 20, 2024",
+          "type": "Update",
+          "description": "Version 2.24.10.79"
+        },
+        {
+          "date": "May 6, 2024",
+          "type": "Update",
+          "description": "Version 2.24.9.78"
+        },
+        {
+          "date": "Apr 9, 2024",
+          "type": "Update",
+          "description": "Version 2.24.7.81"
+        },
+        {
+          "date": "Mar 25, 2024",
+          "type": "Update",
+          "description": "Version 2.24.6.77"
+        },
+        {
+          "date": "Mar 11, 2024",
+          "type": "Update",
+          "description": "Version 2.24.5.76"
+        },
+        {
+          "date": "Feb 26, 2024",
+          "type": "Update",
+          "description": "Version 2.24.4.76"
+        },
+        {
+          "date": "Feb 15, 2024",
+          "type": "Update",
+          "description": "Version 2.24.3.81"
+        },
+        {
+          "date": "Feb 12, 2024",
+          "type": "Update",
+          "description": "Version 2.24.3.77"
+        },
+        {
+          "date": "Jan 29, 2024",
+          "type": "Update",
+          "description": "Version 2.24.2.76"
+        },
+        {
+          "date": "Jan 23, 2024",
+          "type": "Update",
+          "description": "Version 2.24.1.78"
+        },
+        {
+          "date": "Jan 16, 2024",
+          "type": "Update",
+          "description": "Version 2.24.1.76"
+        },
+        {
+          "date": "Dec 18, 2023",
+          "type": "Update",
+          "description": "Version 2.23.25.83"
+        }
+      ],
+      "status": "success",
+      "url": "https://www.appbrain.com/app/body-color-swap/com.whatsapp",
+      "timestamp": "2025-06-11T19:16:12.961096"
+    }
+  }
+}

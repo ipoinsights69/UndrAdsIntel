@@ -26,7 +26,7 @@ def make_request_with_retry(url, max_retries=MAX_RETRIES, timeout=15):
     """
     Make a request with retry logic for timeout and connection errors
     """
-    payload = {'api_key': '4359f18e8ba816dcfa44c714a5ce649d', 'url': url}
+    payload = {'api_key': SCRAPER_API_KEY, 'url': url}
     
     for attempt in range(max_retries + 1):  # +1 because we want to include the initial attempt
         try:

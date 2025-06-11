@@ -164,8 +164,18 @@
 <!-- Live Status (hidden initially) -->
 <div id="live-status" class="card mb-8 hidden">
     <div class="p-6 border-b border-gray-200">
-        <h3 class="text-lg font-semibold text-gray-800">Live Status</h3>
-        <p class="text-gray-600 text-sm">Scraping in progress...</p>
+        <div class="flex justify-between items-center">
+            <div>
+                <h3 class="text-lg font-semibold text-gray-800">Live Status</h3>
+                <p class="text-gray-600 text-sm">Scraping in progress...</p>
+            </div>
+            <button id="stop-job-btn" class="btn-danger">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8 7a1 1 0 00-1 1v4a1 1 0 001 1h4a1 1 0 001-1V8a1 1 0 00-1-1H8z" clip-rule="evenodd" />
+                </svg>
+                Stop Job
+            </button>
+        </div>
     </div>
     <div class="p-6">
         <div class="mb-4">
@@ -201,6 +211,7 @@
         const progressCount = document.getElementById('progress-count');
         const totalCount = document.getElementById('total-count');
         const liveLogs = document.getElementById('live-logs');
+        const stopJobBtn = document.getElementById('stop-job-btn');
         
         let jobId = null;
         let pollingInterval = null;
@@ -247,6 +258,34 @@
             pollingInterval = setInterval(updateStatus, 2000);
         }
         
+        // Add stop job functionality
+        stopJobBtn.addEventListener('click', function() {
+            if (!jobId) return;
+            
+            if (confirm('Are you sure you want to stop this job?')) {
+                fetch(`/api/stop-job/${jobId}`, {
+                    method: 'POST',
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest'
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        alert('Job stopped successfully');
+                        // Redirect to job results page
+                        window.location.href = `/view_job_results/${jobId}`;
+                    } else {
+                        alert('Error: ' + data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred while trying to stop the job.');
+                });
+            }
+        });
+        
         function updateStatus() {
             if (!jobId) return;
             
@@ -263,8 +302,8 @@
                     liveLogs.textContent = data.logs;
                     liveLogs.scrollTop = liveLogs.scrollHeight;
                     
-                    // If job is complete, stop polling and redirect
-                    if (data.status === 'complete') {
+                    // If job is complete or stopped, stop polling and redirect
+                    if (data.status === 'complete' || data.status === 'stopped') {
                         clearInterval(pollingInterval);
                         window.location.href = `/view_job_results/${data.job_id}`;
                     }

@@ -1,0 +1,340 @@
+{
+  "app_name": "X (Formerly Twitter) for Android - Free App Download",
+  "package_name": "com.twitter.android",
+  "Total downloads": "1.7 billion",
+  "Recent downloads": "9.1 million",
+  "Rating": "3.74 based on 22 million ratings",
+  "Ranking": "Top ranked",
+  "APK size": "87.1 MB",
+  "Designed for Android": "8.0+",
+  "Ads": "Contains ads",
+  "developer_info": {
+    "name": "X Corp.",
+    "email": "google-play-emails@twitter.com",
+    "website": "https://support.twitter.com/articles/20169915"
+  },
+  "about_section": "X (Formerly Twitter) is a news & magazines app developed by X Corp.. The APK has been available since April 2010 . In the last 30 days, the app was downloaded about 9.1 million times. It's top ranked. It's rated 3.74 out of 5 stars, based on 22 million ratings. The last update of the app was on June 2, 2025 . X (Formerly Twitter) has a content rating \"High Maturity\" . X (Formerly Twitter) has an APK download size of 87.10 MB and the latest version available is 11.2.0-release.0 . Designed for Android version 8.0+ . X (Formerly Twitter) is FREE to download.",
+  "app_description": "The X app is the trusted global digital town square for everyone.\nWith X, you can:\n- Post content for the world to see and join public conversations\n- Stay up to date on breaking news and follow your interests\n- Stay better informed with extra context from Community Notes\n- Go live with Spaces for audio or stream live video\n- Communicate privately with Direct Messages\n- Subscribe to X Premium to expand your reach, get a blue checkmark, and more\n- Earn a living creating exclusive content for your paid subscribers and share in the ad revenue generated in replies to your posts\n- Create and join Communities around topics and interests, from sports to music to technology\n- Upload and watch videos up to 3 hours in length\n- Write and read long form posts like essays and blogs\n- Connect directly with your customers to help your business grow",
+  "api_details": {
+    "permissions": {},
+    "technologies": {
+      "Ad network libraries": [
+        "AdMob"
+      ],
+      "Social libraries": [],
+      "Development tools": [
+        "Android Jetpack core",
+        "Android Architecture Components",
+        "Android Jetpack VersionedParcelable",
+        "Firebase",
+        "Android Jetpack Annotations",
+        "Android Jetpack Widgets",
+        "Android Jetpack AppCompat",
+        "AndroidX Activity",
+        "Android Activity Saved State",
+        "AndroidX Loader",
+        "Android Jetpack Media",
+        "Google Cloud Messaging (GCM)",
+        "Android Transition Support Library",
+        "Android Support Library collections",
+        "Android Support VectorDrawable",
+        "AndroidX Legacy: Support Library core utils",
+        "Kotlin",
+        "AndroidX Cursor Adapter",
+        "AndroidX Local Broadcast Manager",
+        "AndroidX Legacy: Support Library core UI",
+        "Google gson",
+        "Android Support Library Async Layout Inflater",
+        "Android WorkManager",
+        "AndroidX Widget ViewPager2",
+        "Okio",
+        "JetBrains Annotations",
+        "Glide",
+        "AndroidX ExifInterface",
+        "Google ZXing",
+        "Google Maps SDK",
+        "Retrofit",
+        "Chromium",
+        "Google Guava",
+        "ReactiveX",
+        "BoltsFramework",
+        "Google Protocol Buffers",
+        "Dagger",
+        "Lottie",
+        "Volley",
+        "Reactive Streams",
+        "greenrobot EventBus",
+        "Yoga",
+        "FasterXML Jackson",
+        "Simple Logging Facade for Java (SLF4J)",
+        "okHttp",
+        "Apache Commons Codec",
+        "MPAndroidChart",
+        "Moshi",
+        "The Legion of the Bouncy Castle",
+        "Apache Http Auth",
+        "AndroidSVG",
+        "Google Play Licensing Service",
+        "TensorFlow Lite",
+        "LoganSquare",
+        "Apache Thrift"
+      ]
+    },
+    "raw_html_snippet": "<div>\n    <h2>\n        Permissions\n    </h2>\n    \n        <div class=\"row app-permissions\">\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Development tools</b>\n                        <div>\n                            \n                                test access to protected storage\n                            \n                        </div>\n                    </div>\n                </div>\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Your personal information</b>\n                        <div>\n                            \n                                read your contacts,\n                            \n                                read your own contact card\n                            \n                        </div>\n                    </div>\n          ..."
+  },
+  "changelog": [
+    {
+      "date": "Jun 2, 2025",
+      "type": "Update",
+      "description": "Version 11.2.0-release.0"
+    },
+    {
+      "date": "May 28, 2025",
+      "type": "Update",
+      "description": "Version 11.1.5-release.0"
+    },
+    {
+      "date": "May 27, 2025",
+      "type": "Update",
+      "description": "Version 11.1.0-release.13"
+    },
+    {
+      "date": "May 20, 2025",
+      "type": "Update",
+      "description": "Version 11.0.0-release.0"
+    },
+    {
+      "date": "May 13, 2025",
+      "type": "Update",
+      "description": "Version 10.97.0-release.0"
+    },
+    {
+      "date": "May 5, 2025",
+      "type": "Update",
+      "description": "Version 10.96.0-release.0"
+    },
+    {
+      "date": "Apr 28, 2025",
+      "type": "Update",
+      "description": "Version 10.95.0-release.0"
+    },
+    {
+      "date": "Apr 22, 2025",
+      "type": "Update",
+      "description": "Version 10.94.0-release.0"
+    },
+    {
+      "date": "Apr 18, 2025",
+      "type": "Update",
+      "description": "Version 10.89.1-release.0"
+    },
+    {
+      "date": "Apr 14, 2025",
+      "type": "Update",
+      "description": "Version 10.89.0-release.0"
+    },
+    {
+      "date": "Apr 8, 2025",
+      "type": "Update",
+      "description": "Version 10.88.1-release.0"
+    },
+    {
+      "date": "Apr 3, 2025",
+      "type": "Update",
+      "description": "Version 10.87.1-release.0"
+    },
+    {
+      "date": "Apr 2, 2025",
+      "type": "Category",
+      "description": "Moved from Social to News & Magazines"
+    },
+    {
+      "date": "Mar 25, 2025",
+      "type": "Update",
+      "description": "Version 10.86.0-release.0"
+    },
+    {
+      "date": "Mar 18, 2025",
+      "type": "Update",
+      "description": "Version 10.85.0-release.0"
+    },
+    {
+      "date": "Mar 10, 2025",
+      "type": "Update",
+      "description": "Version 10.84.0-release.0"
+    },
+    {
+      "date": "Mar 4, 2025",
+      "type": "Update",
+      "description": "Version 10.83.0-release.0"
+    },
+    {
+      "date": "Feb 25, 2025",
+      "type": "Update",
+      "description": "Version 10.82.0-release.0"
+    },
+    {
+      "date": "Feb 19, 2025",
+      "type": "Update",
+      "description": "Version 10.81.0-release.0"
+    },
+    {
+      "date": "Feb 13, 2025",
+      "type": "Update",
+      "description": "Version 10.80.1-release.0"
+    },
+    {
+      "date": "Feb 11, 2025",
+      "type": "Update",
+      "description": "Version 10.80.0-release.0"
+    },
+    {
+      "date": "Feb 3, 2025",
+      "type": "Update",
+      "description": "Version 10.79.0-release.0"
+    },
+    {
+      "date": "Jan 28, 2025",
+      "type": "Update",
+      "description": "Version 10.78.0-release.0"
+    },
+    {
+      "date": "Jan 16, 2025",
+      "type": "Update",
+      "description": "Version 10.76.0-release.0"
+    },
+    {
+      "date": "Jan 12, 2025",
+      "type": "Update",
+      "description": "Version 10.75.1-release.0"
+    },
+    {
+      "date": "Jan 8, 2025",
+      "type": "Update",
+      "description": "Version 10.75.0-release.0"
+    },
+    {
+      "date": "Jan 2, 2025",
+      "type": "Update",
+      "description": "Version 10.72.3-release.0"
+    },
+    {
+      "date": "Dec 27, 2024",
+      "type": "Update",
+      "description": "Version 10.72.2-release.0"
+    },
+    {
+      "date": "Dec 20, 2024",
+      "type": "Update",
+      "description": "Version 10.72.1-release.0"
+    },
+    {
+      "date": "Dec 17, 2024",
+      "type": "Update",
+      "description": "Version 10.72.0-release.0"
+    },
+    {
+      "date": "Dec 11, 2024",
+      "type": "Update",
+      "description": "Version 10.71.1-release.0"
+    },
+    {
+      "date": "Dec 3, 2024",
+      "type": "Update",
+      "description": "Version 10.70.0-release.0"
+    },
+    {
+      "date": "Nov 26, 2024",
+      "type": "Update",
+      "description": "Version 10.68.2-release.0"
+    },
+    {
+      "date": "Nov 20, 2024",
+      "type": "Update",
+      "description": "Version 10.68.1-release.0"
+    },
+    {
+      "date": "Nov 12, 2024",
+      "type": "Update",
+      "description": "Version 10.67.0-release.0"
+    },
+    {
+      "date": "Nov 7, 2024",
+      "type": "Update",
+      "description": "Version 10.65.2-release.0"
+    },
+    {
+      "date": "Oct 30, 2024",
+      "type": "Update",
+      "description": "Version 10.65.1-release.0"
+    },
+    {
+      "date": "Oct 25, 2024",
+      "type": "Update",
+      "description": "Version 10.64.2-release.0"
+    },
+    {
+      "date": "Oct 22, 2024",
+      "type": "Update",
+      "description": "Version 10.64.0-release.0"
+    },
+    {
+      "date": "Oct 17, 2024",
+      "type": "Update",
+      "description": "Version 10.63.1-release.0"
+    },
+    {
+      "date": "Oct 8, 2024",
+      "type": "Update",
+      "description": "Version 10.62.1-release.0"
+    },
+    {
+      "date": "Oct 3, 2024",
+      "type": "Update",
+      "description": "Version 10.61.1-release.0"
+    },
+    {
+      "date": "Sep 24, 2024",
+      "type": "Update",
+      "description": "Version 10.60.0-release.0"
+    },
+    {
+      "date": "Sep 20, 2024",
+      "type": "Update",
+      "description": "Version 10.59.1-release.0"
+    },
+    {
+      "date": "Sep 9, 2024",
+      "type": "Update",
+      "description": "Version 10.58.0-release.0"
+    },
+    {
+      "date": "Sep 3, 2024",
+      "type": "Update",
+      "description": "Version 10.57.0-release.0"
+    },
+    {
+      "date": "Aug 27, 2024",
+      "type": "Update",
+      "description": "Version 10.56.0-release.0"
+    },
+    {
+      "date": "Aug 21, 2024",
+      "type": "Update",
+      "description": "Version 10.55.1-release.0"
+    },
+    {
+      "date": "Aug 19, 2024",
+      "type": "Update",
+      "description": "Version 10.55.0-release.0"
+    },
+    {
+      "date": "Aug 15, 2024",
+      "type": "Update",
+      "description": "Version 10.54.2-release.0"
+    }
+  ],
+  "status": "success",
+  "url": "https://www.appbrain.com/app/body-color-swap/com.twitter.android",
+  "timestamp": "2025-06-11T19:11:44.688496"
+}

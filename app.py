@@ -65,7 +65,7 @@ def index():
     try:
         stats = {
             'total_apps': len(data_manager.get_all_apps()),
-            'total_developers': len(set(app.get('developer', '') for app in data_manager.get_all_apps())),
+            'total_developers': len(set(app.get('developer_info', {}).get('name', '') for app in data_manager.get_all_apps())),
             'recent_scrapes': 0  # This would be implemented with a proper tracking system
         }
     except Exception as e:
@@ -204,13 +204,27 @@ def developers():
 
 @app.route('/logs')
 def logs():
-    # Get the last 200 lines of the log file
+    # Get the last 200 lines of the log file and parse them
     log_file = os.path.join(log_dir, f'app_{datetime.now().strftime("%Y%m%d")}.log')
-    log_content = ''
+    log_entries = []
     if os.path.exists(log_file):
         with open(log_file, 'r') as f:
             all_lines = f.readlines()
-            log_content = ''.join(all_lines[-200:] if len(all_lines) > 200 else all_lines)
+            last_lines = all_lines[-200:] if len(all_lines) > 200 else all_lines
+            for line in last_lines:
+                try:
+                    # Parse log line format: timestamp - name - level - message
+                    parts = line.strip().split(' - ', 3)
+                    if len(parts) >= 4:
+                        log_entries.append({
+                            'timestamp': parts[0],
+                            'name': parts[1],
+                            'level': parts[2],
+                            'message': parts[3]
+                        })
+                except Exception as e:
+                    app.logger.error(f"Error parsing log line: {str(e)}")
+                    continue
     
     # Get all job results
     jobs = []
@@ -242,31 +256,34 @@ def logs():
                         partial_count = sum(1 for app in results.values() 
                                          if app.get('status') == 'partial')
                         
-                        jobs.append({
+                        # Add job to list with additional info
+                        job_info = {
                             'job_id': job_id,
                             'timestamp': job_data.get('timestamp', ''),
-                            'total_apps': total_apps,
+                            'status': status,
+                            'progress': progress,
                             'success_count': success_count,
                             'failed_count': failed_count,
                             'partial_count': partial_count,
-                            'status': status,
-                            'progress': progress,
-                            'original_job_id': job_data.get('original_job_id', ''),
-                            'retry_mode': job_data.get('retry_mode', 'all')
-                        })
-                except Exception as e:
-                    logging.error(f"Error reading job file {filename}: {str(e)}")
+                            'completed_apps': completed,  # Make sure this is included
+                            'total_apps': total           # Make sure this is included
+                        }
+                        jobs.append(job_info)
     
+                except Exception as e:
+                    app.logger.error(f"Error loading job data: {str(e)}")
+                    continue
+                
     # Sort jobs by timestamp (newest first)
-    jobs.sort(key=lambda x: x['timestamp'], reverse=True)
+    jobs.sort(key=lambda x: x.get('timestamp', ''), reverse=True)
     
     # Get active jobs that might not have results yet
     for job_id, job_info in scraping_jobs.items():
         if job_info['status'] == 'running':
             # Check if job is already in the list
             if not any(job['job_id'] == job_id for job in jobs):
-                total = job_info['total']
-                completed = job_info['completed']
+                total = job_info.get('total', 0)
+                completed = job_info.get('completed', 0)
                 progress = int((completed / total) * 100) if total > 0 else 0
                 
                 jobs.append({
@@ -278,11 +295,12 @@ def logs():
                     'partial_count': 0,  # We don't know yet
                     'status': 'running',
                     'progress': progress,
+                    'completed_apps': completed,
                     'original_job_id': job_info.get('original_job_id', ''),
                     'retry_mode': job_info.get('retry_mode', 'all')
                 })
     
-    return render_template('logs.html', log_content=log_content, jobs=jobs)
+    return render_template('logs.html', jobs=jobs, log_content=log_entries)
 
 @app.route('/view_job_results/<job_id>')
 def view_job_results(job_id):
@@ -301,6 +319,10 @@ def view_job_results(job_id):
         timestamp = datetime.fromisoformat(job_data.get('timestamp', datetime.now().isoformat()))
         package_names = job_data.get('package_names', [])
         
+        # Initialize variables with default values
+        completed = 0
+        total = len(package_names) if package_names else 0
+        
         # Process app results
         success_apps = []
         failed_apps = []
@@ -308,28 +330,48 @@ def view_job_results(job_id):
         
         # Iterate through the results dictionary
         for package_name, app_data in results.items():
+            # Skip if app_data is not a dictionary
+            if not isinstance(app_data, dict):
+                app.logger.warning(f"Skipping non-dict app_data for {package_name}: {type(app_data)}")
+                continue
+                
             # Add package_name to the app_data dictionary for easier access in template
             app_data['package_name'] = package_name
             
             # Categorize based on status or presence of data
-            if isinstance(app_data, dict):
-                if app_data.get('status') == 'error':
-                    failed_apps.append(app_data)
-                elif not app_data.get('api_details') or not app_data.get('changelog'):
-                    partial_success.append(app_data)
-                else:
-                    success_apps.append(app_data)
+            if app_data.get('status') == 'error':
+                failed_apps.append(app_data)
+            elif not app_data.get('api_details') or not app_data.get('changelog'):
+                partial_success.append(app_data)
+            else:
+                success_apps.append(app_data)
         
-        # Calculate stats
+        # Get job status and progress
+        job_status = scraping_jobs.get(job_id, {})
+        is_running = job_status.get('status') == 'running'
+        
+        # Calculate completed count based on job status
+        if is_running:
+            # For running jobs, get completed count from scraping_jobs
+            completed = job_status.get('completed', 0)
+            total = job_status.get('total', total)  # Use the total from job_status if available
+        else:
+            # For completed jobs, calculate from results
+            completed = len(success_apps) + len(failed_apps) + len(partial_success)
+        
+        # Calculate stats - ensure all values are defined
         stats = {
-            'total': len(package_names),
+            'total': total,
             'success': len(success_apps),
             'failed': len(failed_apps),
-            'partial': len(partial_success)
+            'partial': len(partial_success),
+            'completed': completed  # Explicitly include completed count
         }
         
         # Combine all apps for the all_apps tab
         all_apps = success_apps + failed_apps + partial_success
+        
+        app.logger.info(f"Job {job_id} stats: {stats}")
         
         return render_template('job_results.html', 
                               job_id=job_id,
@@ -345,6 +387,19 @@ def view_job_results(job_id):
         flash(f'Error loading job results: {str(e)}', 'error')
         return redirect(url_for('logs'))
 
+
+@app.route('/stop_job/<job_id>', methods=['POST'])
+def stop_job(job_id):
+    if job_id in scraping_jobs:
+        scraping_jobs[job_id]['status'] = 'stopped'
+        return jsonify({
+            'status': 'success',
+            'message': f'Job {job_id} has been stopped'
+        })
+    return jsonify({
+        'status': 'error',
+        'message': f'Job {job_id} not found'
+    })
 
 @app.route('/retry_failed_apps/<job_id>', methods=['GET', 'POST'])
 def retry_failed_apps(job_id):
@@ -474,6 +529,11 @@ def scrape_and_save(package_names, job_id, original_job_id=None, retry_mode='all
     
     # Scrape each app
     for i, package_name in enumerate(package_names):
+        # Check if job has been stopped
+        if job_id in scraping_jobs and scraping_jobs[job_id].get('status') == 'stopped':
+            logging.info(f"[Job {job_id}] Stopping job as requested by user after processing {i} apps")
+            break
+            
         try:
             logging.info(f"[Job {job_id}] Scraping {i+1}/{total_apps}: {package_name}")
             
@@ -560,8 +620,8 @@ def scrape_and_save(package_names, job_id, original_job_id=None, retry_mode='all
     with open(results_file, 'w') as f:
         json.dump(output, f, indent=2)
     
-    # Update job status
-    if job_id in scraping_jobs:
+    # Update job status - only change to 'complete' if not already 'stopped'
+    if job_id in scraping_jobs and scraping_jobs[job_id].get('status') != 'stopped':
         scraping_jobs[job_id]['status'] = 'complete'
         # Store the new job ID in the original job for reference
         if original_job_id and original_job_id in scraping_jobs:
@@ -625,8 +685,11 @@ def export():
             filters['include_latest_changelog'] = request.form['include_latest_changelog']
         
         try:
-            # Call the export_data function with filters
-            filename = data_manager.export_data(export_format, filters)
+            # Get export name if provided
+            export_name = request.form.get('export_name', '')
+            
+            # Call the export_data function with filters and export name
+            filename = data_manager.export_data(export_format, filters, export_name)
             
             if filename:
                 flash(f'Data exported successfully as {export_format.upper()}', 'success')
@@ -936,6 +999,25 @@ def login_required(view_function):
         return view_function(*args, **kwargs)
     decorated_function.__name__ = view_function.__name__
     return decorated_function
+
+
+# @app.route('/api/stop-job/<job_id>', methods=['POST'])
+# def stop_job(job_id):
+#     """API endpoint to stop a running job"""
+#     if not job_id or job_id not in scraping_jobs:
+#         return jsonify({
+#             'error': 'Invalid job ID',
+#             'status': 'error'
+#         }), 400
+    
+    # Mark the job as stopped
+    scraping_jobs[job_id]['status'] = 'stopped'
+    logging.info(f"[Job {job_id}] Job manually stopped by user")
+    
+    return jsonify({
+        'status': 'success',
+        'message': f'Job {job_id} has been stopped'
+    })
 
 
 if __name__ == '__main__':

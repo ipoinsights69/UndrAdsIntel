@@ -1,0 +1,312 @@
+{
+  "app_name": "Instagram for Android - Free App Download",
+  "package_name": "com.instagram.android",
+  "Total downloads": "6.3 billion",
+  "Recent downloads": "100 million",
+  "Rating": "3.94 based on 160 million ratings",
+  "Ranking": "Top ranked",
+  "APK size": "98.5 MB",
+  "Designed for Android": "9.0+",
+  "Ads": "Contains ads",
+  "developer_info": {
+    "name": "Instagram",
+    "email": "instagram-android@meta.com",
+    "website": "http://help.instagram.com/"
+  },
+  "about_section": "Instagram is a social app developed by Instagram. The APK has been available since April 2012 . In the last 30 days, the app was downloaded about 100 million times. It's top ranked. It's rated 3.94 out of 5 stars, based on 160 million ratings. The last update of the app was on June 3, 2025 . Instagram has a content rating \"Medium Maturity\" . Instagram has an APK download size of 98.54 MB and the latest version available is 383.1.0.48.78 . Designed for Android version 9.0+ . Instagram is FREE to download.",
+  "app_description": "Little moments lead to big friendships. Share yours on Instagram. \n\u2014From Meta\nConnect with friends, find other fans, and see what people around you are up to and into. Explore your interests and post what's going on, from your daily moments to life's highlights.\nShare what you\u2019re up to and into on Insta\u00ae.\n- Keep up with friends on the fly with Stories and Notes that disappear after 24 hours.\n- Start group chats and share unfiltered moments with your Close Friends.\n- Share memories from recent events or trips in Feed.\n- Turn your life into a movie and discover short, entertaining videos on Instagram with Reels.\n- Customize your posts with exclusive templates, music, stickers and filters.\nDive into your interests.\n- Watch videos from your favorite Creators and discover new content that\u2019s personalized to your interests.\n- Get inspired by photos and videos from new accounts in Explore.\n- Discover brands and small businesses, and shop products that are relevant to your personal style.\nSome Instagram features may not be available in your country or region.\nTerms and Policies - https://help.instagram.com/581066165581870\nConsumer Health Privacy Policy: https://privacycenter.instagram.com/policies/health\nLearn how we're working to help keep our communities safe across Meta technologies at the Instagram Safety Center: https://about.instagram.com/safety",
+  "api_details": {
+    "permissions": {},
+    "technologies": {
+      "Ad network libraries": [],
+      "Social libraries": [
+        "Facebook"
+      ],
+      "Development tools": [
+        "Android Jetpack core",
+        "Android Architecture Components",
+        "Android Jetpack VersionedParcelable",
+        "Firebase",
+        "Android Jetpack Widgets",
+        "Android Jetpack AppCompat",
+        "AndroidX Activity",
+        "AndroidX Loader",
+        "Android Jetpack Media",
+        "Google Cloud Messaging (GCM)",
+        "Android Transition Support Library",
+        "Kotlin",
+        "Google gson",
+        "Android WorkManager",
+        "AndroidX Widget ViewPager2",
+        "Glide",
+        "Chromium",
+        "Google Protocol Buffers",
+        "Google Analytics",
+        "Lottie",
+        "Yoga",
+        "React Native",
+        "FasterXML Jackson",
+        "Simple Logging Facade for Java (SLF4J)",
+        "Android GIF Drawable",
+        "Litho",
+        "PyTorch"
+      ]
+    },
+    "raw_html_snippet": "<div>\n    <h2>\n        Permissions\n    </h2>\n    \n        <div class=\"row app-permissions\">\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Development tools</b>\n                        <div>\n                            \n                                test access to protected storage\n                            \n                        </div>\n                    </div>\n                </div>\n            \n                <div class=\"col-sm-6 col-lg-4\">\n                    <div class=\"default-box-color vpadding-xs hpadding-s\">\n                        <b>Your personal information</b>\n                        <div>\n                            \n                                read call log,\n                            \n                                read your contacts,\n                            \n                                read your own contact card,\n                    ..."
+  },
+  "changelog": [
+    {
+      "date": "Jun 3, 2025",
+      "type": "Update",
+      "description": "Version 383.1.0.48.78"
+    },
+    {
+      "date": "May 27, 2025",
+      "type": "Update",
+      "description": "Version 382.0.0.49.84"
+    },
+    {
+      "date": "May 20, 2025",
+      "type": "Update",
+      "description": "Version 381.2.0.53.84"
+    },
+    {
+      "date": "May 13, 2025",
+      "type": "Update",
+      "description": "Version 380.0.0.49.84"
+    },
+    {
+      "date": "May 7, 2025",
+      "type": "Update",
+      "description": "Version 379.1.0.43.80"
+    },
+    {
+      "date": "May 5, 2025",
+      "type": "Update",
+      "description": "Version 379.0.0.41.80"
+    },
+    {
+      "date": "Apr 29, 2025",
+      "type": "Update",
+      "description": "Version 378.0.0.52.68"
+    },
+    {
+      "date": "Apr 22, 2025",
+      "type": "Update",
+      "description": "Version 377.1.0.48.63"
+    },
+    {
+      "date": "Apr 17, 2025",
+      "type": "Update",
+      "description": "Version 376.1.0.55.68"
+    },
+    {
+      "date": "Apr 14, 2025",
+      "type": "Update",
+      "description": "Version 376.0.0.51.68"
+    },
+    {
+      "date": "Apr 7, 2025",
+      "type": "Update",
+      "description": "Version 375.0.0.38.66"
+    },
+    {
+      "date": "Mar 31, 2025",
+      "type": "Update",
+      "description": "Version 374.0.0.43.67"
+    },
+    {
+      "date": "Mar 27, 2025",
+      "type": "Update",
+      "description": "Version 373.0.0.46.67"
+    },
+    {
+      "date": "Mar 17, 2025",
+      "type": "Update",
+      "description": "Version 372.0.0.48.60"
+    },
+    {
+      "date": "Mar 10, 2025",
+      "type": "Update",
+      "description": "Version 371.0.0.36.89"
+    },
+    {
+      "date": "Mar 5, 2025",
+      "type": "Update",
+      "description": "Version 370.1.0.43.96"
+    },
+    {
+      "date": "Mar 4, 2025",
+      "type": "Update",
+      "description": "Version 370.0.0.42.96"
+    },
+    {
+      "date": "Feb 25, 2025",
+      "type": "Update",
+      "description": "Version 369.0.0.46.101"
+    },
+    {
+      "date": "Feb 20, 2025",
+      "type": "Update",
+      "description": "Version 368.0.0.45.96"
+    },
+    {
+      "date": "Feb 10, 2025",
+      "type": "Update",
+      "description": "Version 367.0.0.43.89"
+    },
+    {
+      "date": "Feb 3, 2025",
+      "type": "Update",
+      "description": "Version 366.0.0.34.86"
+    },
+    {
+      "date": "Jan 27, 2025",
+      "type": "Update",
+      "description": "Version 365.0.0.40.94"
+    },
+    {
+      "date": "Jan 20, 2025",
+      "type": "Update",
+      "description": "Version 364.0.0.35.86"
+    },
+    {
+      "date": "Jan 17, 2025",
+      "type": "Update",
+      "description": "Version 364.0.0.18.86"
+    },
+    {
+      "date": "Jan 13, 2025",
+      "type": "Update",
+      "description": "Version 363.0.0.29.80"
+    },
+    {
+      "date": "Jan 7, 2025",
+      "type": "Update",
+      "description": "Version 362.0.0.33.241"
+    },
+    {
+      "date": "Dec 16, 2024",
+      "type": "Update",
+      "description": "Version 361.0.0.46.88"
+    },
+    {
+      "date": "Dec 10, 2024",
+      "type": "Update",
+      "description": "Version 360.0.0.52.192"
+    },
+    {
+      "date": "Dec 6, 2024",
+      "type": "Update",
+      "description": "Version 359.2.0.64.89"
+    },
+    {
+      "date": "Nov 25, 2024",
+      "type": "Update",
+      "description": "Version 359.0.0.59.89"
+    },
+    {
+      "date": "Nov 18, 2024",
+      "type": "Update",
+      "description": "Version 358.0.0.51.97"
+    },
+    {
+      "date": "Nov 13, 2024",
+      "type": "Update",
+      "description": "Version 357.1.0.52.100"
+    },
+    {
+      "date": "Nov 11, 2024",
+      "type": "Update",
+      "description": "Version 357.0.0.51.100"
+    },
+    {
+      "date": "Nov 4, 2024",
+      "type": "Update",
+      "description": "Version 356.0.0.41.101"
+    },
+    {
+      "date": "Oct 31, 2024",
+      "type": "Update",
+      "description": "Version 355.1.0.46.103"
+    },
+    {
+      "date": "Oct 22, 2024",
+      "type": "Update",
+      "description": "Version 354.2.0.47.100"
+    },
+    {
+      "date": "Oct 18, 2024",
+      "type": "Update",
+      "description": "Version 353.2.0.49.90"
+    },
+    {
+      "date": "Oct 15, 2024",
+      "type": "Update",
+      "description": "Version 353.1.0.47.90"
+    },
+    {
+      "date": "Oct 10, 2024",
+      "type": "Update",
+      "description": "Version 352.1.0.41.100"
+    },
+    {
+      "date": "Oct 5, 2024",
+      "type": "Update",
+      "description": "Version 351.1.0.42.106"
+    },
+    {
+      "date": "Sep 30, 2024",
+      "type": "Update",
+      "description": "Version 351.0.0.41.106"
+    },
+    {
+      "date": "Sep 23, 2024",
+      "type": "Update",
+      "description": "Version 350.1.0.46.93"
+    },
+    {
+      "date": "Sep 17, 2024",
+      "type": "Update",
+      "description": "Version 349.3.0.42.104"
+    },
+    {
+      "date": "Sep 16, 2024",
+      "type": "Update",
+      "description": "Version 349.0.0.39.104"
+    },
+    {
+      "date": "Sep 9, 2024",
+      "type": "Update",
+      "description": "Version 348.0.0.46.105"
+    },
+    {
+      "date": "Sep 6, 2024",
+      "type": "Update",
+      "description": "Version 347.3.0.41.103"
+    },
+    {
+      "date": "Sep 3, 2024",
+      "type": "Update",
+      "description": "Version 347.0.0.40.103"
+    },
+    {
+      "date": "Aug 30, 2024",
+      "type": "Update",
+      "description": "Version 346.1.0.46.104"
+    },
+    {
+      "date": "Aug 26, 2024",
+      "type": "Update",
+      "description": "Version 346.0.0.45.104"
+    },
+    {
+      "date": "Aug 19, 2024",
+      "type": "Update",
+      "description": "Version 345.0.0.48.95"
+    }
+  ],
+  "status": "success",
+  "url": "https://www.appbrain.com/app/body-color-swap/com.instagram.android",
+  "timestamp": "2025-06-11T19:16:04.301992"
+}
