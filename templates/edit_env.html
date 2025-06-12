@@ -500,7 +500,7 @@
         button.disabled = true;
         
         // Log the request URL for debugging
-        const requestUrl = `http://localhost:1234/delete_folder/${folderType.toLowerCase()}`;
+        const requestUrl = `${window.location.origin}/delete_folder/${folderType.toLowerCase()}`;
         console.log(`Sending delete request to: ${requestUrl}`);
         
         fetch(requestUrl, {
