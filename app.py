@@ -370,6 +370,52 @@ def logs():
     
     return render_template('logs.html', jobs=jobs, log_content=log_entries)
 
+@app.route('/delete_folder/<folder_type>', methods=['POST'])
+def delete_folder(folder_type):
+    """Delete the contents of a specified folder.
+    
+    folder_type can be: scrapeddata, results, logs, exports
+    """
+    print(f"Delete folder endpoint called with folder_type: {folder_type}")
+    try:
+        folder_map = {
+            'scrapeddata': os.getenv('SCRAPED_DATA_DIR', 'scraped_data'),
+            'results': 'results',
+            'logs': os.getenv('LOGS_DIR', 'logs'),
+            'exports': os.getenv('EXPORTS_DIR', 'exports')
+        }
+        
+        if folder_type.lower() not in folder_map:
+            return jsonify({'success': False, 'message': f'Invalid folder type: {folder_type}'}), 400
+        
+        folder_path = os.path.join(os.getcwd(), folder_map[folder_type.lower()])
+        
+        if not os.path.exists(folder_path):
+            return jsonify({'success': False, 'message': f'Folder does not exist: {folder_path}'}), 404
+        
+        # Delete all files in the folder but keep the folder itself
+        deleted_count = 0
+        for filename in os.listdir(folder_path):
+            file_path = os.path.join(folder_path, filename)
+            try:
+                if os.path.isfile(file_path):
+                    os.unlink(file_path)
+                    deleted_count += 1
+                elif os.path.isdir(file_path):
+                    # Use shutil.rmtree to remove subdirectories
+                    import shutil
+                    shutil.rmtree(file_path)
+                    deleted_count += 1
+            except Exception as e:
+                logging.error(f"Error deleting {file_path}: {str(e)}")
+        
+        logging.info(f"Deleted {deleted_count} items from {folder_path}")
+        return jsonify({'success': True, 'message': f'Successfully deleted {deleted_count} items from {folder_type}'})
+    
+    except Exception as e:
+        logging.error(f"Error in delete_folder: {str(e)}")
+        return jsonify({'success': False, 'message': str(e)}), 500
+
 @app.route('/view_job_results/<job_id>')
 def view_job_results(job_id):
     # Get job results
